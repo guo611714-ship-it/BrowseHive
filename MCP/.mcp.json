@@ -1,0 +1,37 @@
+{
+  "mcpServers": {
+    "browser-use": {
+      "command": "python",
+      "args": ["~/.claude/scripts/browser-use-mcp.py"],
+      "env": { "PYTHONIOENCODING": "utf-8" }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest", "--user-data-dir", "~/. playwright-mcp"]
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@latest"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_TOKEN" }
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": { "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_KEY" }
+    },
+    "codegraph": {
+      "command": "npx",
+      "args": ["-y", "@colbymchenry/codegraph"]
+    },
+    "ai-chat": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-u", "~/.claude/scripts/ai-chat-mcp.py"],
+      "env": { "PYTHONIOENCODING": "utf-8", "PYTHONUNBUFFERED": "1" }
+    }
+  }
+}
