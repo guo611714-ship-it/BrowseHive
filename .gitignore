@@ -1,0 +1,157 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Knowledge Base
+vault/*/                # vault子目录内容除外
+!vault/.gitkeep
+.vault-config.json
+
+# API Keys and secrets
+*.env
+.env
+.secrets/
+anthropic-api-key.txt
+
+# Logs
+logs/
+*.log
+kb-manager.log
+
+# Processed files
+processed/
+tmp/
+
+# Installers
+*.msi
+*.exe
+# *.ps1  (commented out - we need install_service.ps1)
+# install-nodejs.ps1
+
+# Agent Team large data
+.claude/projects/**/*.jsonl
+.claude/projects/**/tool-results/
+.claude/.memory/
+.tmp/
+tmp_exp7/
+
+# Claude 插件缓存（保持目录结构，不提交内容）
+.agents/skills/*
+!.agents/skills/.gitkeep
+.claude/plugins/*
+!.claude/plugins/.gitkeep
+
+# 可选：全局忽略常见大目录
+node_modules/
+npm/
+yarn/
+bower/
+vendor/
+jspm_packages/
+
+# 二进制与构建产物
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.obj
+*.o
+*.a
+*.lib
+*.so
+*.dylib
+*.ncb
+*.sdf
+*.suo
+*.pdb
+*.idb
+*.class
+*.war
+*.ear
+*.jar
+*.pyc
+*.pyo
+*.egg
+*.egg-info/
+dist/
+build/
+target/
+out/
+
+# Scratch (issue tracking) - include but keep structure
+.scratch/*
+!.scratch/.gitkeep
+.scratch/init/
+
+# Backup files
+*.bak
+*.backup
+
+# Obsidian
+.vault/.obsidian/
+.vault/.trash/
+
+# ========== Agent Team ==========
+# 模型配置（本地私密）
+model_config.json
+
+# 记忆系统（包含敏感对话）
+memory/
+!memory/.gitkeep
+
+# Team 状态（本地运行期）
+.team/
+!.team/config.json.example
+.team/inbox/*.jsonl
+.team/threads/*.json
+.team/checkpoints/*.json
+.team/cursors/*.txt
+.team/config.json  # 本地可编辑
+
+# 本地用户模板
+templates/USER.local.md
+templates/agent/identity.md
+templates/agent/compact_prompt.md
+
+# WebUI (如有)
+webui/dist/
+webui/node_modules/
+
+# 桌宠 (如有)
+desktop-pet/node_modules/
+
+# 旧版 agent (已迁移至 agent/ 包)
+agent.py
