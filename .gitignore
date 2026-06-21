@@ -179,3 +179,12 @@ test-results/
 .mypy_cache/
 .hypothesis/
 
+# Collab-v3 runtime data (15GB+)
+collab-v3/.collab/
+
+# GitHub agent tools submodules (nested repos)
+github-agent-tools/bernstein/
+github-agent-tools/claude_codex_bridge/
+github-agent-tools/agmsg/
+github-agent-tools/hcom/
+
