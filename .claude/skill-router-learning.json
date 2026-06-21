@@ -1,0 +1,845 @@
+{
+  "weights": {
+    "gpt-image-2": 2,
+    "word-document-processor": 1.6000000000000005,
+    "ljg-word": 1.4000000000000004,
+    "azure-deploy": 1.3000000000000003,
+    "remotion-best-practices": 1.3000000000000003,
+    "agents-sdk": 1.6000000000000005,
+    "react-three-fiber": 1.4000000000000004,
+    "claude-api": 1.6000000000000005,
+    "senior-ml-engineer": 1.1,
+    "github-mirror-accelerator": 1.2000000000000002,
+    "keil": 2,
+    "build-keil": 2,
+    "ouyi-ai": 2,
+    "git-mirror-accelerator": 2,
+    "academic-paper-reviewer": 1.2000000000000002,
+    "search-searxng": 1.2000000000000002,
+    "brainstorming": 1.4000000000000004,
+    "python-testing-patterns": 1.4000000000000004,
+    "notion": 1.3000000000000003
+  },
+  "history": [
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779271958191
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779272550692
+    },
+    {
+      "skill": "word-document-processor",
+      "accepted": true,
+      "ts": 1779272551120
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779272669509
+    },
+    {
+      "skill": "word-document-processor",
+      "accepted": true,
+      "ts": 1779272669836
+    },
+    {
+      "skill": "ljg-word",
+      "accepted": true,
+      "ts": 1779272669945
+    },
+    {
+      "skill": "azure-deploy",
+      "accepted": true,
+      "ts": 1779272670175
+    },
+    {
+      "skill": "remotion-best-practices",
+      "accepted": true,
+      "ts": 1779272670404
+    },
+    {
+      "skill": "agents-sdk",
+      "accepted": true,
+      "ts": 1779272670933
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779272846506
+    },
+    {
+      "skill": "word-document-processor",
+      "accepted": true,
+      "ts": 1779272846632
+    },
+    {
+      "skill": "ljg-word",
+      "accepted": true,
+      "ts": 1779272846767
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779272904552
+    },
+    {
+      "skill": "react-three-fiber",
+      "accepted": true,
+      "ts": 1779272904786
+    },
+    {
+      "skill": "word-document-processor",
+      "accepted": true,
+      "ts": 1779272904913
+    },
+    {
+      "skill": "ljg-word",
+      "accepted": true,
+      "ts": 1779272905027
+    },
+    {
+      "skill": "azure-deploy",
+      "accepted": true,
+      "ts": 1779272905258
+    },
+    {
+      "skill": "claude-api",
+      "accepted": true,
+      "ts": 1779272905369
+    },
+    {
+      "skill": "remotion-best-practices",
+      "accepted": true,
+      "ts": 1779272905473
+    },
+    {
+      "skill": "agents-sdk",
+      "accepted": true,
+      "ts": 1779272906018
+    },
+    {
+      "skill": "senior-ml-engineer",
+      "accepted": true,
+      "ts": 1779273022567
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779273022894
+    },
+    {
+      "skill": "agents-sdk",
+      "accepted": true,
+      "ts": 1779273023019
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779274342052
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779275183642
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779275183964
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779275207694
+    },
+    {
+      "skill": "github-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779275218871
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779275233647
+    },
+    {
+      "skill": "react-three-fiber",
+      "accepted": true,
+      "ts": 1779275233864
+    },
+    {
+      "skill": "word-document-processor",
+      "accepted": true,
+      "ts": 1779275233970
+    },
+    {
+      "skill": "ljg-word",
+      "accepted": true,
+      "ts": 1779275234080
+    },
+    {
+      "skill": "azure-deploy",
+      "accepted": true,
+      "ts": 1779275234298
+    },
+    {
+      "skill": "claude-api",
+      "accepted": true,
+      "ts": 1779275234408
+    },
+    {
+      "skill": "remotion-best-practices",
+      "accepted": true,
+      "ts": 1779275234510
+    },
+    {
+      "skill": "agents-sdk",
+      "accepted": true,
+      "ts": 1779275235072
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779275436753
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779276311066
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779276311512
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779276311631
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779276468306
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779276902617
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779276903237
+    },
+    {
+      "skill": "word-document-processor",
+      "accepted": true,
+      "ts": 1779276903462
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779278166913
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779278167344
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779278649274
+    },
+    {
+      "skill": "claude-api",
+      "accepted": true,
+      "ts": 1779281625097
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779283255263
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779290760198
+    },
+    {
+      "skill": "claude-api",
+      "accepted": true,
+      "ts": 1779355245610
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779359309223
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779359335427
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779360577925
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779369224459
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779369686581
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779369686700
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779369686825
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779369686941
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779369687060
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779369848573
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779369848705
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779370736938
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779371454057
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779373428220
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779375205558
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779375392334
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779376970445
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779377072276
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779377829341
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779378303539
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779379014249
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779379112990
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779382902644
+    },
+    {
+      "skill": "academic-paper-reviewer",
+      "accepted": true,
+      "ts": 1779383278532
+    },
+    {
+      "skill": "academic-paper-reviewer",
+      "accepted": true,
+      "ts": 1779383278638
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779383293394
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779383293858
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779383644307
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779383986783
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779387959030
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779388200532
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779388311570
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779388780537
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779388830404
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779389338273
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779391562914
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779392921903
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779393026765
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779393143888
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779395542154
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779395645861
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779395909654
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779397142095
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779397283539
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779397865083
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779399173222
+    },
+    {
+      "skill": "search-searxng",
+      "accepted": true,
+      "ts": 1779401276477
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779429832406
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779443592787
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779443741770
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779447823835
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779449223589
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779453542178
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779459677755
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779460385870
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779462165194
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779471072220
+    },
+    {
+      "skill": "agents-sdk",
+      "accepted": true,
+      "ts": 1779471673841
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779473133715
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779473480813
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779476071434
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779476256339
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779476463667
+    },
+    {
+      "skill": "agents-sdk",
+      "accepted": true,
+      "ts": 1779480288647
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779524813599
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779527399025
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779527921865
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779536771316
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779538675269
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779539390956
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779539470542
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779539703935
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779539995473
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779540963515
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779542386864
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779543026223
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779544122594
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779544566918
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779544648576
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779544838590
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779545250724
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779547283373
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779547533110
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779553609365
+    },
+    {
+      "skill": "search-searxng",
+      "accepted": true,
+      "ts": 1779554108938
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779558651960
+    },
+    {
+      "skill": "build-keil",
+      "accepted": true,
+      "ts": 1779558738697
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779559093946
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779560130270
+    },
+    {
+      "skill": "git-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779561161788
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779562232906
+    },
+    {
+      "skill": "brainstorming",
+      "accepted": true,
+      "ts": 1779562239924
+    },
+    {
+      "skill": "python-testing-patterns",
+      "accepted": true,
+      "ts": 1779562247596
+    },
+    {
+      "skill": "github-mirror-accelerator",
+      "accepted": true,
+      "ts": 1779562280499
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779562571516
+    },
+    {
+      "skill": "brainstorming",
+      "accepted": true,
+      "ts": 1779562571791
+    },
+    {
+      "skill": "notion",
+      "accepted": true,
+      "ts": 1779562802656
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779562802937
+    },
+    {
+      "skill": "brainstorming",
+      "accepted": true,
+      "ts": 1779562803217
+    },
+    {
+      "skill": "python-testing-patterns",
+      "accepted": true,
+      "ts": 1779562803491
+    },
+    {
+      "skill": "notion",
+      "accepted": true,
+      "ts": 1779562826814
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779562854716
+    },
+    {
+      "skill": "claude-api",
+      "accepted": true,
+      "ts": 1779562854876
+    },
+    {
+      "skill": "react-three-fiber",
+      "accepted": true,
+      "ts": 1779562855186
+    },
+    {
+      "skill": "notion",
+      "accepted": true,
+      "ts": 1779562887908
+    },
+    {
+      "skill": "gpt-image-2",
+      "accepted": true,
+      "ts": 1779562888220
+    },
+    {
+      "skill": "brainstorming",
+      "accepted": true,
+      "ts": 1779562888575
+    },
+    {
+      "skill": "python-testing-patterns",
+      "accepted": true,
+      "ts": 1779562888754
+    },
+    {
+      "skill": "keil",
+      "accepted": true,
+      "ts": 1779562888944
+    },
+    {
+      "skill": "react-three-fiber",
+      "accepted": true,
+      "ts": 1779562889151
+    },
+    {
+      "skill": "claude-api",
+      "accepted": true,
+      "ts": 1779562889967
+    },
+    {
+      "skill": "python-testing-patterns",
+      "accepted": true,
+      "ts": 1779562936982
+    },
+    {
+      "skill": "ouyi-ai",
+      "accepted": true,
+      "ts": 1779563413228
+    }
+  ]
+}

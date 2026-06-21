@@ -1,0 +1,7 @@
+{
+  "api_key_env": "NVIDIA_API_KEY",
+  "base_url": "https://integrate.api.nvidia.com/v1",
+  "model": "stepfun-ai/step-3.7-flash",
+  "max_tokens": 4096,
+  "vault_name": "AI知识库"
+}

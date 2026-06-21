@@ -1,0 +1,852 @@
+# Skill Router V2 — Enhanced with ZH_EN_MAP (cross-language Chinese→English mapping)
+# Merged from: David-CKS/claude-skill-router + custom skill-router.js features
+#
+# 新增字段:
+#   - triggers_zh: 中文触发词列表（自动与ZH_EN_MAP匹配）
+#   - chain_group: 链式调用分组（同一组内可串联多个cluster）
+
+# ─── ZH_EN_MAP: 中文→英文关键词映射 ──────────────────────
+# 每个中文词映射到可能匹配的英文关键词列表
+# 路由器先查ZH_EN_MAP，再用英文关键词匹配cluster
+ZH_EN_MAP:
+  # 图像/生成
+  图片: [image, generate, images, text-to-image]
+  图像: [image, generate, images]
+  生成图片: [generate, image, text-to-image]
+  生成图: [generate, image, text-to-image]
+  AI画: [image, generate, gpt]
+  AI绘图: [image, generate, gpt]
+  画图: [image, generate, draw]
+  绘图: [image, generate, draw]
+  文生图: [text-to-image, generate, image]
+  编辑图片: [edit, image-edit, editing]
+  修图: [edit, image-edit]
+  # React/前端
+  react: [react, component, nextjs]
+  组件: [component, react, components]
+  前端: [react, nextjs, frontend, web]
+  界面: [react, component, ui]
+  3D: [three, fiber, threejs, meshes]
+  三维: [three, fiber, threejs]
+  # Python
+  python: [python, django, flask]
+  Python测试: [python, pytest, testing, test]
+  单元测试: [test, testing, pytest, unit]
+  pytest: [python, pytest, testing]
+  # GitNexus
+  代码分析: [analyze, analysis, gitnexus]
+  代码探索: [explore, architecture, flow]
+  代码重构: [refactor, refactoring, rename, extract]
+  代码调试: [debug, debugging, trace, error]
+  影响分析: [impact, analysis, safety, break]
+  PR审查: [review, pull-request, merge]
+  代码审查: [review, code-review]
+  # 文档/办公
+  文档: [document, word, documentation]
+  word: [word, document, word-document]
+  写文档: [document, word, create]
+  # 表格/Excel
+  表格: [excel, spreadsheet, table, excel-automation]
+  excel: [excel, spreadsheet, excel-automation]
+  # PPT
+  ppt: [ppt, powerpoint, presentation, pptx]
+  PPT: [ppt, powerpoint, presentation, pptx]
+  演示文稿: [ppt, powerpoint, presentation]
+  幻灯片: [ppt, powerpoint, slides]
+  # 嵌入式
+  keil: [keil, mdk, uvprojx]
+  嵌入式: [embedded, keil, stm32, firmware]
+  STM32: [stm32, keil, mdk, embedded]
+  单片机: [embedded, keil, stm32, mdk, firmware]
+  编译: [build, rebuild, compile]
+  # 部署
+  部署: [deploy, deployment]
+  azure: [azure, deployment, azd]
+  # AI/ML
+  大模型: [llm, model, ai-models]
+  LLM: [llm, model, ai-models]
+  模型: [model, ai-models]
+  机器学习: [ml, model, deployment, mlops]
+  prompt: [prompt, caching, claude]
+  Claude API: [claude, anthropic, sdk, api]
+  # Agent
+  代理: [agent, agents, sdk]
+  agent: [agent, agents, sdk]
+  智能体: [agent, agents, durable, stateful]
+  工作流: [workflow, flow, durable]
+  # 搜索
+  搜索: [search-searxng, searxng, baidu]
+  联网搜索: [search-searxng, searxng, baidu, bing]
+  百度: [search-searxng, searxng, baidu]
+  # Git/GitHub
+  github: [github, git]
+  Git加速: [git, mirror, accelerator, cdn]
+  # 认证
+  认证: [auth, authentication, betterauth]
+  登录: [auth, login, session]
+  # 视频
+  视频: [video, animation, remotion]
+  动画: [video, animation, remotion]
+  # PDF/OCR
+  PDF: [pdf, extraction, pdfplumber]
+  OCR: [ocr, smart-ocr, recognition]
+  # 测试
+  测试: [test, testing]
+  自动化测试: [test, playwright, browser, automation]
+  截图: [screenshot, capture, playwright]
+  # Skill管理
+  # 持续学习
+  学习: [learning, instinct, continuous]
+  记忆: [learning, instinct, memory]
+  # 创意/设计
+  头脑风暴: [brainstorming, creative, design]
+  brainstorm: [brainstorming, creative, design]
+  需求分析: [brainstorming, requirements, design]
+  # 欧亿AI
+  欧亿: [ouyi-ai, api]
+  对话: [ouyi-ai, chat, api]
+  # 论文
+  论文审稿: [academic-paper-reviewer, peer, review]
+  论文: [academic-paper-reviewer, paper, manuscript]
+  # Karpathy
+  编码规范: [karpathy-guidelines, code, guidelines]
+  代码规范: [karpathy-guidelines, code, guidelines]
+  karpathy: [karpathy-guidelines, guidelines, code]
+  # 邮件
+  邮件: [himalaya, imap, smtp]
+  收邮件: [himalaya, imap, inbox]
+  发邮件: [himalaya, smtp, compose]
+  # Notion/Obsidian
+  notion: [notion, pages, markdown, content]
+  笔记管理: [notion, obsidian, notes]
+  obsidian: [obsidian, vaults, notes, markdown]
+  知识库: [obsidian, notion, vaults]
+  # 语音
+  语音识别: [openai-whisper, whisper, speech, transcribe]
+  语音转文字: [openai-whisper, whisper, speech, transcribe]
+  语音合成: [sag, sherpa-onnx-tts, tts, speech]
+  TTS: [sag, sherpa-onnx-tts, tts, speech]
+  文字转语音: [sag, sherpa-onnx-tts, tts, speech]
+  # Python调试
+  Python调试: [python-debugpy, python, debug, pdb]
+  # 摘要
+  摘要: [summarize, transcribe, youtubevideos]
+  总结: [summarize, transcribe, podcasts]
+  # 图表
+  图表: [diagram-maker, diagram, chart, draw]
+  流程图: [diagram-maker, diagram, flowchart, mermaid]
+  架构图: [diagram-maker, diagram, architecture, draw]
+  # 健康检查
+  健康检查: [healthcheck, health, audit, security]
+  # tmux
+  tmux: [tmux, session, pane, terminal]
+  # 模型路由
+  模型路由: [model-router, router, model, select]
+  节省token: [model-router, token, cost, save]
+  # 模型用量
+  模型用量: [model-usage, usage, cost, model]
+  # 成本
+  成本优化: [cost-aware-llm-pipeline, cost, optimize, token]
+
+# ─── Clusters ──────────────────────────────────────────────
+clusters:
+  image_generation:
+    description: "Image generation, text-to-image, AI art"
+    triggers_natural:
+      - "generate an image"
+      - "create a picture"
+      - "AI art"
+      - "text to image"
+    triggers_zh:
+      - "图片"
+      - "生成图片"
+      - "生成图"
+      - "AI画"
+      - "AI绘图"
+      - "画图"
+      - "绘图"
+      - "文生图"
+    keywords:
+      - "image"
+      - "generate"
+      - "text-to-image"
+      - "gpt-image"
+      - "dalle"
+    skills:
+      - gpt-image-2
+    confidence_threshold: 0.7
+
+  image_edit:
+    description: "Edit, retouch, or modify existing images"
+    triggers_natural:
+      - "edit the image"
+      - "retouch photo"
+      - "change background"
+    triggers_zh:
+      - "编辑图片"
+      - "修图"
+      - "换背景"
+    keywords:
+      - "image-edit"
+      - "runcomfy"
+      - "flux"
+      - "inpaint"
+    skills:
+      - image-edit
+      - nano-banana-edit
+    confidence_threshold: 0.7
+
+  react_frontend:
+    description: "React/Next.js component implementation, hooks, TSX/TS"
+    triggers_natural:
+      - "implement the component"
+      - "create a Next page"
+      - "edit the TSX"
+      - "fix the useEffect hook"
+    triggers_zh:
+      - "react"
+      - "组件"
+      - "前端"
+      - "界面"
+      - "3D"
+      - "三维"
+    keywords:
+      - "react"
+      - "tsx"
+      - "jsx"
+      - "next.js"
+      - "component"
+      - "hooks"
+      - "three"
+      - "fiber"
+    paths:
+      - "**/*.tsx"
+      - "**/*.ts"
+    paths_exclude:
+      - "**/api/**"
+      - "**/*.test.*"
+      - "**/node_modules/**"
+    skills:
+      - react
+      - react-three-fiber
+      - next-best-practices
+    confidence_threshold: 0.65
+
+  python_dev:
+    description: "Python development, testing, debugging, Genkit"
+    triggers_natural:
+      - "write Python tests"
+      - "debug Python code"
+      - "run pytest"
+    triggers_zh:
+      - "python"
+      - "Python测试"
+      - "单元测试"
+      - "pytest"
+      - "Python调试"
+    keywords:
+      - "python"
+      - "pytest"
+      - "debugpy"
+      - "genkit"
+      - "pdb"
+    skills:
+      - python-testing-patterns
+      - python-debugpy
+      - developing-genkit-python
+    confidence_threshold: 0.65
+
+  gitnexus:
+    description: "Code analysis, exploration, refactoring, debugging via GitNexus"
+    triggers_natural:
+      - "analyze this codebase"
+      - "explore the architecture"
+      - "refactor this function"
+      - "review the PR"
+    triggers_zh:
+      - "代码分析"
+      - "代码探索"
+      - "代码重构"
+      - "代码调试"
+      - "影响分析"
+      - "PR审查"
+      - "代码审查"
+    keywords:
+      - "gitnexus"
+      - "analyze"
+      - "refactor"
+      - "review"
+      - "pull-request"
+    skills:
+      - gitnexus-cli
+      - gitnexus-debugging
+      - gitnexus-exploring
+      - gitnexus-pr-review
+      - gitnexus-refactoring
+      - gitnexus-guide
+    confidence_threshold: 0.65
+
+  code_review:
+    description: "Code review workflows, receiving and requesting reviews"
+    triggers_natural:
+      - "review this PR"
+      - "code review"
+      - "request review"
+    triggers_zh:
+      - "代码审查"
+      - "PR审查"
+    keywords:
+      - "review"
+      - "pull-request"
+      - "code-review"
+    skills:
+      - receiving-code-review
+      - requesting-code-review
+      - autoreview
+    confidence_threshold: 0.7
+
+  document_office:
+    description: "Word documents, Excel spreadsheets, PPT presentations"
+    triggers_natural:
+      - "create a Word document"
+      - "edit the Excel file"
+      - "make a PowerPoint"
+    triggers_zh:
+      - "文档"
+      - "word"
+      - "写文档"
+      - "表格"
+      - "excel"
+      - "ppt"
+      - "PPT"
+      - "演示文稿"
+      - "幻灯片"
+    keywords:
+      - "word"
+      - "document"
+      - "excel"
+      - "spreadsheet"
+      - "pptx"
+      - "powerpoint"
+      - "presentation"
+    skills:
+      - word-document-processor
+      - excel-automation
+      - pptx
+    confidence_threshold: 0.7
+
+  embedded:
+    description: "Embedded development with Keil MDK, STM32, firmware"
+    triggers_natural:
+      - "compile with Keil"
+      - "flash firmware"
+      - "build the embedded project"
+    triggers_zh:
+      - "keil"
+      - "嵌入式"
+      - "STM32"
+      - "单片机"
+      - "编译"
+      - "烧录"
+    keywords:
+      - "keil"
+      - "mdk"
+      - "stm32"
+      - "embedded"
+      - "firmware"
+      - "uvprojx"
+    skills:
+      - build-keil
+      - keil
+    confidence_threshold: 0.7
+
+  deployment:
+    description: "Azure deployment, cloud infrastructure"
+    triggers_natural:
+      - "deploy to Azure"
+      - "set up CI/CD"
+    triggers_zh:
+      - "部署"
+      - "azure"
+      - "云部署"
+    keywords:
+      - "azure"
+      - "deploy"
+      - "azd"
+    skills:
+      - azure-deploy
+    confidence_threshold: 0.7
+
+  ai_ml:
+    description: "AI/ML models, LLM patterns, MLOps, senior ML engineering"
+    triggers_natural:
+      - "optimize the model"
+      - "set up MLOps pipeline"
+      - "fine-tune the LLM"
+    triggers_zh:
+      - "大模型"
+      - "LLM"
+      - "模型"
+      - "机器学习"
+      - "prompt"
+      - "Claude API"
+      - "模型路由"
+      - "模型用量"
+      - "节省token"
+      - "成本优化"
+    keywords:
+      - "llm"
+      - "model"
+      - "mlops"
+      - "fine-tune"
+      - "claude"
+      - "anthropic"
+      - "prompt"
+      - "router"
+      - "cost"
+    skills:
+      - ai-models
+      - senior-ml-engineer
+      - llm-patterns
+      - claude-api
+      - model-router
+      - model-usage
+      - cost-aware-llm-pipeline
+    confidence_threshold: 0.65
+
+  agent_workflow:
+    description: "Agent development, durable workflows, task orchestration"
+    triggers_natural:
+      - "create an agent"
+      - "build a workflow"
+      - "coordinate tasks"
+    triggers_zh:
+      - "代理"
+      - "agent"
+      - "智能体"
+      - "工作流"
+      - "任务协调"
+    keywords:
+      - "agent"
+      - "workflow"
+      - "taskflow"
+      - "durable"
+    skills:
+      - taskflow
+      - taskflow-inbox-triage
+    confidence_threshold: 0.7
+
+  search:
+    description: "Web search, SearXNG, Chinese web search"
+    triggers_natural:
+      - "search the web"
+      - "look up on Baidu"
+    triggers_zh:
+      - "搜索"
+      - "联网搜索"
+      - "百度"
+    keywords:
+      - "search"
+      - "searxng"
+      - "baidu"
+    skills:
+      - search-searxng
+    confidence_threshold: 0.7
+
+  github_ops:
+    description: "GitHub operations, issues, PRs, mirrors"
+    triggers_natural:
+      - "create a GitHub issue"
+      - "mirror the repo"
+      - "accelerate git clone"
+    triggers_zh:
+      - "github"
+      - "Git加速"
+      - "clone加速"
+      - "镜像"
+      - "issue"
+    keywords:
+      - "github"
+      - "git"
+      - "mirror"
+      - "issue"
+      - "clone"
+    skills:
+      - github
+      - github-mirror-accelerator
+      - gh-issues
+    confidence_threshold: 0.7
+
+  auth:
+    description: "Authentication, OAuth, session management"
+    triggers_natural:
+      - "set up authentication"
+      - "configure OAuth"
+    triggers_zh:
+      - "认证"
+      - "登录"
+      - "OAuth"
+    keywords:
+      - "auth"
+      - "oauth"
+      - "session"
+      - "betterauth"
+    skills:
+      - better-auth-best-practices
+    confidence_threshold: 0.7
+
+  video_animation:
+    description: "Video creation, animation, Remotion"
+    triggers_natural:
+      - "create a video"
+      - "animate with Remotion"
+    triggers_zh:
+      - "视频"
+      - "动画"
+      - "Remotion"
+    keywords:
+      - "video"
+      - "animation"
+      - "remotion"
+    skills:
+      - remotion-best-practices
+      - video-frames
+    confidence_threshold: 0.7
+
+  pdf_ocr:
+    description: "PDF processing, OCR, text extraction"
+    triggers_natural:
+      - "extract text from PDF"
+      - "OCR this image"
+    triggers_zh:
+      - "PDF"
+      - "OCR"
+      - "文字识别"
+    keywords:
+      - "pdf"
+      - "ocr"
+      - "extraction"
+    skills:
+      - nano-pdf
+    confidence_threshold: 0.7
+
+  testing:
+    description: "Testing, prototyping, spike experiments"
+    triggers_natural:
+      - "run the tests"
+      - "create a prototype"
+      - "spike on this approach"
+    triggers_zh:
+      - "测试"
+      - "自动化测试"
+      - "原型"
+      - "验证可行性"
+      - "技术调研"
+    keywords:
+      - "test"
+      - "testing"
+      - "playwright"
+      - "prototype"
+      - "spike"
+      - "feasibility"
+    skills:
+      - spike
+    confidence_threshold: 0.7
+
+  skill_management:
+    description: "Skill creation, discovery, orchestration"
+    triggers_natural:
+      - "create a new skill"
+      - "find a skill for"
+      - "route skills automatically"
+    triggers_zh:
+      - "创建技能"
+      - "技能"
+      - "找技能"
+      - "发现技能"
+      - "安装技能"
+      - "技能路由"
+    keywords:
+      - "skill"
+      - "create"
+      - "find"
+      - "discover"
+      - "orchestrator"
+    skills:
+      - skill-creator
+      - find-skills
+      - smart-skill-orchestrator
+    confidence_threshold: 0.7
+
+  brainstorming:
+    description: "Brainstorming, creative design, requirements analysis"
+    triggers_natural:
+      - "brainstorm ideas"
+      - "creative design"
+      - "analyze requirements"
+    triggers_zh:
+      - "头脑风暴"
+      - "brainstorm"
+      - "创意设计"
+      - "需求分析"
+      - "功能设计"
+      - "帮我构思"
+    keywords:
+      - "brainstorming"
+      - "creative"
+      - "design"
+      - "requirements"
+    skills:
+      - brainstorming
+    confidence_threshold: 0.7
+
+  academic:
+    description: "Academic paper review, peer review"
+    triggers_natural:
+      - "review this paper"
+      - "peer review"
+    triggers_zh:
+      - "论文审稿"
+      - "论文评审"
+      - "审稿"
+      - "论文"
+    keywords:
+      - "academic"
+      - "paper"
+      - "peer"
+      - "review"
+      - "manuscript"
+    skills:
+      - academic-paper-reviewer
+    confidence_threshold: 0.7
+
+  coding_standards:
+    description: "Karpathy coding guidelines, code quality"
+    triggers_natural:
+      - "apply Karpathy guidelines"
+      - "code standards"
+    triggers_zh:
+      - "编码规范"
+      - "代码规范"
+      - "karpathy"
+      - "避免过度设计"
+    keywords:
+      - "karpathy"
+      - "guidelines"
+      - "code"
+      - "overcomplication"
+    skills:
+      - karpathy-guidelines
+    confidence_threshold: 0.7
+
+  email:
+    description: "Email via IMAP/SMTP, Himalaya CLI"
+    triggers_natural:
+      - "send an email"
+      - "check my inbox"
+    triggers_zh:
+      - "邮件"
+      - "收邮件"
+      - "发邮件"
+      - "邮箱"
+    keywords:
+      - "himalaya"
+      - "imap"
+      - "smtp"
+      - "email"
+    skills:
+      - himalaya
+    confidence_threshold: 0.7
+
+  knowledge_base:
+    description: "Notion, Obsidian, note-taking, knowledge management"
+    triggers_natural:
+      - "open Notion"
+      - "search Obsidian vault"
+      - "manage notes"
+    triggers_zh:
+      - "notion"
+      - "笔记管理"
+      - "obsidian"
+      - "知识库"
+      - "双链笔记"
+    keywords:
+      - "notion"
+      - "obsidian"
+      - "vault"
+      - "note"
+      - "markdown"
+    skills:
+      - notion
+      - obsidian
+    confidence_threshold: 0.7
+
+  speech:
+    description: "Speech-to-text, text-to-speech, voice"
+    triggers_natural:
+      - "transcribe this audio"
+      - "convert text to speech"
+    triggers_zh:
+      - "语音识别"
+      - "语音转文字"
+      - "语音合成"
+      - "TTS"
+      - "文字转语音"
+      - "转录"
+    keywords:
+      - "whisper"
+      - "tts"
+      - "speech"
+      - "transcribe"
+    skills:
+      - openai-whisper
+      - openai-whisper-api
+      - sag
+      - sherpa-onnx-tts
+    confidence_threshold: 0.7
+
+  diagrams:
+    description: "Diagrams, flowcharts, architecture diagrams"
+    triggers_natural:
+      - "draw a diagram"
+      - "create a flowchart"
+    triggers_zh:
+      - "图表"
+      - "流程图"
+      - "架构图"
+    keywords:
+      - "diagram"
+      - "flowchart"
+      - "mermaid"
+      - "chart"
+    skills:
+      - diagram-maker
+    confidence_threshold: 0.7
+
+  summarize:
+    description: "Summarize content, transcribe videos/podcasts"
+    triggers_natural:
+      - "summarize this article"
+      - "transcribe the video"
+    triggers_zh:
+      - "摘要"
+      - "总结"
+      - "总结视频"
+      - "总结文章"
+    keywords:
+      - "summarize"
+      - "transcribe"
+      - "youtube"
+      - "podcast"
+    skills:
+      - summarize
+    confidence_threshold: 0.7
+
+  health:
+    description: "System health checks, security auditing"
+    triggers_natural:
+      - "run health check"
+      - "audit security"
+    triggers_zh:
+      - "健康检查"
+      - "安全审计"
+    keywords:
+      - "health"
+      - "audit"
+      - "security"
+      - "firewall"
+    skills:
+      - healthcheck
+    confidence_threshold: 0.7
+
+  tmux:
+    description: "Tmux session management"
+    triggers_natural:
+      - "tmux session"
+      - "terminal multiplexer"
+    triggers_zh:
+      - "tmux"
+      - "终端复用"
+    keywords:
+      - "tmux"
+      - "session"
+      - "pane"
+    skills:
+      - tmux
+    confidence_threshold: 0.7
+
+  browser_workflow:
+    description: "Browser automation, BrowseHive, AI platform collaboration"
+    triggers_natural:
+      - "open AI platforms"
+      - "browse with harness"
+    triggers_zh:
+      - "浏览"
+      - "浏览器"
+      - "bh"
+      - "hive"
+      - "打开AI平台"
+    keywords:
+      - "browsehive"
+      - "browser"
+      - "harness"
+      - "chrome"
+    skills:
+      - browsehive
+    confidence_threshold: 0.7
+
+  continuous_learning:
+    description: "Continuous learning, memory, session logs"
+    triggers_natural:
+      - "learn from this"
+      - "check session logs"
+    triggers_zh:
+      - "学习"
+      - "记忆"
+      - "持续学习"
+      - "会话日志"
+    keywords:
+      - "learning"
+      - "memory"
+      - "session"
+      - "log"
+    skills:
+      - continuous-learning-v2
+      - session-logs
+    confidence_threshold: 0.7
+
+# ─── Chain groups: skills that can be chained together ──────
+# 用于v1.7多技能链式调用检测
+chain_groups:
+  creative:
+    - brainstorming
+    - gpt-image-2
+    - diagram-maker
+  dev_cycle:
+    - python-testing-patterns
+    - receiving-code-review
+    - requesting-code-review
+    - commit-work
+  research:
+    - search-searxng
+    - summarize
+    - academic-paper-reviewer
+
+# Global router settings
+settings:
+  llm_model: "gemini-2.5-flash"
+  fallback_to_v1: true
+  dedup_turns: 5
+  min_prompt_words: 2
+  max_prompt_chars: 2000
+  cache_ttl_seconds: 3600
+  log_level: "INFO"
+  cost_alert_threshold_usd: 1.0
+  # ZH_EN_MAP settings
+  zh_en_map_enabled: true
+  # Jaccard semantic fallback (zero-token)
+  jaccard_fallback_enabled: true
+  jaccard_threshold: 0.3
+  # Chain detection
+  chain_detection_enabled: true
+  chain_separators: ["，", "、", "和", "然后", "接着", "再", ",", "and", "then", "also"]

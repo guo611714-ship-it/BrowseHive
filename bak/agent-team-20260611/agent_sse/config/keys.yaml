@@ -1,0 +1,17 @@
+# agent_sse/config/keys.yaml
+# API Key 配置（不提交到 Git）
+keys:
+  - "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"
+  - "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"
+  - "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"
+  - "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"
+  - "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"
+  - "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"
+  - "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"
+  - "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"
+  - "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"
+  - "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"
+  - "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"
+  - "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"
+
+base_url: "https://integrate.api.nvidia.com/v1"

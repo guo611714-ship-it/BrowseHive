@@ -1,0 +1,1696 @@
+{
+  "skills": {
+    "1password": {
+      "keywords": [
+        "set",
+        "1password",
+        "cli",
+        "sign-in",
+        "desktop",
+        "integration",
+        "reading",
+        "injecting",
+        "secrets"
+      ],
+      "mtime": 1779448639542.3665
+    },
+    "academic-paper-reviewer": {
+      "keywords": [
+        "multi-perspective",
+        "academic",
+        "paper",
+        "review",
+        "dynamic",
+        "reviewer",
+        "personas",
+        "simulates",
+        "independent",
+        "reviewers",
+        "eic",
+        "peer",
+        "devils",
+        "advocate",
+        "field-specific",
+        "expertise",
+        "supports",
+        "full",
+        "re-review",
+        "verification",
+        "quick",
+        "assessment",
+        "methodology",
+        "focus",
+        "socratic",
+        "guided",
+        "calibration",
+        "modes",
+        "triggers",
+        "manuscript"
+      ],
+      "mtime": 1779382191713.7722
+    },
+    "ai-models": {
+      "keywords": [
+        "latest",
+        "models",
+        "reference",
+        "claude",
+        "openai",
+        "gemini",
+        "eleven",
+        "labs",
+        "replicate",
+        "ai-models"
+      ],
+      "mtime": 1779622787775.2556
+    },
+    "autoreview": {
+      "keywords": [
+        "auto",
+        "review",
+        "closeout",
+        "codex",
+        "default",
+        "engine",
+        "set",
+        "recommended",
+        "reviewer",
+        "autoreview"
+      ],
+      "mtime": 1779448635371.8618
+    },
+    "azure-deploy": {
+      "keywords": [
+        "execute",
+        "azure",
+        "deployments",
+        "already-prepared",
+        "applications",
+        "existing",
+        "azuredeployment-planmd",
+        "infrastructure",
+        "files",
+        "skill",
+        "user",
+        "asks",
+        "create",
+        "application",
+        "azure-prepare",
+        "instead",
+        "runs",
+        "azd",
+        "deploy",
+        "terraform",
+        "apply",
+        "deployment",
+        "commands",
+        "built-in",
+        "error",
+        "recovery",
+        "requires",
+        "validated",
+        "status",
+        "azure-validate"
+      ],
+      "mtime": 1779258371440.126
+    },
+    "better-auth-best-practices": {
+      "keywords": [
+        "configure",
+        "better",
+        "auth",
+        "server",
+        "client",
+        "set",
+        "database",
+        "adapters",
+        "manage",
+        "sessions",
+        "plugins",
+        "handle",
+        "environment",
+        "variables",
+        "users",
+        "mention",
+        "betterauth",
+        "authts",
+        "need",
+        "typescript",
+        "authentication",
+        "emailpassword",
+        "oauth",
+        "plugin",
+        "configuration",
+        "better-auth-best-practices"
+      ],
+      "mtime": 1779257984868.6848
+    },
+    "brainstorming": {
+      "keywords": [
+        "must",
+        "before",
+        "creative",
+        "work",
+        "creating",
+        "features",
+        "building",
+        "components",
+        "adding",
+        "functionality",
+        "modifying",
+        "behavior",
+        "explores",
+        "user",
+        "intent",
+        "requirements",
+        "design",
+        "implementation",
+        "brainstorming"
+      ],
+      "mtime": 1779277910918.1853
+    },
+    "browsehive": {
+      "keywords": [
+        "browsehiveaibrowser-harnesschromedeepseekaibhhiveai",
+        "浏览器",
+        "工作流",
+        "通过",
+        "操控",
+        "与豆包",
+        "欧亿",
+        "火山引擎",
+        "协作",
+        "触发词",
+        "联网",
+        "打开",
+        "平台",
+        "browsehive"
+      ],
+      "mtime": 1779623041373.014
+    },
+    "build-keil": {
+      "keywords": [
+        "keil",
+        "mdk",
+        "当需要通",
+        "命令行编",
+        "译嵌入式",
+        "工程",
+        "调用自带",
+        "脚本解析",
+        "工程文件",
+        "执行构建",
+        "并定位固",
+        "件产物时",
+        "使用",
+        "build-keil"
+      ],
+      "mtime": 1779197196901.3176
+    },
+    "camsnap": {
+      "keywords": [
+        "capture",
+        "frames",
+        "clips",
+        "rtsponvif",
+        "cameras",
+        "camsnap"
+      ],
+      "mtime": 1779448639544.346
+    },
+    "canvas": {
+      "keywords": [
+        "present",
+        "html",
+        "connected",
+        "openclaw",
+        "node",
+        "canvases",
+        "navigateevalsnapshot",
+        "debug",
+        "canvas",
+        "host",
+        "urls"
+      ],
+      "mtime": 1779448639544.346
+    },
+    "channel-message-flows": {
+      "keywords": [
+        "previewing",
+        "local",
+        "channel",
+        "message",
+        "flow",
+        "fixtures",
+        "channel-message-flows"
+      ],
+      "mtime": 1779448635371.8618
+    },
+    "claude-api": {
+      "keywords": [
+        "build",
+        "debug",
+        "optimize",
+        "claude",
+        "api",
+        "anthropic",
+        "sdk",
+        "apps",
+        "built",
+        "skill",
+        "include",
+        "prompt",
+        "caching",
+        "handles",
+        "migrating",
+        "existing",
+        "code",
+        "between",
+        "model",
+        "versions",
+        "retired-model",
+        "replacements",
+        "trigger",
+        "imports",
+        "anthropicanthropic-aisdk",
+        "user",
+        "asks",
+        "managed",
+        "agents",
+        "addsmodifiestunes"
+      ],
+      "mtime": 1779257989526.9329
+    },
+    "continuous-learning-v2": {
+      "keywords": [
+        "instinct-based",
+        "learning",
+        "system",
+        "observes",
+        "sessions",
+        "via",
+        "hooks",
+        "creates",
+        "atomic",
+        "instincts",
+        "confidence",
+        "scoring",
+        "evolves",
+        "skillscommandsagents",
+        "v21",
+        "adds",
+        "project-scoped",
+        "prevent",
+        "cross-project",
+        "contamination",
+        "continuous-learning-v2",
+        "whenwritingnewfunctions"
+      ],
+      "mtime": 1778842518926.0767
+    },
+    "cost-aware-llm-pipeline": {
+      "keywords": [
+        "cost-aware-llm-pipeline"
+      ],
+      "mtime": 1779622811269.0486
+    },
+    "crabbox": {
+      "keywords": [
+        "crabbox",
+        "wrapper",
+        "openclaw",
+        "remote",
+        "validation",
+        "across",
+        "linux",
+        "macos",
+        "windows",
+        "wsl2",
+        "including",
+        "delegated",
+        "blacksmith",
+        "testbox",
+        "proof",
+        "report",
+        "actual",
+        "provider"
+      ],
+      "mtime": 1779448635380.0542
+    },
+    "developing-genkit-python": {
+      "keywords": [
+        "develop",
+        "ai-powered",
+        "applications",
+        "genkit",
+        "python",
+        "user",
+        "asks",
+        "agents",
+        "flows",
+        "tools",
+        "encountering",
+        "errors",
+        "import",
+        "issues",
+        "api",
+        "problems",
+        "developing-genkit-python"
+      ],
+      "mtime": 1779622830555.0286
+    },
+    "diagram-maker": {
+      "keywords": [
+        "create",
+        "svghtml",
+        "excalidraw",
+        "diagrams",
+        "concepts",
+        "architecture",
+        "flows",
+        "whiteboards",
+        "diagram-maker"
+      ],
+      "mtime": 1779448639550.4019
+    },
+    "discord-clawd": {
+      "keywords": [
+        "talk",
+        "discord-backed",
+        "openclaw",
+        "agentsession",
+        "archive",
+        "search",
+        "discord-clawd"
+      ],
+      "mtime": 1779448635380.586
+    },
+    "discrawl": {
+      "keywords": [
+        "discord",
+        "archive",
+        "search",
+        "sync",
+        "freshness",
+        "dms",
+        "channel",
+        "slices",
+        "sql",
+        "counts",
+        "discrawl",
+        "repo",
+        "work"
+      ],
+      "mtime": 1779448635382.0383
+    },
+    "excel-automation": {
+      "keywords": [
+        "excel-automation"
+      ],
+      "mtime": 1779272885780.066
+    },
+    "find-skills": {
+      "keywords": [
+        "helps",
+        "users",
+        "discover",
+        "install",
+        "agent",
+        "skills",
+        "ask",
+        "questions",
+        "find",
+        "skill",
+        "there",
+        "express",
+        "interest",
+        "extending",
+        "capabilities",
+        "user",
+        "looking",
+        "functionality",
+        "might",
+        "exist",
+        "installable",
+        "find-skills"
+      ],
+      "mtime": 1778842519047.238
+    },
+    "gemini": {
+      "keywords": [
+        "gemini",
+        "cli",
+        "one-shot",
+        "prompts",
+        "summaries",
+        "generation",
+        "skills",
+        "hooks",
+        "mcp",
+        "gemma",
+        "routing"
+      ],
+      "mtime": 1779448639552.874
+    },
+    "gh-issues": {
+      "keywords": [
+        "fetch",
+        "github",
+        "issues",
+        "select",
+        "candidates",
+        "spawn",
+        "background",
+        "fix",
+        "agents",
+        "open",
+        "prs",
+        "optionally",
+        "process",
+        "review",
+        "comments",
+        "gh-issues"
+      ],
+      "mtime": 1779448639552.874
+    },
+    "gifgrep": {
+      "keywords": [
+        "search",
+        "gif",
+        "providers",
+        "clitui",
+        "download",
+        "results",
+        "extract",
+        "stillssheets",
+        "gifgrep"
+      ],
+      "mtime": 1779448639553.8667
+    },
+    "gitcrawl": {
+      "keywords": [
+        "github",
+        "archive",
+        "issuepr",
+        "search",
+        "sync",
+        "freshness",
+        "duplicate",
+        "clusters",
+        "gh-shim",
+        "status",
+        "gitcrawl",
+        "repo",
+        "work"
+      ],
+      "mtime": 1779448635383.0435
+    },
+    "github": {
+      "keywords": [
+        "github",
+        "cli",
+        "issues",
+        "prs",
+        "cicheck",
+        "logs",
+        "comments",
+        "reviews",
+        "releases",
+        "repos",
+        "api",
+        "queries"
+      ],
+      "mtime": 1779448639553.8667
+    },
+    "github-mirror-accelerator": {
+      "keywords": [
+        "git",
+        "github",
+        "accelerate",
+        "mirror",
+        "speed",
+        "cdn",
+        "proxy",
+        "china",
+        "download",
+        "clone",
+        "health-check",
+        "wsl",
+        "配置",
+        "使用镜像",
+        "加速",
+        "下载",
+        "特别适用",
+        "于中国区",
+        "用户和",
+        "环境",
+        "github-mirror-accelerator"
+      ],
+      "mtime": 1779623142153.8667
+    },
+    "gitnexus-cli": {
+      "keywords": [
+        "user",
+        "needs",
+        "run",
+        "gitnexus",
+        "cli",
+        "commands",
+        "analyzeindex",
+        "repo",
+        "check",
+        "status",
+        "clean",
+        "index",
+        "generate",
+        "wiki",
+        "list",
+        "indexed",
+        "repos",
+        "examples",
+        "reanalyze",
+        "codebase",
+        "gitnexus-cli"
+      ],
+      "mtime": 1779191460583.8828
+    },
+    "gitnexus-debugging": {
+      "keywords": [
+        "user",
+        "debugging",
+        "bug",
+        "tracing",
+        "error",
+        "asking",
+        "something",
+        "fails",
+        "examples",
+        "failing",
+        "come",
+        "trace",
+        "gitnexus-debugging"
+      ],
+      "mtime": 1779623932826.3545
+    },
+    "gitnexus-exploring": {
+      "keywords": [
+        "user",
+        "asks",
+        "code",
+        "works",
+        "wants",
+        "understand",
+        "architecture",
+        "trace",
+        "execution",
+        "flows",
+        "explore",
+        "unfamiliar",
+        "parts",
+        "codebase",
+        "examples",
+        "work",
+        "calls",
+        "function",
+        "show",
+        "auth",
+        "flow",
+        "gitnexus-exploring"
+      ],
+      "mtime": 1779623986336.54
+    },
+    "gitnexus-guide": {
+      "keywords": [
+        "user",
+        "asks",
+        "gitnexus",
+        "itself",
+        "available",
+        "tools",
+        "query",
+        "knowledge",
+        "graph",
+        "mcp",
+        "resources",
+        "schema",
+        "workflow",
+        "reference",
+        "examples",
+        "gitnexus-guide"
+      ],
+      "mtime": 1779191460578.2324
+    },
+    "gitnexus-pr-review": {
+      "keywords": [
+        "user",
+        "wants",
+        "review",
+        "pull",
+        "request",
+        "understand",
+        "changes",
+        "assess",
+        "risk",
+        "merging",
+        "check",
+        "missing",
+        "test",
+        "coverage",
+        "examples",
+        "change",
+        "safe",
+        "merge",
+        "gitnexus-pr-review"
+      ],
+      "mtime": 1779191460573.7444
+    },
+    "gitnexus-refactoring": {
+      "keywords": [
+        "user",
+        "wants",
+        "rename",
+        "extract",
+        "split",
+        "move",
+        "restructure",
+        "code",
+        "safely",
+        "examples",
+        "function",
+        "module",
+        "refactor",
+        "class",
+        "separate",
+        "file",
+        "gitnexus-refactoring"
+      ],
+      "mtime": 1779191460571.7358
+    },
+    "gog": {
+      "keywords": [
+        "google",
+        "workspace",
+        "cli",
+        "gmail",
+        "calendar",
+        "drive",
+        "contacts",
+        "sheets",
+        "docs",
+        "gog"
+      ],
+      "mtime": 1779448639555.105
+    },
+    "gpt-image-2": {
+      "keywords": [
+        "generate",
+        "images",
+        "gpt",
+        "image",
+        "chatgpt",
+        "inside",
+        "claude",
+        "code",
+        "existing",
+        "plus",
+        "pro",
+        "subscription",
+        "separate",
+        "openai",
+        "access",
+        "per-image",
+        "billing",
+        "supports",
+        "text-to-image",
+        "image-to-image",
+        "editing",
+        "style",
+        "transfer",
+        "multi-reference",
+        "composition",
+        "via",
+        "local",
+        "codex",
+        "cli",
+        "triggers"
+      ],
+      "mtime": 1778842519076.1348
+    },
+    "healthcheck": {
+      "keywords": [
+        "auditharden",
+        "openclaw",
+        "hosts",
+        "ssh",
+        "firewall",
+        "updates",
+        "exposure",
+        "backups",
+        "disk",
+        "encryption",
+        "gateway",
+        "security",
+        "healthcheck"
+      ],
+      "mtime": 1779448639556.4883
+    },
+    "himalaya": {
+      "keywords": [
+        "himalaya",
+        "cli",
+        "imapsmtp",
+        "mail",
+        "list",
+        "read",
+        "search",
+        "compose",
+        "reply",
+        "forward",
+        "copy",
+        "move",
+        "delete"
+      ],
+      "mtime": 1779448639556.4883
+    },
+    "image-edit": {
+      "keywords": [
+        "edit",
+        "images",
+        "runcomfy",
+        "skill",
+        "smart",
+        "router",
+        "matches",
+        "users",
+        "intent",
+        "right",
+        "model",
+        "catalog",
+        "picks",
+        "nano",
+        "banana",
+        "batch",
+        "identity-preserving",
+        "default",
+        "openai",
+        "gpt",
+        "image",
+        "multilingual",
+        "in-image",
+        "text",
+        "rewrite",
+        "multi-ref",
+        "composition",
+        "layout",
+        "precision",
+        "flux"
+      ],
+      "mtime": 1778842519155.207
+    },
+    "karpathy-guidelines": {
+      "keywords": [
+        "behavioral",
+        "guidelines",
+        "reduce",
+        "common",
+        "llm",
+        "coding",
+        "mistakes",
+        "writing",
+        "reviewing",
+        "refactoring",
+        "code",
+        "avoid",
+        "overcomplication",
+        "surgical",
+        "changes",
+        "surface",
+        "assumptions",
+        "define",
+        "verifiable",
+        "success",
+        "criteria",
+        "karpathy-guidelines"
+      ],
+      "mtime": 1779382001043.3796
+    },
+    "keil": {
+      "keywords": [
+        "keil",
+        "mdk",
+        "uvprojxuvmpw",
+        "target",
+        "buildrebuildclean",
+        "jlinkopenocd",
+        "flash",
+        "keilmdkuvisionuv4",
+        "skill",
+        "工程构建",
+        "工具",
+        "用于扫描",
+        "工程",
+        "枚举",
+        "执行",
+        "并解析构",
+        "建日志",
+        "返回可供",
+        "复用的产",
+        "物路径",
+        "子命令仅",
+        "作为兼容",
+        "入口保留",
+        "当用户提",
+        "编译",
+        "重建",
+        "清理",
+        "烧录",
+        "下载固件",
+        "时自动触"
+      ],
+      "mtime": 1779196519549.14
+    },
+    "ljg-word": {
+      "keywords": [
+        "deep-dive",
+        "english",
+        "word",
+        "mastery",
+        "tool",
+        "deconstructs",
+        "single",
+        "core",
+        "semantics",
+        "epiphany",
+        "user",
+        "asks",
+        "explainmaster",
+        "specific",
+        "ljg-word"
+      ],
+      "mtime": 1778842519397.759
+    },
+    "llm-patterns": {
+      "keywords": [
+        "ai-first",
+        "application",
+        "patterns",
+        "llm",
+        "testing",
+        "prompt",
+        "management",
+        "llm-patterns"
+      ],
+      "mtime": 1778842519424.8042
+    },
+    "mcporter": {
+      "keywords": [
+        "list",
+        "configure",
+        "authenticate",
+        "call",
+        "inspect",
+        "mcp",
+        "serverstools",
+        "mcporter",
+        "http",
+        "stdio"
+      ],
+      "mtime": 1779448639558.6082
+    },
+    "meme-maker": {
+      "keywords": [
+        "search",
+        "meme",
+        "templates",
+        "suggest",
+        "formats",
+        "generate",
+        "local",
+        "hosted",
+        "image",
+        "memes",
+        "meme-maker"
+      ],
+      "mtime": 1779448639558.6082
+    },
+    "model-router": {
+      "keywords": [
+        "router",
+        "cost-optimization",
+        "model-selection",
+        "nvidia",
+        "mcp",
+        "nvidiadeepseekclaudetoken",
+        "智能模型",
+        "路由器",
+        "根据任务",
+        "复杂度自",
+        "动选择最",
+        "优模型",
+        "豆包",
+        "节省",
+        "成本",
+        "model-router"
+      ],
+      "mtime": 1779447199101.2876
+    },
+    "model-usage": {
+      "keywords": [
+        "summarize",
+        "codexbar",
+        "local",
+        "cost",
+        "logs",
+        "model",
+        "codex",
+        "claude",
+        "including",
+        "current",
+        "full",
+        "breakdowns",
+        "model-usage"
+      ],
+      "mtime": 1779448639560.6016
+    },
+    "nano-banana-edit": {
+      "keywords": [
+        "edit",
+        "images",
+        "google",
+        "nano",
+        "banana",
+        "image-to-image",
+        "endpoint",
+        "runcomfy",
+        "documents",
+        "edits",
+        "strengths",
+        "preserve",
+        "subject",
+        "identity",
+        "swap",
+        "background",
+        "localize",
+        "spatial",
+        "language",
+        "multi-image",
+        "batch",
+        "inputs",
+        "schema",
+        "route",
+        "gpt",
+        "image",
+        "flux",
+        "kontext",
+        "t2i",
+        "instead"
+      ],
+      "mtime": 1778842519451.1328
+    },
+    "nano-pdf": {
+      "keywords": [
+        "edit",
+        "pdfs",
+        "natural-language",
+        "instructions",
+        "nano-pdf",
+        "cli"
+      ],
+      "mtime": 1779448639562.4731
+    },
+    "next-best-practices": {
+      "keywords": [
+        "nextjs",
+        "best",
+        "practices",
+        "file",
+        "conventions",
+        "rsc",
+        "boundaries",
+        "data",
+        "patterns",
+        "async",
+        "apis",
+        "metadata",
+        "error",
+        "handling",
+        "route",
+        "handlers",
+        "imagefont",
+        "optimization",
+        "bundling",
+        "next-best-practices"
+      ],
+      "mtime": 1779257977034.0764
+    },
+    "node-connect": {
+      "keywords": [
+        "diagnose",
+        "openclaw",
+        "android",
+        "ios",
+        "macos",
+        "node",
+        "pairing",
+        "qrsetup",
+        "code",
+        "route",
+        "auth",
+        "connection",
+        "failures",
+        "node-connect"
+      ],
+      "mtime": 1779448639562.4731
+    },
+    "node-inspect-debugger": {
+      "keywords": [
+        "debug",
+        "nodejs",
+        "node",
+        "inspect",
+        "--inspect",
+        "breakpoints",
+        "cdp",
+        "heap",
+        "cpu",
+        "profiles",
+        "node-inspect-debugger"
+      ],
+      "mtime": 1779448639564.664
+    },
+    "notion": {
+      "keywords": [
+        "notion",
+        "cliapi",
+        "pages",
+        "markdown",
+        "content",
+        "data",
+        "sources",
+        "files",
+        "comments",
+        "search",
+        "workers",
+        "raw",
+        "api",
+        "calls"
+      ],
+      "mtime": 1779448639564.664
+    },
+    "obsidian": {
+      "keywords": [
+        "work",
+        "obsidian",
+        "vaults",
+        "official",
+        "cli",
+        "readsearchcreateedit",
+        "notes",
+        "tasks",
+        "links",
+        "properties",
+        "plugins"
+      ],
+      "mtime": 1779448639564.664
+    },
+    "openai-whisper": {
+      "keywords": [
+        "local",
+        "speech-to-text",
+        "whisper",
+        "cli",
+        "api",
+        "key",
+        "openai-whisper"
+      ],
+      "mtime": 1779448639564.664
+    },
+    "openai-whisper-api": {
+      "keywords": [
+        "openai",
+        "audio",
+        "transcriptions",
+        "api",
+        "via",
+        "curl",
+        "gpt-4o-transcribe",
+        "mini",
+        "diarize",
+        "whisper-1",
+        "openai-whisper-api"
+      ],
+      "mtime": 1779448639564.664
+    },
+    "optimizetests": {
+      "keywords": [
+        "optimize",
+        "openclaw",
+        "slow",
+        "tests",
+        "imports",
+        "misplaced",
+        "coverage",
+        "wall",
+        "without",
+        "dropping",
+        "optimizetests"
+      ],
+      "mtime": 1779448635405.8623
+    },
+    "oracle": {
+      "keywords": [
+        "oracle",
+        "cli",
+        "second-model",
+        "reviewdebugrefactordesign",
+        "selected",
+        "files",
+        "dry-run",
+        "token",
+        "checks",
+        "api",
+        "browser",
+        "engine"
+      ],
+      "mtime": 1779448639564.664
+    },
+    "ouyi-ai": {
+      "keywords": [
+        "-ai",
+        "api",
+        "gptclaudegeminideepseek",
+        "dall-e",
+        "欧亿",
+        "对话",
+        "写作",
+        "思维导图",
+        "绘图",
+        "调用",
+        "ouyi-ai"
+      ],
+      "mtime": 1779367991210.6082
+    },
+    "parallels-discord-roundtrip": {
+      "keywords": [
+        "run",
+        "macos",
+        "parallels",
+        "smoke",
+        "discord",
+        "send",
+        "host",
+        "verification",
+        "reply",
+        "guest",
+        "readback",
+        "proof",
+        "parallels-discord-roundtrip"
+      ],
+      "mtime": 1779448635405.8623
+    },
+    "pptx": {
+      "keywords": [
+        "skill",
+        "pptx",
+        "file",
+        "involved",
+        "input",
+        "output",
+        "both",
+        "includes",
+        "creating",
+        "slide",
+        "decks",
+        "pitch",
+        "presentations",
+        "reading",
+        "parsing",
+        "extracting",
+        "text",
+        "even",
+        "extracted",
+        "content",
+        "elsewhere",
+        "email",
+        "summary",
+        "editing",
+        "modifying",
+        "updating",
+        "existing",
+        "combining",
+        "splitting",
+        "files"
+      ],
+      "mtime": 1779272896291.593
+    },
+    "python-debugpy": {
+      "keywords": [
+        "debug",
+        "python",
+        "pdb",
+        "breakpoint",
+        "post-mortem",
+        "inspection",
+        "debugpy",
+        "remote",
+        "attach",
+        "python-debugpy"
+      ],
+      "mtime": 1779448639571.1667
+    },
+    "python-testing-patterns": {
+      "keywords": [
+        "implement",
+        "comprehensive",
+        "testing",
+        "strategies",
+        "pytest",
+        "fixtures",
+        "mocking",
+        "test-driven",
+        "development",
+        "writing",
+        "python",
+        "tests",
+        "setting",
+        "test",
+        "suites",
+        "implementing",
+        "best",
+        "practices",
+        "python-testing-patterns"
+      ],
+      "mtime": 1779258318613.7527
+    },
+    "react": {
+      "keywords": [
+        "react",
+        "renderer",
+        "json-render",
+        "turns",
+        "json",
+        "specs",
+        "components",
+        "working",
+        "json-renderreact",
+        "building",
+        "uis",
+        "creating",
+        "component",
+        "catalogs",
+        "rendering",
+        "ai-generated"
+      ],
+      "mtime": 1778842519724.661
+    },
+    "react-three-fiber": {
+      "keywords": [
+        "react",
+        "three",
+        "fiber",
+        "renderer",
+        "json-render",
+        "working",
+        "json-renderreact-three-fiber",
+        "building",
+        "scenes",
+        "json",
+        "specs",
+        "rendering",
+        "mesheslightsmodelsenvironments",
+        "integrating",
+        "threejs",
+        "catalogs",
+        "react-three-fiber"
+      ],
+      "mtime": 1778842519753.461
+    },
+    "receiving-code-review": {
+      "keywords": [
+        "receiving",
+        "code",
+        "review",
+        "feedback",
+        "before",
+        "implementing",
+        "suggestions",
+        "especially",
+        "seems",
+        "unclear",
+        "technically",
+        "questionable",
+        "requires",
+        "technical",
+        "rigor",
+        "verification",
+        "performative",
+        "agreement",
+        "blind",
+        "implementation",
+        "receiving-code-review"
+      ],
+      "mtime": 1779257729416.705
+    },
+    "remotion-best-practices": {
+      "keywords": [
+        "best",
+        "practices",
+        "remotion",
+        "video",
+        "creation",
+        "react",
+        "remotion-best-practices"
+      ],
+      "mtime": 1779257691090.0032
+    },
+    "requesting-code-review": {
+      "keywords": [
+        "completing",
+        "tasks",
+        "implementing",
+        "major",
+        "features",
+        "before",
+        "merging",
+        "verify",
+        "work",
+        "meets",
+        "requirements",
+        "requesting-code-review"
+      ],
+      "mtime": 1779257720276.7832
+    },
+    "sag": {
+      "keywords": [
+        "elevenlabs",
+        "text-to-speech",
+        "mac-style",
+        "sag"
+      ],
+      "mtime": 1779448639571.1667
+    },
+    "search-searxng": {
+      "keywords": [
+        "search",
+        "chinese",
+        "web",
+        "via",
+        "local",
+        "searxng",
+        "baidubingsogou",
+        "foreign",
+        "built-in",
+        "websearch",
+        "tool",
+        "search-searxng"
+      ],
+      "mtime": 1779178415001.629
+    },
+    "senior-ml-engineer": {
+      "keywords": [
+        "engineering",
+        "skill",
+        "productionizing",
+        "models",
+        "building",
+        "mlops",
+        "pipelines",
+        "integrating",
+        "llms",
+        "covers",
+        "model",
+        "deployment",
+        "feature",
+        "stores",
+        "drift",
+        "monitoring",
+        "rag",
+        "systems",
+        "cost",
+        "optimization",
+        "user",
+        "asks",
+        "deploying",
+        "production",
+        "setting",
+        "infrastructure",
+        "mlflow",
+        "kubeflow",
+        "kubernetes",
+        "docker"
+      ],
+      "mtime": 1778842519840.8745
+    },
+    "session-logs": {
+      "keywords": [
+        "search",
+        "analyze",
+        "own",
+        "session",
+        "logs",
+        "olderparent",
+        "conversations",
+        "session-logs"
+      ],
+      "mtime": 1779448639572.168
+    },
+    "sherpa-onnx-tts": {
+      "keywords": [
+        "local",
+        "text-to-speech",
+        "via",
+        "sherpa-onnx",
+        "offline",
+        "cloud",
+        "sherpa-onnx-tts"
+      ],
+      "mtime": 1779448639573.1682
+    },
+    "skill-creator": {
+      "keywords": [
+        "create",
+        "edit",
+        "audit",
+        "tidy",
+        "validate",
+        "restructure",
+        "agentskills",
+        "skillmd",
+        "files",
+        "skill-creator"
+      ],
+      "mtime": 1779448639574.6675
+    },
+    "smart-skill-orchestrator": {
+      "keywords": [
+        "orchestrator",
+        "router",
+        "natural-language",
+        "automation",
+        "meta-skill",
+        "intelligent",
+        "natural",
+        "language",
+        "skill",
+        "understands",
+        "user",
+        "intent",
+        "automatically",
+        "invokes",
+        "appropriate",
+        "installed",
+        "skills",
+        "enables",
+        "seamless",
+        "usage",
+        "through",
+        "conversational",
+        "commands",
+        "smart-skill-orchestrator"
+      ],
+      "mtime": 1778925987719.508
+    },
+    "spike": {
+      "keywords": [
+        "run",
+        "throwaway",
+        "prototypes",
+        "validate",
+        "feasibility",
+        "compare",
+        "approaches",
+        "report",
+        "verdict",
+        "spike"
+      ],
+      "mtime": 1779448639580.3108
+    },
+    "summarize": {
+      "keywords": [
+        "summarize",
+        "transcribe",
+        "urls",
+        "youtubevideos",
+        "podcasts",
+        "articles",
+        "transcripts",
+        "pdfs",
+        "local",
+        "files"
+      ],
+      "mtime": 1779448639581.8796
+    },
+    "tag-duplicate-prs-issues": {
+      "keywords": [
+        "gitcrawl",
+        "search",
+        "duplicate",
+        "openclaw",
+        "prsissues",
+        "group",
+        "related",
+        "work",
+        "prtags",
+        "sync",
+        "state",
+        "github",
+        "tag-duplicate-prs-issues"
+      ],
+      "mtime": 1779448635410.3435
+    },
+    "taskflow": {
+      "keywords": [
+        "coordinate",
+        "multi-step",
+        "detached",
+        "tasks",
+        "durable",
+        "taskflow",
+        "job",
+        "owner",
+        "context",
+        "state",
+        "waits",
+        "child"
+      ],
+      "mtime": 1779448639581.8796
+    },
+    "taskflow-inbox-triage": {
+      "keywords": [
+        "example",
+        "taskflow",
+        "pattern",
+        "inbox",
+        "triage",
+        "intent",
+        "routing",
+        "waiting",
+        "replies",
+        "later",
+        "summaries",
+        "taskflow-inbox-triage"
+      ],
+      "mtime": 1779448639581.8796
+    },
+    "tmux": {
+      "keywords": [
+        "control",
+        "tmux",
+        "sessionspanes",
+        "interactive",
+        "clis",
+        "list",
+        "capture",
+        "output",
+        "send",
+        "keys",
+        "paste",
+        "text",
+        "monitor",
+        "prompts"
+      ],
+      "mtime": 1779448639581.8796
+    },
+    "video-frames": {
+      "keywords": [
+        "extract",
+        "frames",
+        "short",
+        "clips",
+        "videos",
+        "ffmpeg",
+        "video-frames"
+      ],
+      "mtime": 1779448639587.141
+    },
+    "voice-call": {
+      "keywords": [
+        "start",
+        "voice",
+        "calls",
+        "via",
+        "openclaw",
+        "voice-call",
+        "plugin"
+      ],
+      "mtime": 1779448639589.2021
+    },
+    "word-document-processor": {
+      "keywords": [
+        "comprehensive",
+        "word",
+        "document",
+        "processing",
+        "full",
+        "format",
+        "support",
+        "handles",
+        "creation",
+        "editing",
+        "formatting",
+        "preservation",
+        "tracked",
+        "changes",
+        "metadata",
+        "management",
+        "word-document-processor"
+      ],
+      "mtime": 1778842520455.037
+    },
+    "insights-cn": {
+      "keywords": [
+        "中文会话",
+        "洞察报告",
+        "生成器",
+        "优化版",
+        "支持多维",
+        "度分析",
+        "insights-cn"
+      ],
+      "mtime": 1779636362192.356
+    },
+    "skill-stocktake": {
+      "keywords": [
+        "auditing",
+        "claude",
+        "skills",
+        "commands",
+        "quality",
+        "supports",
+        "quick",
+        "scan",
+        "changed",
+        "full",
+        "stocktake",
+        "modes",
+        "sequential",
+        "subagent",
+        "batch",
+        "evaluation",
+        "skill-stocktake"
+      ],
+      "mtime": 1779569542880.132
+    }
+  },
+  "lastScan": 1779699559184
+}

@@ -1,0 +1,39 @@
+# 模型配置示例
+# 复制为 model_config.json 并填入真实 API Key
+
+{
+  "agents": {
+    "defaults": {
+      "model": "deepseek-work",
+      "provider": "deepseek",
+      "maxTokens": 20000,
+      "temperature": 0.1,
+      "reasoningEffort": null,
+      "contextWindowTokens": 200000
+    }
+  },
+  "models": [
+    {
+      "name": "deepseek-work",
+      "provider": "deepseek",
+      "mainModelId": "deepseek-reasoner",
+      "secondaryModelId": "deepseek-chat",
+      "apiKey": "YOUR_API_KEY_HERE",
+      "apiBase": "https://api.deepseek.com"
+    }
+  ],
+  "providers": {
+    "deepseek": {
+      "apiKey": "YOUR_API_KEY_HERE",
+      "apiBase": "https://api.deepseek.com"
+    },
+    "anthropic": {
+      "apiKey": "YOUR_ANTHROPIC_API_KEY",
+      "apiBase": null
+    },
+    "openai": {
+      "apiKey": "YOUR_OPENAI_API_KEY",
+      "apiBase": null
+    }
+  }
+}

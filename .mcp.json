@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "ai-chat": {
+      "type": "http",
+      "url": "http://127.0.0.1:8090/mcp"
+    },
+    "codegraph": {
+      "type": "http",
+      "url": "http://127.0.0.1:8091/mcp"
+    },
+    "context7": {
+      "type": "http",
+      "url": "http://127.0.0.1:8092/mcp"
+    },
+    "github": {
+      "type": "http",
+      "url": "http://127.0.0.1:8093/mcp",
+      "headers": {
+        "Authorization": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "chrome-devtools": {
+      "type": "http",
+      "url": "http://127.0.0.1:8094/mcp"
+    }
+  }
+}

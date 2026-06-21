@@ -1,0 +1,8192 @@
+[
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:00:02",
+    "task_id": "exec-0",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:00:00",
+    "completed_at": "2026-06-01T10:00:02",
+    "duration_seconds": 2.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:01:02",
+    "task_id": "exec-1",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:01:00",
+    "completed_at": "2026-06-01T10:01:02",
+    "duration_seconds": 2.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:02:02",
+    "task_id": "exec-2",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:02:00",
+    "completed_at": "2026-06-01T10:02:02",
+    "duration_seconds": 3.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:03:02",
+    "task_id": "exec-3",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:03:00",
+    "completed_at": "2026-06-01T10:03:02",
+    "duration_seconds": 3.5,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  },
+  {
+    "type": "task",
+    "timestamp": "2026-06-01T10:04:02",
+    "task_id": "exec-4",
+    "status": "success",
+    "strategy": "auto",
+    "started_at": "2026-06-01T10:04:00",
+    "completed_at": "2026-06-01T10:04:02",
+    "duration_seconds": 4.0,
+    "files": [
+      "file_0.py",
+      "file_1.py",
+      "file_2.py"
+    ],
+    "conflict_count": 0,
+    "shard_count": 1,
+    "metadata": {}
+  }
+]

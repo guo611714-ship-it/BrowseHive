@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}Stats{% endblock %}
+
+{% block content %}
+<div class="flex items-center justify-between mb-4">
+  <div>
+    <h1 class="text-2xl text-nasa-accent">Stats</h1>
+    <p class="text-sm text-nasa-muted">Métricas agregadas · ventana {{ days }}d</p>
+  </div>
+  <div class="flex gap-2 text-xs mono">
+    <a href="?days=7" class="px-2 py-1 border border-nasa-border rounded {% if days == 7 %}text-nasa-accent{% endif %}">7d</a>
+    <a href="?days=14" class="px-2 py-1 border border-nasa-border rounded {% if days == 14 %}text-nasa-accent{% endif %}">14d</a>
+    <a href="?days=30" class="px-2 py-1 border border-nasa-border rounded {% if days == 30 %}text-nasa-accent{% endif %}">30d</a>
+  </div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+    <h2 class="text-sm uppercase text-nasa-cyan mb-3">Activaciones diarias</h2>
+    <canvas id="dailyChart" height="140"></canvas>
+  </div>
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+    <h2 class="text-sm uppercase text-nasa-cyan mb-3">Cluster activations · barras</h2>
+    <canvas id="clusterChart" height="140"></canvas>
+  </div>
+</div>
+
+<div class="border border-nasa-border bg-nasa-panel rounded-md p-4 mb-6">
+  <h2 class="text-sm uppercase text-nasa-cyan mb-3">Cluster table</h2>
+  <table class="w-full text-sm">
+    <thead>
+      <tr>
+        <th>cluster</th>
+        <th class="text-right">activations</th>
+        <th class="text-right">skills_sug</th>
+        <th class="text-right">skills_inv</th>
+        <th class="text-right">invoke_rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in cluster_rows %}
+      <tr>
+        <td class="mono"><a href="/clusters/{{ r.cluster_id }}">{{ r.cluster_id }}</a></td>
+        <td class="text-right mono">{{ r.activations }}</td>
+        <td class="text-right mono">{{ r.skills_suggested }}</td>
+        <td class="text-right mono text-nasa-accent">{{ r.skills_invoked }}</td>
+        <td class="text-right mono">{{ (r.invoke_rate * 100) | round(0) }}%</td>
+      </tr>
+      {% endfor %}
+      {% if not cluster_rows %}
+      <tr><td colspan="5" class="text-center text-nasa-muted py-6">sin activaciones registradas en esta ventana</td></tr>
+      {% endif %}
+    </tbody>
+  </table>
+</div>
+
+<details class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+  <summary class="cursor-pointer text-sm mono text-nasa-cyan">raw summary JSON</summary>
+  <pre class="text-xs text-nasa-accent mt-2">{{ summary | tojson(indent=2) }}</pre>
+</details>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  const daily = {{ daily | tojson }};
+  const cRows = {{ cluster_rows | tojson }};
+  const d_labels = daily.map(d => d.date.slice(5));
+  const d_counts = daily.map(d => d.count);
+  new Chart(document.getElementById('dailyChart'), {
+    type: 'line',
+    data: { labels: d_labels, datasets: [{ label: 'activations', data: d_counts, borderColor: '#00ff9c', backgroundColor: 'rgba(0,255,156,0.1)', tension: 0.3, fill: true }]},
+    options: { responsive: true, plugins: { legend: { labels: { color: '#9aa6b4' }}},
+      scales: { x:{ticks:{color:'#5b6776'},grid:{color:'#1c2530'}}, y:{ticks:{color:'#5b6776'},grid:{color:'#1c2530'},beginAtZero:true}}}
+  });
+  const c_labels = cRows.map(r => r.cluster_id);
+  const c_counts = cRows.map(r => r.activations);
+  new Chart(document.getElementById('clusterChart'), {
+    type: 'bar',
+    data: { labels: c_labels, datasets: [{ label: 'activations', data: c_counts, backgroundColor: '#3ec9f7' }]},
+    options: { indexAxis: 'y', plugins: { legend: { display: false }},
+      scales: { x:{ticks:{color:'#5b6776'},grid:{color:'#1c2530'},beginAtZero:true}, y:{ticks:{color:'#5b6776',font:{family:'JetBrains Mono',size:10}},grid:{color:'#1c2530'}}}}
+  });
+</script>
+{% endblock %}

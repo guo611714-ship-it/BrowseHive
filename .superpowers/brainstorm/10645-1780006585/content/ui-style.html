@@ -1,0 +1,78 @@
+<div class="section">
+  <h2>Sider 风格 UI Mockup</h2>
+  <p class="subtitle">点击选择你想应用到哪个Add-in</p>
+</div>
+
+<div class="cards">
+  <div class="card" data-choice="excel" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 20px; background: #f8f9fa; border-radius: 12px;">
+      <div style="max-width: 300px; margin: 0 auto; font-family: 'DM Sans', sans-serif;">
+        <div style="font-size: 28px; font-weight: 700; color: #1a1a1a; margin-bottom: 4px;">你好，</div>
+        <div style="font-size: 15px; color: #6b6b6b; margin-bottom: 20px;">Claude Excel Assistant</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
+          <div style="padding: 8px 16px; border: 1px solid #e0e0e0; border-radius: 20px; font-size: 13px; color: #333;">📊 总结数据</div>
+          <div style="padding: 8px 16px; border: 1px solid #e0e0e0; border-radius: 20px; font-size: 13px; color: #333;">📈 分析趋势</div>
+          <div style="padding: 8px 16px; border: 1px solid #e0e0e0; border-radius: 20px; font-size: 13px; color: #333;">🔢 生成公式</div>
+          <div style="padding: 8px 16px; border: 1px solid #e0e0e0; border-radius: 20px; font-size: 13px; color: #333;">🧹 数据清洗</div>
+        </div>
+        <div style="border: 1px solid #e0e0e0; border-radius: 12px; padding: 12px 16px; display: flex; align-items: center; gap: 8px;">
+          <div style="width: 24px; height: 24px; background: linear-gradient(135deg, #7c3aed, #2563eb); border-radius: 50%;"></div>
+          <div style="flex: 1; color: #999; font-size: 14px;">输入问题，例如：分析当前选中的数据</div>
+          <div style="color: #7c3aed;">➤</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Excel - Sider 风格</h3>
+      <p>大标题问候 + 快捷操作chip + 底部输入框 + 紫色渐变图标</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="word" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 20px; background: #f8f9fa; border-radius: 12px;">
+      <div style="max-width: 300px; margin: 0 auto; font-family: 'DM Sans', sans-serif;">
+        <div style="font-size: 28px; font-weight: 700; color: #1a1a1a; margin-bottom: 4px;">你好，</div>
+        <div style="font-size: 15px; color: #6b6b6b; margin-bottom: 20px;">Claude Word Assistant</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
+          <div style="padding: 8px 16px; border: 1px solid #e0e0e0; border-radius: 20px; font-size: 13px; color: #333;">📝 总结文本</div>
+          <div style="padding: 8px 16px; border: 1px solid #e0e0e0; border-radius: 20px; font-size: 13px; color: #333;">✏️ 改写优化</div>
+          <div style="padding: 8px 16px; border: 1px solid #e0e0e0; border-radius: 20px; font-size: 13px; color: #333;">🔍 校对</div>
+          <div style="padding: 8px 16px; border: 1px solid #e0e0e0; border-radius: 20px; font-size: 13px; color: #333;">🌐 翻译</div>
+        </div>
+        <div style="border: 1px solid #e0e0e0; border-radius: 12px; padding: 12px 16px; display: flex; align-items: center; gap: 8px;">
+          <div style="width: 24px; height: 24px; background: linear-gradient(135deg, #7c3aed, #2563eb); border-radius: 50%;"></div>
+          <div style="flex: 1; color: #999; font-size: 14px;">输入问题，例如：优化这段文本</div>
+          <div style="color: #7c3aed;">➤</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Word - Sider 风格</h3>
+      <p>相同布局，适配Word场景的快捷操作</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="ppt" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 20px; background: #f8f9fa; border-radius: 12px;">
+      <div style="max-width: 300px; margin: 0 auto; font-family: 'DM Sans', sans-serif;">
+        <div style="font-size: 28px; font-weight: 700; color: #1a1a1a; margin-bottom: 4px;">你好，</div>
+        <div style="font-size: 15px; color: #6b6b6b; margin-bottom: 20px;">Claude PowerPoint Assistant</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
+          <div style="padding: 8px 16px; border: 1px solid #e0e0e0; border-radius: 20px; font-size: 13px; color: #333;">📋 生成备注</div>
+          <div style="padding: 8px 16px; border: 1px solid #e0e0e0; border-radius: 20px; font-size: 13px; color: #333;">🎨 设计建议</div>
+          <div style="padding: 8px 16px; border: 1px solid #e0e0e0; border-radius: 20px; font-size: 13px; color: #333;">📑 生成大纲</div>
+          <div style="padding: 8px 16px; border: 1px solid #e0e0e0; border-radius: 20px; font-size: 13px; color: #333;">➕ 新增幻灯片</div>
+        </div>
+        <div style="border: 1px solid #e0e0e0; border-radius: 12px; padding: 12px 16px; display: flex; align-items: center; gap: 8px;">
+          <div style="width: 24px; height: 24px; background: linear-gradient(135deg, #7c3aed, #2563eb); border-radius: 50%;"></div>
+          <div style="flex: 1; color: #999; font-size: 14px;">输入问题，例如：为当前幻灯片生成备注</div>
+          <div style="color: #7c3aed;">➤</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>PowerPoint - Sider 风格</h3>
+      <p>相同布局，适配PPT场景的快捷操作</p>
+    </div>
+  </div>
+</div>

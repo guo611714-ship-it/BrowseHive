@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Clusters{% endblock %}
+
+{% block content %}
+<div class="flex items-center justify-between mb-4">
+  <div>
+    <h1 class="text-2xl text-nasa-accent">Clusters</h1>
+    <p class="text-sm text-nasa-muted">{{ clusters | length }} clusters · ventana {{ days }}d</p>
+  </div>
+  <div class="flex gap-2 text-xs mono">
+    <a href="?days=7" class="px-2 py-1 border border-nasa-border rounded {% if days == 7 %}text-nasa-accent{% endif %}">7d</a>
+    <a href="?days=14" class="px-2 py-1 border border-nasa-border rounded {% if days == 14 %}text-nasa-accent{% endif %}">14d</a>
+    <a href="?days=30" class="px-2 py-1 border border-nasa-border rounded {% if days == 30 %}text-nasa-accent{% endif %}">30d</a>
+  </div>
+</div>
+
+<div class="border border-nasa-border bg-nasa-panel rounded-md overflow-x-auto">
+  <table class="w-full text-sm">
+    <thead>
+      <tr>
+        <th>cluster</th>
+        <th>description</th>
+        <th class="text-right">skills</th>
+        <th class="text-right">triggers</th>
+        <th class="text-right">threshold</th>
+        <th class="text-right">activations</th>
+        <th class="text-right">invoke_rate</th>
+        <th class="text-right">last_seen</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for c in clusters %}
+      <tr>
+        <td class="mono">
+          <a href="/clusters/{{ c.id }}">{{ c.id }}</a>
+          {% if c.auto_invoke %}<span class="badge badge-cyan ml-1">auto</span>{% endif %}
+        </td>
+        <td class="text-nasa-muted" style="max-width:380px">{{ c.description[:140] }}{% if c.description|length > 140 %}…{% endif %}</td>
+        <td class="text-right mono">{{ c.skills_count }}</td>
+        <td class="text-right mono">{{ c.triggers_count }}</td>
+        <td class="text-right mono">{{ c.threshold }}</td>
+        <td class="text-right mono {% if c.activations > 0 %}text-nasa-accent{% else %}text-nasa-muted{% endif %}">{{ c.activations }}</td>
+        <td class="text-right mono">
+          {% if c.skills_suggested > 0 %}
+            {% set pct = (c.invoke_rate * 100) | round(1) %}
+            <span class="{% if c.invoke_rate >= 0.5 %}text-nasa-accent{% elif c.invoke_rate >= 0.2 %}text-nasa-warn{% else %}text-nasa-danger{% endif %}">{{ pct }}%</span>
+          {% else %}<span class="text-nasa-muted">—</span>{% endif %}
+        </td>
+        <td class="text-right mono text-xs text-nasa-muted">{{ c.last_seen[:10] or '—' }}</td>
+        <td class="text-right">
+          <a href="/clusters/{{ c.id }}/edit" class="text-xs mono px-2 py-1 border border-nasa-border rounded hover:text-nasa-accent">edit</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

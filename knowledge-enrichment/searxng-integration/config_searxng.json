@@ -1,0 +1,18 @@
+{
+  "searxng_url": "http://localhost:8080",
+  "default_max_results": 15,
+  "categories": [
+    "电机工程",
+    "电力电子",
+    "可再生能源",
+    "电力系统",
+    "自动控制",
+    "高压技术",
+    "电力市场"
+  ],
+  "llmwiki_project": "D:/MyWiki-KB",
+  "enrich_with_claude": false,
+  "claude_model": "claude-sonnet-4-20250514",
+  "delay_between_requests": 1.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+}

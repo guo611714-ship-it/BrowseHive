@@ -1,0 +1,125 @@
+{
+  "version": "1.0.0",
+  "selectors": {
+    "doubao": {
+      "input": "textarea, [contenteditable='true'], [role='textbox']",
+      "response": [
+        "div[class*='message']",
+        "div[class*='flow-markdown-body']",
+        "div[class*='container'][class*='theme-']"
+      ]
+    },
+    "deepseek": {
+      "input": "textarea, [contenteditable='true']",
+      "response": [
+        ".ds-assistant-message-main-content",
+        "[class*='markdown']:not(.flow-markdown-body)",
+        "[class*='ds-chat']",
+        "[class*='assist']"
+      ]
+    },
+    "ouyi": {
+      "input": "textarea, [contenteditable='true'], [role='textbox']",
+      "response": [
+        "div[class*='message']",
+        "div[class*='chat-item']",
+        "div[class*='response']"
+      ]
+    },
+    "kimi": {
+      "input": "textarea, [contenteditable='true'], [role='textbox']",
+      "response": [
+        "[class*='chat-message']",
+        "[class*='markdown']",
+        "[class*='message-content']"
+      ]
+    },
+    "chatglm": {
+      "input": "textarea, [contenteditable='true'], [role='textbox']",
+      "response": [
+        "[class*='chat-msg']",
+        "[class*='markdown-body']",
+        "[class*='answer']"
+      ]
+    }
+  },
+  "platforms": {
+    "doubao": {
+      "name": "豆包",
+      "url": "https://www.doubao.com/chat/",
+      "type": "ai_chat"
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "url": "https://chat.deepseek.com/",
+      "type": "ai_chat"
+    },
+    "ouyi": {
+      "name": "欧亿AI",
+      "url": "https://ai.rcouyi.com/chat/3244281610078725",
+      "homepage": "https://ai.rcouyi.com/home",
+      "type": "ai_chat"
+    },
+    "kimi": {
+      "name": "Kimi",
+      "url": "https://kimi.moonshot.cn/",
+      "type": "ai_chat"
+    },
+    "chatglm": {
+      "name": "智谱清言",
+      "url": "https://chatglm.cn/",
+      "type": "ai_chat"
+    },
+    "bing": {
+      "name": "必应搜索",
+      "url": "https://cn.bing.com/",
+      "type": "search_engine"
+    }
+  },
+  "errors": {
+    "patterns": [
+      "重试.*次后仍失败",
+      "Cannot read properties",
+      "TypeError:",
+      "Page.evaluate",
+      "接口重试",
+      "请求失败",
+      "页面执行脚本触发类型异常"
+    ],
+    "exclusions": [
+      "内容由",
+      "AI 生成",
+      "请仔细甄别",
+      "下载电脑版",
+      "历史对话",
+      "超能模式",
+      "帮我写作",
+      "PPT 生成",
+      "图像生成",
+      "更多",
+      "新对话",
+      "Ctrl K",
+      "AI 创作",
+      "云盘",
+      "专家",
+      "Beta",
+      "主页",
+      "绘画",
+      "画廊",
+      "思维导图",
+      "白板",
+      "客户端",
+      "画布绘画",
+      "内容举报",
+      "高级VIP"
+    ]
+  },
+  "browser": {
+    "ports": [9222, 9223, 9224, 9225, 9333],
+    "max_scan_attempts": 3,
+    "cdp_ready_timeout": 10,
+    "harness_timeout": 60,
+    "no_response_limit": 7,
+    "streaming_limit": 40
+  }
+}

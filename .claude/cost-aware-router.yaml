@@ -1,0 +1,110 @@
+# Cost-Aware LLM Router Configuration
+# 适配 cost-aware-llm-pipeline 到 MCP工作流
+
+# ─── 路由规则 ─────────────────────────────────────────────
+routing:
+  enabled: true
+  default_model: "doubao"  # 默认使用豆包（免费）
+  fallback_chain:
+    - nvidia      # L1: 简单任务，成本最低
+    - doubao      # L2: 中等任务，免费
+    - deepseek    # L3: 复杂任务，专家模式
+    - claude      # L4: 极复杂，最后手段
+
+# ─── 复杂度阈值 ───────────────────────────────────────────
+thresholds:
+  # 文本长度阈值
+  char_threshold:
+    nvidia: 50      # <50字符 → NVIDIA
+    doubao: 200     # <200字符 → 豆包
+    deepseek: 1000  # <1000字符 → DeepSeek
+    claude: 5000    # >5000字符 → Claude
+
+  # 任务项数量阈值
+  item_threshold:
+    nvidia: 1
+    doubao: 3
+    deepseek: 10
+    claude: 30
+
+  # 复杂度关键词
+  keywords:
+    simple: ["你好", "hi", "hello", "谢谢", "测试", "翻译"]
+    medium: ["润色", "总结", "写", "生成", "解释"]
+    complex: ["代码", "函数", "分析", "调试", "优化", "设计"]
+    extreme: ["架构", "重构", "微服务", "系统设计", "创新"]
+
+# ─── 模型配置 ─────────────────────────────────────────────
+models:
+  nvidia:
+    endpoint: "http://127.0.0.1:8080"
+    max_tokens: 1000
+    cost_per_1k_input: 0.0001
+    cost_per_1k_output: 0.0002
+    timeout: 10
+
+  doubao:
+    mcp_tool: "mcp__ai-chat__ask_doubao"
+    platform: "doubao"
+    cost_per_1k: 0  # 免费
+    timeout: 30
+
+  deepseek:
+    mcp_tool: "mcp__ai-chat__ask_deepseek"
+    platform: "deepseek"
+    mode: "expert"
+    cost_per_1k_input: 0.002
+    cost_per_1k_output: 0.008
+    timeout: 60
+
+  claude:
+    native: true
+    cost_per_1k_input: 0.015
+    cost_per_1k_output: 0.075
+    timeout: 120
+
+# ─── 预算控制 ─────────────────────────────────────────────
+budget:
+  enabled: true
+  daily_limit_usd: 1.0  # 每日预算上限
+  alert_threshold: 0.8  # 80%时告警
+  block_on_exceed: true
+
+# ─── 缓存策略 ─────────────────────────────────────────────
+cache:
+  enabled: true
+  system_prompt_cache: true  # 缓存系统提示词
+  response_cache: true       # 缓存响应
+  response_ttl: 300          # 5分钟TTL
+  max_entries: 100
+
+# ─── 重试策略 ─────────────────────────────────────────────
+retry:
+  enabled: true
+  max_retries: 3
+  backoff_multiplier: 2
+  retryable_errors:
+    - "timeout"
+    - "rate_limit"
+    - "server_error"
+  non_retryable_errors:
+    - "auth_error"
+    - "invalid_request"
+
+# ─── 监控指标 ─────────────────────────────────────────────
+metrics:
+  enabled: true
+  log_file: "~/.claude/logs/router-metrics.json"
+  track:
+    - routing_decisions
+    - cost_per_task
+    - latency
+    - cache_hit_rate
+    - fallback_count
+
+# ─── Hook集成 ─────────────────────────────────────────────
+hooks:
+  UserPromptSubmit:
+    enabled: true
+    script: "~/.claude/hooks/cost-aware-router.js"
+    async: false  # 同步执行，确保路由决策在请求前完成

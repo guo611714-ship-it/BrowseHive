@@ -1,0 +1,326 @@
+# Claude Code Model Router Configuration
+
+default_model: deepseek-v4-pro
+
+providers:
+  deepseek:
+    display_name: DeepSeek
+    provider: deepseek
+    base_url: https://api.deepseek.com/anthropic
+    api_key_env: DEEPSEEK_API_KEY
+    auth_header: x-api-key
+    auth_type: api_key
+    default_variant: v4-pro
+    variants:
+      v4-pro:
+        display_name: "DeepSeek V4 Pro"
+        model_id: deepseek-v4-pro
+        max_tokens: 393216
+        context_window: 1048576
+      v4-flash:
+        display_name: "DeepSeek V4 Flash"
+        model_id: deepseek-v4-flash
+        max_tokens: 393216
+        context_window: 1048576
+
+  kimi:
+    display_name: Kimi
+    provider: moonshot
+    base_url: https://api.moonshot.ai/anthropic
+    api_key_env: KIMI_API_KEY
+    auth_header: Authorization
+    auth_type: bearer
+    default_variant: k2.6
+    variants:
+      k2.6:
+        display_name: "Kimi K2.6"
+        model_id: kimi-k2.6
+        max_tokens: 16384
+        context_window: 262144
+
+  minimax:
+    display_name: MiniMax CN
+    provider: minimax-cn
+    base_url: https://api.minimaxi.com/anthropic
+    api_key_env: MINIMAX_API_KEY
+    auth_header: Authorization
+    auth_type: bearer
+    default_variant: m2.7
+    variants:
+      m2.7:
+        display_name: "MiniMax M2.7"
+        model_id: MiniMax-M2.7
+        max_tokens: 196608
+        context_window: 204800
+      m2.7-highspeed:
+        display_name: "MiniMax M2.7 Highspeed"
+        model_id: MiniMax-M2.7-highspeed
+        max_tokens: 196608
+        context_window: 204800
+
+  minimax-global:
+    display_name: MiniMax Global
+    provider: minimax-global
+    base_url: https://api.minimax.io/anthropic
+    api_key_env: MINIMAX_GLOBAL_API_KEY
+    auth_header: Authorization
+    auth_type: bearer
+    default_variant: m2.7
+    variants:
+      m2.7:
+        display_name: "MiniMax M2.7 (Global)"
+        model_id: MiniMax-M2.7
+        max_tokens: 196608
+        context_window: 204800
+      m2.7-highspeed:
+        display_name: "MiniMax M2.7 Highspeed (Global)"
+        model_id: MiniMax-M2.7-highspeed
+        max_tokens: 196608
+        context_window: 204800
+
+  qwen:
+    display_name: Qwen
+    provider: alibaba
+    base_url: https://dashscope.aliyuncs.com/apps/anthropic
+    api_key_env: QWEN_API_KEY
+    auth_header: x-api-key
+    auth_type: api_key
+    default_variant: 3.5-plus
+    variants:
+      3.5-plus:
+        model_key: qwen3.5-plus
+        display_name: "Qwen3.5 Plus"
+        model_id: qwen3.5-plus
+        max_tokens: 65536
+        context_window: 1000000
+      3.5-flash:
+        model_key: qwen3.5-flash
+        display_name: "Qwen3.5 Flash"
+        model_id: qwen3.5-flash
+        max_tokens: 65536
+        context_window: 1000000
+      3-max:
+        model_key: qwen3-max
+        display_name: "Qwen3 Max"
+        model_id: qwen3-max
+        max_tokens: 65536
+        context_window: 1000000
+
+  glm:
+    display_name: GLM
+    provider: zhipu
+    base_url: https://open.bigmodel.cn/api/anthropic
+    api_key_env: GLM_API_KEY
+    auth_header: x-api-key
+    auth_type: api_key
+    default_variant: 5.1
+    variants:
+      5.1:
+        display_name: "GLM-5.1"
+        model_id: glm-5.1
+        max_tokens: 131072
+        context_window: 204800
+
+  mimo:
+    display_name: MiMo Token Plan SGP
+    provider: xiaomi-token-sgp
+    base_url: https://token-plan-sgp.xiaomimimo.com/anthropic
+    api_key_env: MIMO_API_KEY
+    auth_header: api-key
+    auth_type: api_key
+    default_variant: v2.5-pro
+    variants:
+      v2.5-pro:
+        display_name: "MiMo V2.5 Pro"
+        model_id: mimo-v2.5-pro
+        max_tokens: 131072
+        context_window: 1048576
+      v2.5:
+        display_name: "MiMo V2.5"
+        model_id: mimo-v2.5
+        max_tokens: 131072
+        context_window: 1048576
+
+  mimo-token-cn:
+    display_name: MiMo Token Plan CN
+    provider: xiaomi-token-cn
+    base_url: https://token-plan-cn.xiaomimimo.com/anthropic
+    api_key_env: MIMO_TOKEN_CN_API_KEY
+    auth_header: api-key
+    auth_type: api_key
+    default_variant: v2.5-pro
+    variants:
+      v2.5-pro:
+        display_name: "MiMo V2.5 Pro (CN)"
+        model_id: mimo-v2.5-pro
+        max_tokens: 131072
+        context_window: 1048576
+      v2.5:
+        display_name: "MiMo V2.5 (CN)"
+        model_id: mimo-v2.5
+        max_tokens: 131072
+        context_window: 1048576
+
+  mimo-token-ams:
+    display_name: MiMo Token Plan AMS
+    provider: xiaomi-token-ams
+    base_url: https://token-plan-ams.xiaomimimo.com/anthropic
+    api_key_env: MIMO_TOKEN_AMS_API_KEY
+    auth_header: api-key
+    auth_type: api_key
+    default_variant: v2.5-pro
+    variants:
+      v2.5-pro:
+        display_name: "MiMo V2.5 Pro (AMS)"
+        model_id: mimo-v2.5-pro
+        max_tokens: 131072
+        context_window: 1048576
+      v2.5:
+        display_name: "MiMo V2.5 (AMS)"
+        model_id: mimo-v2.5
+        max_tokens: 131072
+        context_window: 1048576
+
+  mimo-payg:
+    display_name: MiMo Pay-as-you-go
+    provider: xiaomi-payg
+    base_url: https://api.xiaomimimo.com/anthropic
+    api_key_env: MIMO_PAYG_API_KEY
+    auth_header: api-key
+    auth_type: api_key
+    default_variant: v2.5-pro
+    variants:
+      v2.5-pro:
+        display_name: "MiMo V2.5 Pro (Pay-as-you-go)"
+        model_id: mimo-v2.5-pro
+        max_tokens: 131072
+        context_window: 1048576
+      v2.5:
+        display_name: "MiMo V2.5 (Pay-as-you-go)"
+        model_id: mimo-v2.5
+        max_tokens: 131072
+        context_window: 1048576
+
+  nvidia:
+    display_name: NVIDIA
+    provider: nvidia
+    api_format: openai
+    base_url: https://integrate.api.nvidia.com/v1
+    api_key_env: NVIDIA_API_KEY
+    auth_header: Authorization
+    auth_type: bearer
+    default_variant: llama-3.3-70b
+    variants:
+      llama-3.3-70b:
+        display_name: "Llama 3.3 70B Instruct"
+        model_id: meta/llama-3.3-70b-instruct
+        max_tokens: 16384
+        context_window: 128000
+      llama-4-maverick:
+        display_name: "Llama 4 Maverick 17B"
+        model_id: meta/llama-4-maverick-17b-128e-instruct
+        max_tokens: 16384
+        context_window: 128000
+      llama-3.1-8b:
+        display_name: "Llama 3.1 8B Instruct"
+        model_id: meta/llama-3.1-8b-instruct
+        max_tokens: 16384
+        context_window: 128000
+      nemotron-ultra:
+        display_name: "Nemotron Ultra 253B"
+        model_id: nvidia/llama-3.1-nemotron-ultra-253b-v1
+        max_tokens: 16384
+        context_window: 128000
+      nemotron-super-49b:
+        display_name: "Nemotron Super 49B v1.5"
+        model_id: nvidia/llama-3.3-nemotron-super-49b-v1.5
+        max_tokens: 16384
+        context_window: 128000
+      deepseek-v4-pro:
+        display_name: "DeepSeek V4 Pro"
+        model_id: deepseek-ai/deepseek-v4-pro
+        max_tokens: 16384
+        context_window: 128000
+      deepseek-v4-flash:
+        display_name: "DeepSeek V4 Flash"
+        model_id: deepseek-ai/deepseek-v4-flash
+        max_tokens: 16384
+        context_window: 128000
+      qwen3.5-397b:
+        display_name: "Qwen 3.5 397B"
+        model_id: qwen/qwen3.5-397b-a17b
+        max_tokens: 16384
+        context_window: 128000
+      qwen3-coder:
+        display_name: "Qwen3 Coder 480B"
+        model_id: qwen/qwen3-coder-480b-a35b-instruct
+        max_tokens: 16384
+        context_window: 128000
+      mistral-large-3:
+        display_name: "Mistral Large 3 675B"
+        model_id: mistralai/mistral-large-3-675b-instruct-2512
+        max_tokens: 16384
+        context_window: 128000
+      step-3.5-flash:
+        display_name: "Step 3.5 Flash"
+        model_id: stepfun-ai/step-3.5-flash
+        max_tokens: 16384
+        context_window: 128000
+
+aliases:
+  deepseek: deepseek-v4-pro
+  deepseek-v4: deepseek-v4-pro
+  deepseek-pro: deepseek-v4-pro
+  deepseek-flash: deepseek-v4-flash
+  deepseek-chat: deepseek-v4-flash
+  ds: deepseek-v4-pro
+  kimi: kimi-k2.6
+  kimi-k2: kimi-k2.6
+  moonshot: kimi-k2.6
+  minimax: minimax-m2.7
+  minimax-cn: minimax-m2.7
+  minimax-m2: minimax-m2.7
+  minimax-highspeed: minimax-m2.7-highspeed
+  minimax-cn-highspeed: minimax-m2.7-highspeed
+  minimaxi: minimax-m2.7
+  minimax-global: minimax-global-m2.7
+  minimax-io: minimax-global-m2.7
+  minimax-global-highspeed: minimax-global-m2.7-highspeed
+  mm: minimax-m2.7
+  qwen: qwen3.5-plus
+  qwen3.5: qwen3.5-plus
+  tongyi: qwen3.5-plus
+  glm: glm-5.1
+  glm-5: glm-5.1
+  zhipu: glm-5.1
+  chatglm: glm-5.1
+  mimo: mimo-v2.5-pro
+  mimo-pro: mimo-v2.5-pro
+  mimo-token: mimo-v2.5-pro
+  mimo-token-sgp: mimo-v2.5-pro
+  mimo-sgp: mimo-v2.5-pro
+  mimo-v2: mimo-v2.5
+  mimo-v2.5: mimo-v2.5
+  mimo-v2.5-pro: mimo-v2.5-pro
+  mimo-token-cn: mimo-token-cn-v2.5-pro
+  mimo-cn: mimo-token-cn-v2.5-pro
+  mimo-token-cn-v2.5: mimo-token-cn-v2.5
+  mimo-token-ams: mimo-token-ams-v2.5-pro
+  mimo-ams: mimo-token-ams-v2.5-pro
+  mimo-token-ams-v2.5: mimo-token-ams-v2.5
+  mimo-payg: mimo-payg-v2.5-pro
+  mimo-payg-pro: mimo-payg-v2.5-pro
+  mimo-payg-v2.5: mimo-payg-v2.5
+  xiaomi: mimo-v2.5-pro
+  nvidia: nvidia-llama-3.3-70b
+  nvidia-llama: nvidia-llama-3.3-70b
+  nvidia-70b: nvidia-llama-3.3-70b
+  nvidia-8b: nvidia-llama-3.1-8b
+  nvidia-405b: nvidia-llama-3.1-405b
+  nvidia-qwen: nvidia-qwen2.5-72b
+  nvidia-r1: nvidia-deepseek-r1
+  nvidia-step: nvidia-step-3.5-flash
+
+gateway:
+  port: 8080
+  timeout: 300

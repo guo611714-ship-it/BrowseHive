@@ -1,0 +1,28 @@
+{
+  "name": "github-mirror-accelerator",
+  "description": "Configure Git to use GitHub mirror acceleration for faster downloads in China. Automatically sets up git config url rewriting to use cdn.gh-proxy.org or other mirrors. Essential for WSL and slow network environments.",
+  "version": "1.0.0",
+  "author": "Claude",
+  "license": "MIT",
+  "tags": [
+    "git",
+    "github",
+    "accelerate",
+    "mirror",
+    "speed",
+    "cdn",
+    "proxy",
+    "china",
+    "download",
+    "clone"
+  ],
+  "capabilities": [
+    "git_configuration",
+    "network_acceleration",
+    "mirror_setup"
+  ],
+  "entrypoint": "scripts/setup-mirror.sh",
+  "timeout": 60,
+  "maxConcurrent": 1,
+  "prompt": "GitHub mirror accelerator - speed up git clone and downloads"
+}

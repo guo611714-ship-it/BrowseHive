@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Cluster · {{ cluster_id }}{% endblock %}
+
+{% block content %}
+<div class="flex items-center justify-between mb-4">
+  <div>
+    <p class="text-xs text-nasa-muted mono"><a href="/clusters">← clusters</a></p>
+    <h1 class="text-2xl text-nasa-accent mono">{{ cluster_id }}</h1>
+    <p class="text-sm text-nasa-muted">{{ cdef.description }}</p>
+  </div>
+  <a href="/clusters/{{ cluster_id }}/edit"
+     class="px-3 py-1.5 text-xs mono border border-nasa-accent/40 text-nasa-accent hover:bg-nasa-accent/10 rounded">
+    edit
+  </a>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+    <div class="text-xs text-nasa-muted uppercase">Activations ({{ days }}d)</div>
+    <div class="text-3xl mono text-nasa-accent">{{ stats.activations | default(0) }}</div>
+  </div>
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+    <div class="text-xs text-nasa-muted uppercase">Invoke rate</div>
+    {% set rate = stats.invoke_rate | default(0) %}
+    <div class="text-3xl mono {% if rate >= 0.5 %}text-nasa-accent{% elif rate >= 0.2 %}text-nasa-warn{% else %}text-nasa-danger{% endif %}">
+      {{ (rate * 100) | round(1) }}%
+    </div>
+    <div class="text-xs text-nasa-muted">{{ stats.skills_invoked | default(0) }}/{{ stats.skills_suggested | default(0) }} skills</div>
+  </div>
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+    <div class="text-xs text-nasa-muted uppercase">Threshold</div>
+    <div class="text-3xl mono text-nasa-cyan">{{ cdef.confidence_threshold | default('—') }}</div>
+    <div class="text-xs text-nasa-muted">auto_invoke: {{ cdef.auto_invoke | default(false) }}</div>
+  </div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+    <h2 class="text-sm uppercase text-nasa-cyan mb-3">Skills declaradas ({{ cdef.skills | length }})</h2>
+    <ul class="text-sm mono space-y-1">
+      {% for s in cdef.skills %}
+      <li class="flex items-center gap-2">
+        <span class="text-nasa-accent">▸</span><span>{{ s }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+    <h2 class="text-sm uppercase text-nasa-cyan mb-3">Triggers naturales ({{ cdef.triggers_natural | default([]) | length }})</h2>
+    {% if cdef.triggers_natural %}
+    <ul class="text-sm space-y-1 text-nasa-muted">
+      {% for t in cdef.triggers_natural %}
+      <li class="border-l-2 border-nasa-border pl-3">"{{ t }}"</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="text-sm text-nasa-muted">Sin triggers naturales.</p>
+    {% endif %}
+  </div>
+</div>
+
+<div class="mt-6 border border-nasa-border bg-nasa-panel rounded-md p-4">
+  <h2 class="text-sm uppercase text-nasa-cyan mb-3">YAML definition</h2>
+  <pre class="text-xs text-nasa-accent bg-black/40 p-3 rounded overflow-x-auto">{{ yaml_snippet }}</pre>
+</div>
+
+{% if cdef.gate_reminder %}
+<div class="mt-6 border border-nasa-warn/40 bg-nasa-warn/5 rounded-md p-4">
+  <h2 class="text-sm uppercase text-nasa-warn mb-2">Gate reminder</h2>
+  <p class="text-sm">{{ cdef.gate_reminder }}</p>
+</div>
+{% endif %}
+{% endblock %}

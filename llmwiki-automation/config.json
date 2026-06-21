@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "description": "Hermes-Windows 配置文件 - Claude + LLM Wiki + Obsidian 自动化",
+  "paths": {
+    "llmwiki_exe": "C:\\Users\\YourName\\AppData\\Local\\LLMwiki\\LLMwiki.exe",
+    "obsidian_exe": "C:\\Users\\YourName\\AppData\\Local\\Obsidian\\Obsidian.exe",
+    "wiki_project_dir": "D:\\KnowledgeBase\\MyWiki",
+    "vault_dir": "D:\\KnowledgeBase\\MyWiki\\wiki"
+  },
+  "settings": {
+    "claude_api_key": "",
+    "default_model": "claude-sonnet-4-20250514",
+    "window_timeout_seconds": 10,
+    "import_wait_seconds": 5,
+    "auto_sync": false,
+    "log_operations": true
+  },
+  "hotkeys": {
+    "import": "#i",
+    "query": "#q",
+    "open_obsidian": "#o",
+    "activate_llm": "#w",
+    "import_and_open": "#g"
+  },
+  "directories": {
+    "import_inbox": "Import",
+    "wiki_output": "wiki",
+    "obsidian_inbox": "01-Inbox",
+    "obsidian_articles": "02-Articles",
+    "obsidian_concepts": "02-Concepts",
+    "obsidian_resources": "03-Resources"
+  },
+  "notes": {
+    "zh": "请修改上面的路径为您的实际安装位置",
+    "en": "Please update paths to match your actual installation locations"
+  }
+}

@@ -1,0 +1,26 @@
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4 glow-accent">
+    <div class="text-xs text-nasa-muted uppercase tracking-wider">Clusters definidos</div>
+    <div class="text-3xl mono text-nasa-accent">{{ cluster_count }}</div>
+    <div class="text-xs text-nasa-muted">en clusters.yaml</div>
+  </div>
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+    <div class="text-xs text-nasa-muted uppercase tracking-wider">Hit rate 7d</div>
+    <div class="text-3xl mono {% if summary.hit_rate >= 0.7 %}text-nasa-accent{% elif summary.hit_rate >= 0.4 %}text-nasa-warn{% else %}text-nasa-danger{% endif %}">
+      {{ (summary.hit_rate * 100) | round(1) }}%
+    </div>
+    <div class="text-xs text-nasa-muted">{{ summary.user_prompts }} prompts</div>
+  </div>
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+    <div class="text-xs text-nasa-muted uppercase tracking-wider">Skill ghosts</div>
+    <div class="text-3xl mono {% if summary.ghost_count == 0 %}text-nasa-accent{% elif summary.ghost_count < 4 %}text-nasa-warn{% else %}text-nasa-danger{% endif %}">
+      {{ summary.ghost_count }}
+    </div>
+    <div class="text-xs text-nasa-muted">sugeridas y nunca invocadas</div>
+  </div>
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4 glow-cyan">
+    <div class="text-xs text-nasa-muted uppercase tracking-wider">Eventos 7d</div>
+    <div class="text-3xl mono text-nasa-cyan">{{ summary.total_events }}</div>
+    <div class="text-xs text-nasa-muted">tool_blocked: {{ summary.blocked_tools }}</div>
+  </div>
+</div>

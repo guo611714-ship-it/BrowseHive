@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --office-bg: #F8F9FA;
+  --office-card: #FFFFFF;
+  --office-border: #E5E7EB;
+  --office-text: #1E293B;
+  --office-muted: #64748B;
+
+  --agent-idle: #94A3B8;
+  --agent-running: #3B82F6;
+  --agent-complete: #10B981;
+  --agent-failed: #EF4444;
+  --agent-waiting: #F59E0B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--office-bg);
+  color: var(--office-text);
+  overflow: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--office-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--office-muted);
+}
+
+/* Desk shadow */
+.desk-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Status glow */
+.status-glow {
+  box-shadow: 0 0 12px currentColor;
+}
+
+/* Stagger animation */
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.1s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.2s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.3s; }
+
+/* Log level colors */
+.log-info { color: #94A3B8; }
+.log-warn { color: #F59E0B; }
+.log-error { color: #EF4444; }

@@ -1,0 +1,26 @@
+{
+  "sync": {
+    "status": "not_tracked",
+    "pid": null,
+    "last_heartbeat": null,
+    "action": "none"
+  },
+  "backup": {
+    "status": "not_tracked",
+    "pid": null,
+    "last_heartbeat": null,
+    "action": "none"
+  },
+  "cache": {
+    "status": "not_tracked",
+    "pid": null,
+    "last_heartbeat": null,
+    "action": "none"
+  },
+  "_timestamp": "2026-06-01T01:48:42.687492",
+  "_checked_services": [
+    "sync",
+    "backup",
+    "cache"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "folders": [
+    { "path": "official-projects/ClaudeExcelOfficial_v2" },
+    { "path": "official-projects/ClaudeWordOfficial_v2" },
+    { "path": "official-projects/ClaudePowerPointOfficial_v2" }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.git": true,
+      "**/coverage": true,
+      "**/.nyc_output": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.git": true
+    },
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/dist/**": true,
+      "**/build/**": true,
+      "**/.git/**": true,
+      "**/.DS_Store": true
+    },
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "javascript.suggest.autoImports": false,
+    "editor.largeFileOptimizations": true,
+    "files.maxMemoryForLargeFilesMB": 4096,
+    "extensions.ignoreRecommendations": true,
+    "git.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "selection",
+    "editor.suggestOnTriggerCharacters": false
+  }
+}

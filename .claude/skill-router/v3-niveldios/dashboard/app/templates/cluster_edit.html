@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}Edit · {{ cluster_id }}{% endblock %}
+
+{% block content %}
+<div class="mb-4">
+  <p class="text-xs text-nasa-muted mono"><a href="/clusters/{{ cluster_id }}">← cluster {{ cluster_id }}</a></p>
+  <h1 class="text-2xl text-nasa-accent mono">edit · {{ cluster_id }}</h1>
+  <p class="text-sm text-nasa-muted">
+    Edita el cuerpo YAML. Validación server-side antes de escribir.
+    Backup automático en <span class="mono text-nasa-cyan">backups/clusters.yaml.bak-&lt;ts&gt;</span>.
+  </p>
+</div>
+
+<form id="editor-form" hx-post="/clusters/{{ cluster_id }}" hx-target="#save-result" hx-swap="innerHTML">
+  <textarea name="cluster_yaml" rows="22"
+            class="w-full bg-black/60 border border-nasa-border rounded p-3 mono text-sm text-nasa-accent focus:outline-none focus:border-nasa-accent">{{ yaml_snippet }}</textarea>
+
+  <div class="mt-4 flex items-center gap-3">
+    <button type="submit"
+            class="px-4 py-2 text-sm mono border border-nasa-accent/40 bg-nasa-accent/10 text-nasa-accent hover:bg-nasa-accent/20 rounded">
+      save (backup + validate + write)
+    </button>
+    <a href="/clusters/{{ cluster_id }}"
+       class="px-4 py-2 text-sm mono border border-nasa-border text-nasa-muted hover:text-nasa-accent rounded">
+      cancel
+    </a>
+    <div id="save-result" class="text-sm mono"></div>
+  </div>
+</form>
+
+<details class="mt-6 text-xs text-nasa-muted">
+  <summary class="cursor-pointer">cluster schema cheat-sheet</summary>
+  <pre class="mt-2 bg-black/40 p-3 rounded text-nasa-cyan">description: "..."        # required, &ge;5 chars
+skills:                     # required, &ge;1 item
+  - plugin:skill-name
+  - other-skill
+triggers_natural:           # optional
+  - "frase 1"
+confidence_threshold: 0.7   # 0.0-1.0
+auto_invoke: false          # optional boolean
+gate_reminder: "..."        # optional</pre>
+</details>
+
+<script>
+  // Render save result with SAFE DOM methods (textContent only, no innerHTML).
+  document.body.addEventListener('htmx:afterRequest', function (evt) {
+    if (!evt.detail.elt.matches('#editor-form')) return;
+    var target = document.getElementById('save-result');
+    while (target.firstChild) target.removeChild(target.firstChild);
+    var xhr = evt.detail.xhr;
+    var span = document.createElement('span');
+    var msg = '';
+    var cls = 'text-nasa-danger';
+    try {
+      var data = JSON.parse(xhr.responseText);
+      if (data && data.ok) {
+        cls = 'text-nasa-accent';
+        msg = 'OK saved - backup ' + (data.backup_path || 'none');
+      } else {
+        var errs = (data && data.errors) ? data.errors.slice(0, 3) : ['unknown error'];
+        msg = 'ERR ' + errs.join(' | ');
+      }
+    } catch (e) {
+      msg = 'ERR HTTP ' + xhr.status;
+    }
+    span.className = cls;
+    span.textContent = msg;
+    target.appendChild(span);
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,26 @@
+{
+  "turn": 1,
+  "recent_clusters": [
+    {
+      "cluster": "image_generation",
+      "turn": 1,
+      "ts": 1779567736
+    }
+  ],
+  "recent_skills": [
+    {
+      "skill": "gpt-image-2",
+      "turn": 1,
+      "ts": 1779567736
+    }
+  ],
+  "llm_cache": {},
+  "llm_calls_today": 0,
+  "llm_calls_today_date": "",
+  "llm_total_calls": 0,
+  "llm_total_cost_usd": 0.0,
+  "turn_needs_skill": true,
+  "turn_skill_invoked": true,
+  "turn_auto_satisfied_by_injection": true,
+  "skill_gate": null
+}

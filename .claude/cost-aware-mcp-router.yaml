@@ -1,0 +1,165 @@
+# Cost-Aware MCP Router Configuration
+# 适配 cost-aware-llm-pipeline 到 MCP工作流
+
+# ─── 路由矩阵 ─────────────────────────────────────────────
+routing:
+  enabled: true
+  default_model: "doubao"  # 默认使用豆包（免费）
+
+  # 任务复杂度 → 模型映射
+  model_tiers:
+    L1_simple:
+      target: "nvidia"
+      description: "短文本（<20字符）"
+      endpoint: "http://127.0.0.1:8080"
+      cost_per_1k: 0.0001
+
+    L2_medium:
+      target: "tree"
+      description: "非代码任务（≥20字符），树状调用：豆包→(DeepSeek+火山引擎)→NVIDIA整合"
+      tree:
+        layer1: { model: "doubao", tool: "mcp__ai-chat__ask_doubao" }
+        layer2:
+          - { model: "deepseek", tool: "mcp__ai-chat__ask_deepseek" }
+          - { model: "volcengine", tool: "mcp__ai-chat__ask_volcengine" }
+        layer3: { model: "nvidia", endpoint: "http://127.0.0.1:8080" }
+      cost_per_1k: 0  # 免费
+
+    L3_complex:
+      target: "claude"
+      description: "仅代码任务"
+      cost_per_1k: 0.015
+
+  # 故障回退链
+  fallback_chain:
+    - nvidia → doubao
+    - doubao → volcengine
+    - volcengine → deepseek
+    - deepseek → claude
+
+# ─── 复杂度评估阈值 ───────────────────────────────────────
+thresholds:
+  # 文本长度阈值（字符数）
+  char_thresholds:
+    nvidia: 50       # <50字符 → NVIDIA
+    doubao: 200      # 50-200字符 → 豆包
+    deepseek: 1000   # 200-1000字符 → DeepSeek
+    claude: 5000     # >1000字符 → Claude
+
+  # 关键词匹配
+  keywords:
+    L1_simple:
+      - "你好"
+      - "hi"
+      - "hello"
+      - "谢谢"
+      - "测试"
+      - "1+1"
+      - "翻译这句话"
+
+    L2_medium:
+      - "润色"
+      - "总结"
+      - "解释"
+      - "写"
+      - "生成"
+      - "分析"
+      - "推理"
+      - "画"
+      - "整理"
+
+    L3_complex:
+      - "代码"
+      - "函数"
+      - "class"
+      - "function"
+      - "bug"
+      - "调试"
+      - "优化"
+      - "架构"
+      - "设计"
+      - "重构"
+
+# ─── 模型配置 ─────────────────────────────────────────────
+models:
+  nvidia:
+    type: "api"
+    endpoint: "http://127.0.0.1:8080"
+    max_tokens: 1000
+    timeout: 10
+    cost:
+      input_per_1k: 0.0001
+      output_per_1k: 0.0002
+
+  doubao:
+    type: "mcp"
+    tool: "mcp__ai-chat__ask_doubao"
+    platform: "doubao"
+    mode: "super"  # 超能模式
+    timeout: 30
+    cost:
+      input_per_1k: 0
+      output_per_1k: 0
+
+  volcengine:
+    type: "mcp"
+    tool: "mcp__ai-chat__ask_volcengine"
+    platform: "volcengine"
+    model: "doubao-seed-2.0-pro"
+    timeout: 30
+    cost:
+      input_per_1k: 0
+      output_per_1k: 0
+
+  deepseek:
+    type: "mcp"
+    tool: "mcp__ai-chat__ask_deepseek"
+    platform: "deepseek"
+    mode: "expert"  # 专家模式+深度思考
+    timeout: 60
+    cost:
+      input_per_1k: 0.002
+      output_per_1k: 0.008
+
+  claude:
+    type: "native"
+    timeout: 120
+    cost:
+      input_per_1k: 0.015
+      output_per_1k: 0.075
+
+# ─── 预算控制 ─────────────────────────────────────────────
+budget:
+  enabled: true
+  daily_limit_usd: 1.0
+  alert_threshold: 0.8  # 80%时告警
+  block_on_exceed: true
+
+# ─── 缓存策略 ─────────────────────────────────────────────
+cache:
+  enabled: true
+  response_cache: true
+  response_ttl: 300  # 5分钟
+  max_entries: 100
+
+# ─── 重试策略 ─────────────────────────────────────────────
+retry:
+  enabled: true
+  max_retries: 3
+  backoff_multiplier: 2
+  retryable_errors:
+    - "timeout"
+    - "rate_limit"
+    - "server_error"
+    - "connection_error"
+  non_retryable_errors:
+    - "auth_error"
+    - "invalid_request"
+    - "not_found"
+
+# ─── Hook集成 ─────────────────────────────────────────────
+hooks:
+  UserPromptSubmit:
+    enabled: true
+    script: "cost-aware-router-hook.js"
+    async: false

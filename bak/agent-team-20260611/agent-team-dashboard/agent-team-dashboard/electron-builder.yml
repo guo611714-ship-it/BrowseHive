@@ -1,0 +1,32 @@
+appId: com.agent-team.desktop
+productName: Agent Team Dashboard
+directories:
+  output: dist
+files:
+  - "dist/index.html"
+  - "dist/assets/**/*"
+  - "electron/**/*"
+  - "assets/**/*"
+  - "!node_modules/**/*"
+  - "!dist/win-unpacked/**/*"
+  - "!dist/*.exe"
+  - "!dist/*.blockmap"
+  - "!dist/*.yaml"
+extraResources:
+  - from: "../run_sse.py"
+    to: "run_sse.py"
+  - from: "../agent"
+    to: "agent"
+  - from: "../agent_sse"
+    to: "agent_sse"
+  - from: "../.team"
+    to: ".team"
+win:
+  target: nsis
+  icon: assets/icon.png
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Agent Team Dashboard

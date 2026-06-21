@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# router-stats — wrapper bash que delega a stats.py
+# Uso: router-stats <subcommand> [opts]
+#
+# Subcomandos: summary | clusters | skills | gaps | gate
+#
+# Resolución de Python:
+#   1. $ROUTER_PYTHON si está definido
+#   2. .venv/bin/python si existe (relativa al audit dir)
+#   3. python3 del PATH (fallback)
+
+set -euo pipefail
+
+# Path canónico del directorio audit
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+AUDIT_DIR="$(dirname "$SCRIPT_DIR")"
+
+# Detectar intérprete
+if [[ -n "${ROUTER_PYTHON:-}" ]]; then
+  PY="$ROUTER_PYTHON"
+elif [[ -x "$AUDIT_DIR/.venv/bin/python" ]]; then
+  PY="$AUDIT_DIR/.venv/bin/python"
+else
+  PY="$(command -v python3 || true)"
+fi
+
+if [[ -z "$PY" ]]; then
+  echo "router-stats: ERROR — no se encontró Python (define ROUTER_PYTHON o crea .venv)" >&2
+  exit 2
+fi
+
+exec "$PY" "$AUDIT_DIR/stats.py" "$@"

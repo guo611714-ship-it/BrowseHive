@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Team 生产级架构</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0d1117; color: #c9d1d9; padding: 20px; }
+h1 { text-align: center; font-size: 28px; margin-bottom: 8px; background: linear-gradient(135deg, #58a6ff, #bc8cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.subtitle { text-align: center; color: #8b949e; margin-bottom: 30px; font-size: 14px; }
+.layer { border: 1px solid #30363d; border-radius: 12px; margin: 12px 0; padding: 16px; position: relative; }
+.layer-title { font-weight: 700; font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.layer-title .badge { font-size: 11px; padding: 2px 8px; border-radius: 10px; font-weight: 500; }
+.items { display: flex; flex-wrap: wrap; gap: 8px; }
+.item { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 8px 12px; font-size: 12px; }
+.item .name { font-weight: 600; color: #f0f6fc; }
+.item .desc { color: #8b949e; font-size: 11px; margin-top: 2px; }
+.arrow { text-align: center; color: #484f58; font-size: 20px; margin: 4px 0; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 20px; }
+.stat { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px; text-align: center; }
+.stat .num { font-size: 28px; font-weight: 700; background: linear-gradient(135deg, #58a6ff, #3fb950); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.stat .label { color: #8b949e; font-size: 12px; margin-top: 4px; }
+.model-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.model-table th { text-align: left; padding: 6px 8px; border-bottom: 1px solid #30363d; color: #8b949e; }
+.model-table td { padding: 6px 8px; border-bottom: 1px solid #21262d; }
+.model-table tr:hover { background: #161b22; }
+.tag { display: inline-block; padding: 1px 6px; border-radius: 4px; font-size: 10px; margin-right: 4px; }
+.tag-fast { background: #1f3a2a; color: #3fb950; }
+.tag-code { background: #1a2332; color: #58a6ff; }
+.tag-agent { background: #2a1f3a; color: #bc8cff; }
+.tag-reason { background: #3a2a1f; color: #d29922; }
+.tag-light { background: #1a2a1f; color: #56d364; }
+.tag-multi { background: #2a1a2a; color: #f778ba; }
+/* Layer colors */
+.l1 { border-color: #1f6feb33; } .l1 .layer-title { color: #58a6ff; }
+.l2 { border-color: #23863633; } .l2 .layer-title { color: #3fb950; }
+.l3 { border-color: #8957e533; } .l3 .layer-title { color: #bc8cff; }
+.l4 { border-color: #d2992233; } .l4 .layer-title { color: #d29922; }
+.l5 { border-color: #f778ba33; } .l5 .layer-title { color: #f778ba; }
+.l6 { border-color: #58a6ff33; } .l6 .layer-title { color: #58a6ff; }
+.l7 { border-color: #3fb95033; } .l7 .layer-title { color: #3fb950; }
+.l8 { border-color: #8b949e33; } .l8 .layer-title { color: #8b999e; }
+</style>
+</head>
+<body>
+<h1>Agent Team 生产级架构</h1>
+<p class="subtitle">10模型智能路由 · 7子代理 · 8编排模式 · 50+工具 · 全免费API</p>
+
+<!-- 接入层 -->
+<div class="layer l1">
+<div class="layer-title"><span class="badge" style="background:#1f6feb33;color:#58a6ff">接入层</span> HTTP接入</div>
+<div class="items">
+<div class="item"><div class="name">agent_api.py</div><div class="desc">REST同步接口 :8766</div></div>
+<div class="item"><div class="name">agent_stream.py</div><div class="desc">SSE流式接口 :8771</div></div>
+</div>
+</div>
+<div class="arrow">▼</div>
+
+<!-- 主Agent层 -->
+<div class="layer l2">
+<div class="layer-title"><span class="badge" style="background:#23863633;color:#3fb950">主Agent层</span> 核心组件</div>
+<div class="items">
+<div class="item"><div class="name">AgentLoop</div><div class="desc">主循环 · tool-call调度</div></div>
+<div class="item"><div class="name">ContextAssembler</div><div class="desc">System Prompt组装</div></div>
+<div class="item"><div class="name">ModelOrchestrator</div><div class="desc">10模型智能路由 · 34场景规则</div></div>
+<div class="item"><div class="name">MemoryStore</div><div class="desc">3层记忆 · Working/Episodic/Long-term</div></div>
+<div class="item"><div class="name">AgentRunner</div><div class="desc">50+工具执行 · sync/async适配</div></div>
+</div>
+</div>
+<div class="arrow">▼</div>
+
+<!-- 调度层 -->
+<div class="layer l3">
+<div class="layer-title"><span class="badge" style="background:#8957e533;color:#bc8cff">调度层</span> SubagentDispatcher</div>
+<div class="items">
+<div class="item"><div class="name">复杂度评分</div><div class="desc">5级关键词匹配(1-5分)</div></div>
+<div class="item"><div class="name">模型路由</div><div class="desc">agent专属 > 场景匹配 > 复杂度 > 角色</div></div>
+<div class="item"><div class="name">Fallback链</div><div class="desc">失败→nemotron→step-3.7→minimax</div></div>
+<div class="item"><div class="name">进度推送</div><div class="desc">AgentProgressEvent · 实时print</div></div>
+<div class="item"><div class="name">独立记忆</div><div class="desc">agent_memory/ 持久化</div></div>
+<div class="item"><div class="name">检查点</div><div class="desc">每步checkpoint · 崩溃续跑</div></div>
+</div>
+</div>
+<div class="arrow">▼</div>
+
+<!-- 执行层 -->
+<div class="layer l4">
+<div class="layer-title"><span class="badge" style="background:#d2992233;color:#d29922">执行层</span> 7个子代理</div>
+<div class="items">
+<div class="item"><div class="name">小黄门</div><div class="desc">轻量只读 · step-3.7 · 5轮</div></div>
+<div class="item"><div class="name">随堂</div><div class="desc">文档阅读 · step-3.7 · 10轮</div></div>
+<div class="item"><div class="name">探事</div><div class="desc">查访搜索 · step-3.7 · 30轮</div></div>
+<div class="item"><div class="name">典簿</div><div class="desc">质量检查 · nemotron · 20轮</div></div>
+<div class="item"><div class="name">内官监</div><div class="desc">工程执行 · minimax · 100轮</div></div>
+<div class="item"><div class="name">浏览器操作员</div><div class="desc">网页操作 · step-3.7 · 30轮</div></div>
+<div class="item"><div class="name">通用</div><div class="desc">回退agent · minimax</div></div>
+</div>
+</div>
+<div class="arrow">▼</div>
+
+<!-- 编排模式 -->
+<div class="layer l5">
+<div class="layer-title"><span class="badge" style="background:#f778ba33;color:#f778ba">编排模式</span> 8种工作流</div>
+<div class="items">
+<div class="item"><div class="name">串行</div><div class="desc">Sequential</div></div>
+<div class="item"><div class="name">并行</div><div class="desc">Concurrent</div></div>
+<div class="item"><div class="name">Handoff</div><div class="desc">自主转移</div></div>
+<div class="item"><div class="name">审批</div><div class="desc">Human-in-loop</div></div>
+<div class="item"><div class="name">重规划</div><div class="desc">Auto-replan</div></div>
+<div class="item"><div class="name">迭代精炼</div><div class="desc">Writer-Reviewer</div></div>
+<div class="item"><div class="name">看板</div><div class="desc">Dashboard</div></div>
+<div class="item"><div class="name">LLM选Agent</div><div class="desc">智能路由</div></div>
+</div>
+</div>
+<div class="arrow">▼</div>
+
+<!-- 工具层 -->
+<div class="layer l6">
+<div class="layer-title"><span class="badge" style="background:#58a6ff33;color:#58a6ff">工具层</span> 50+ Tools</div>
+<div class="items">
+<div class="item"><div class="name">内置工具 (21)</div><div class="desc">read/write/edit/run/glob/grep/web</div></div>
+<div class="item"><div class="name">浏览器工具 (14)</div><div class="desc">navigate/click/type/screenshot/text</div></div>
+<div class="item"><div class="name">编排工具 (8)</div><div class="desc">dispatch_parallel/handoff/approval</div></div>
+<div class="item"><div class="name">会话工具 (3)</div><div class="desc">start/end/get_session_memory</div></div>
+<div class="item"><div class="name">共享工具 (4)</div><div class="desc">shared_context_set/get/list</div></div>
+</div>
+</div>
+<div class="arrow">▼</div>
+
+<!-- 数据层 -->
+<div class="layer l7">
+<div class="layer-title"><span class="badge" style="background:#3fb95033;color:#3fb950">数据层</span> 持久化存储</div>
+<div class="items">
+<div class="item"><div class="name">TaskPlan</div><div class="desc">DAG调度 · 依赖管理</div></div>
+<div class="item"><div class="name">TaskState</div><div class="desc">并发安全 · 线程锁</div></div>
+<div class="item"><div class="name">Checkpoint</div><div class="desc">崩溃恢复 · 断点续跑</div></div>
+<div class="item"><div class="name">SharedContext</div><div class="desc">子代理间通信</div></div>
+<div class="item"><div class="name">AgentMemory</div><div class="desc">子代理独立记忆</div></div>
+</div>
+</div>
+<div class="arrow">▼</div>
+
+<!-- 基础设施 -->
+<div class="layer l8">
+<div class="layer-title"><span class="badge" style="background:#8b949e33;color:#8b999e">基础设施</span> 可靠性保障</div>
+<div class="items">
+<div class="item"><div class="name">6Key轮转</div><div class="desc">2账号×3Key · 独立限流 · 429自动切换</div></div>
+<div class="item"><div class="name">10模型路由</div><div class="desc">34场景规则 · 5级复杂度评分</div></div>
+<div class="item"><div class="name">BrowserClient</div><div class="desc">统一CDP · 实例池 · 监控</div></div>
+<div class="item"><div class="name">知识库集成</div><div class="desc">kb_search · 29文档 · 中英文映射</div></div>
+</div>
+</div>
+
+<!-- 模型路由表 -->
+<div class="layer" style="margin-top:20px; border-color: #58a6ff33;">
+<div class="layer-title" style="color:#58a6ff">📊 10模型路由表</div>
+<table class="model-table">
+<tr><th>模型</th><th>角色</th><th>速度</th><th>Context</th><th>强项</th></tr>
+<tr><td>gemma-e2b</td><td><span class="tag tag-light">lightweight</span></td><td>极快</td><td>32K</td><td>分类/摘要/简单问答</td></tr>
+<tr><td>gemma-e4b</td><td><span class="tag tag-light">lightweight</span></td><td>极快</td><td>32K</td><td>音频/相关性判断</td></tr>
+<tr><td>step-3.5-flash</td><td><span class="tag tag-agent">agentic</span></td><td>350tok/s</td><td>256K</td><td>纯文本极速/批量处理</td></tr>
+<tr><td>step-3.7-flash</td><td><span class="tag tag-agent">agentic</span></td><td>350tok/s</td><td>256K</td><td>SWE-bench 74.4%/GUI/多模态</td></tr>
+<tr><td>minimax-m2.7</td><td><span class="tag tag-agent">agentic</span></td><td>中等</td><td>204K</td><td>Agent Teams原生/Toolathon 46%</td></tr>
+<tr><td>mistral-nemotron</td><td><span class="tag tag-code">coding</span></td><td>中等</td><td>128K</td><td>HumanEval 92.68/MATH 91.14</td></tr>
+<tr><td>qwen3-coder</td><td><span class="tag tag-code">coding</span></td><td>中等</td><td>200K</td><td>代码专用/大规模审计</td></tr>
+<tr><td>llama-maverick</td><td><span class="tag tag-reason">reasoning</span></td><td>快</td><td>1M</td><td>1M上下文/多模态推理</td></tr>
+<tr><td>mistral-large-3</td><td><span class="tag tag-reason">reasoning</span></td><td>慢</td><td>256K</td><td>675B企业级/原生function calling</td></tr>
+<tr><td>glm-5.1</td><td><span class="tag tag-reason">reasoning</span></td><td>慢</td><td>131K</td><td>754B最长链推理/数千次工具调用</td></tr>
+</table>
+</div>
+
+<!-- 修复专项状态 -->
+<div class="layer" style="margin-top:20px; border-color: #3fb95033;">
+<div class="layer-title" style="color:#3fb950">🔧 修复专项状态 (9/9 完成)</div>
+<table class="model-table">
+<tr><th>编号</th><th>修复项</th><th>状态</th></tr>
+<tr><td>P0-1</td><td>CDP连接 curl替代httpx</td><td style="color:#3fb950">✅ 已完成</td></tr>
+<tr><td>P0-2</td><td>5xx错误自动禁用Key</td><td style="color:#3fb950">✅ 已完成</td></tr>
+<tr><td>P0-3</td><td>浏览器AI工具自动注入</td><td style="color:#3fb950">✅ 已完成</td></tr>
+<tr><td>P1-4</td><td>进度输出改用stderr</td><td style="color:#3fb950">✅ 已完成</td></tr>
+<tr><td>P1-5</td><td>LLM调用指数退避重试</td><td style="color:#3fb950">✅ 已完成</td></tr>
+<tr><td>P1-6</td><td>SharedContext TTL过期</td><td style="color:#3fb950">✅ 已完成</td></tr>
+<tr><td>P1-7</td><td>SharedContext注入子代理</td><td style="color:#3fb950">✅ 已完成</td></tr>
+<tr><td>P2-8</td><td>smart_ask 3次重试+4平台切换</td><td style="color:#3fb950">✅ 已完成</td></tr>
+<tr><td>P2-12</td><td>BrowserClient统一入口</td><td style="color:#3fb950">✅ 已完成</td></tr>
+</table>
+</div>
+
+<!-- Roadmap状态 -->
+<div class="layer" style="margin-top:20px; border-color: #d2992233;">
+<div class="layer-title" style="color:#d29922">📋 Roadmap完成状态 (10/10)</div>
+<table class="model-table">
+<tr><th>阶段</th><th>任务</th><th>状态</th></tr>
+<tr><td>P0</td><td>子代理独立记忆 / 检查点接入 / DAG自动触发 / Browser AI规则</td><td style="color:#3fb950">✅ 4/4</td></tr>
+<tr><td>P1</td><td>上下文过滤 / 进度推送 / SharedContext通信</td><td style="color:#3fb950">✅ 3/3</td></tr>
+<tr><td>P2</td><td>多模型投票 / 自动Benchmark</td><td style="color:#3fb950">✅ 2/2</td></tr>
+<tr><td>P2</td><td>BrowserClient统一</td><td style="color:#3fb950">✅ 1/1</td></tr>
+</table>
+</div>
+
+<!-- 统计信息 -->
+<div class="stats">
+<div class="stat"><div class="num">10</div><div class="label">模型</div></div>
+<div class="stat"><div class="num">7</div><div class="label">子代理</div></div>
+<div class="stat"><div class="num">50+</div><div class="label">工具</div></div>
+<div class="stat"><div class="num">8</div><div class="label">编排模式</div></div>
+</div>
+</body>
+</html>

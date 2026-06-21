@@ -1,0 +1,25 @@
+{
+  "sessions": 164,
+  "skillCounts": {
+    "gpt-image-2": 29,
+    "word-document-processor": 6,
+    "ljg-word": 4,
+    "azure-deploy": 3,
+    "remotion-best-practices": 3,
+    "agents-sdk": 6,
+    "react-three-fiber": 4,
+    "claude-api": 6,
+    "senior-ml-engineer": 1,
+    "github-mirror-accelerator": 2,
+    "keil": 14,
+    "build-keil": 28,
+    "ouyi-ai": 26,
+    "git-mirror-accelerator": 17,
+    "academic-paper-reviewer": 2,
+    "search-searxng": 2,
+    "brainstorming": 4,
+    "python-testing-patterns": 4,
+    "notion": 3
+  },
+  "lastUpdated": 1779563413229
+}

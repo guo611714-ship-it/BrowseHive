@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI知识库管理面板</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: #0f1419; color: #e7e9ea; min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        /* Header */
+        .header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 0; border-bottom: 1px solid #2f3336;
+        }
+        .header h1 { font-size: 1.5em; font-weight: 700; }
+        .header-actions { display: flex; gap: 8px; }
+
+        /* Cards */
+        .card {
+            background: #16181c; border-radius: 12px; padding: 20px;
+            margin: 10px 0; border: 1px solid #2f3336;
+        }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+        }
+
+        /* Stats */
+        .stat { text-align: center; padding: 24px 16px; }
+        .stat-value {
+            font-size: 2.2em; font-weight: bold; color: #1d9bf0;
+            font-variant-numeric: tabular-nums;
+        }
+        .stat-label { color: #71767b; margin-top: 8px; font-size: 0.9em; }
+
+        /* Buttons */
+        .btn {
+            padding: 10px 20px; border-radius: 20px; border: none;
+            cursor: pointer; font-weight: 600; font-size: 0.9em;
+            transition: all 0.15s;
+        }
+        .btn:hover { opacity: 0.9; transform: scale(1.02); }
+        .btn:active { transform: scale(0.98); }
+        .btn-primary { background: #1d9bf0; color: white; }
+        .btn-danger { background: #f4212e; color: white; }
+        .btn-ghost { background: transparent; color: #1d9bf0; border: 1px solid #2f3336; }
+        .btn-sm { padding: 6px 14px; font-size: 0.85em; }
+
+        /* Search */
+        .search-box {
+            width: 100%; padding: 12px 20px; border-radius: 24px;
+            border: 1px solid #2f3336; background: #0f1419; color: #e7e9ea;
+            font-size: 16px; outline: none; transition: border-color 0.2s;
+        }
+        .search-box:focus { border-color: #1d9bf0; }
+        .search-box::placeholder { color: #536471; }
+
+        /* Document list */
+        .doc-list { list-style: none; max-height: 500px; overflow-y: auto; }
+        .doc-item {
+            padding: 14px 16px; border-bottom: 1px solid #2f3336;
+            cursor: pointer; transition: background 0.15s;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .doc-item:hover { background: #1d1d1f; }
+        .doc-item:last-child { border-bottom: none; }
+        .doc-title { font-weight: 500; font-size: 0.95em; }
+        .doc-meta { color: #71767b; font-size: 0.85em; margin-top: 4px; }
+        .doc-actions { display: flex; gap: 6px; opacity: 0; transition: opacity 0.15s; }
+        .doc-item:hover .doc-actions { opacity: 1; }
+
+        /* Tags */
+        .tag {
+            display: inline-block; padding: 2px 10px; border-radius: 12px;
+            background: #1d9bf022; color: #1d9bf0; font-size: 0.8em; margin: 2px;
+        }
+        .tag-concept { background: #00ba7c22; color: #00ba7c; }
+        .tag-entity { background: #f4212e22; color: #f4212e; }
+
+        /* Tabs */
+        .tabs { display: flex; gap: 0; border-bottom: 1px solid #2f3336; margin-bottom: 16px; }
+        .tab {
+            padding: 12px 20px; cursor: pointer; color: #71767b;
+            font-weight: 500; border-bottom: 2px solid transparent;
+            transition: all 0.15s;
+        }
+        .tab:hover { color: #e7e9ea; }
+        .tab.active { color: #1d9bf0; border-bottom-color: #1d9bf0; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* Modal */
+        .modal-overlay {
+            display: none; position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%; background: rgba(0,0,0,0.8);
+            z-index: 1000; justify-content: center; align-items: center;
+        }
+        .modal-overlay.active { display: flex; }
+        .modal-box {
+            background: #16181c; border-radius: 16px; padding: 28px;
+            max-width: 520px; width: 92%; border: 1px solid #2f3336;
+        }
+        .modal-box h3 { margin-bottom: 16px; font-size: 1.2em; }
+        .modal-input {
+            width: 100%; padding: 10px 14px; border-radius: 8px;
+            border: 1px solid #2f3336; background: #0f1419; color: #e7e9ea;
+            font-size: 14px; margin-bottom: 12px; outline: none;
+        }
+        .modal-input:focus { border-color: #1d9bf0; }
+        .modal-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 20px; }
+
+        /* Progress */
+        .progress-bar {
+            height: 4px; background: #2f3336; border-radius: 2px;
+            overflow: hidden; margin: 16px 0; display: none;
+        }
+        .progress-fill {
+            height: 100%; background: #1d9bf0;
+            transition: width 0.3s; width: 0%;
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed; bottom: 24px; right: 24px;
+            background: #1d9bf0; color: white; padding: 12px 24px;
+            border-radius: 8px; font-weight: 500; z-index: 2000;
+            transform: translateY(100px); opacity: 0;
+            transition: all 0.3s;
+        }
+        .toast.show { transform: translateY(0); opacity: 1; }
+        .toast.error { background: #f4212e; }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #2f3336; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #404549; }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .header { flex-direction: column; gap: 12px; align-items: flex-start; }
+            .header-actions { width: 100%; flex-wrap: wrap; }
+            .grid { grid-template-columns: 1fr; }
+        }
+
+        /* Detail panel */
+        .detail-panel {
+            background: #0f1419; border-radius: 8px; padding: 20px;
+            margin-top: 16px; border: 1px solid #2f3336;
+            display: none; white-space: pre-wrap;
+            font-size: 0.9em; line-height: 1.6; max-height: 400px;
+            overflow-y: auto; color: #b0b3b8;
+        }
+        .detail-panel.active { display: block; }
+        .detail-panel h4 { color: #e7e9ea; margin-bottom: 12px; }
+
+        /* Category list */
+        .cat-section { margin-bottom: 16px; }
+        .cat-section h4 { color: #71767b; font-size: 0.85em; text-transform: uppercase; margin-bottom: 8px; }
+        .cat-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 8px 12px; border-bottom: 1px solid #2f3336;
+        }
+        .cat-item:last-child { border-bottom: none; }
+        .cat-count { color: #71767b; font-size: 0.85em; }
+
+        /* Graph placeholder */
+        .graph-container {
+            min-height: 300px; display: flex; align-items: center;
+            justify-content: center; color: #536471;
+        }
+
+        /* Loading */
+        .loading { color: #536471; text-align: center; padding: 40px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>AI知识库管理面板</h1>
+            <div class="header-actions">
+                <button class="btn btn-primary" onclick="showModal('import')">导入</button>
+                <button class="btn btn-ghost" onclick="doSync()">同步</button>
+                <button class="btn btn-ghost" onclick="doBackup()">备份</button>
+                <a href="/docs" target="_blank" class="btn btn-ghost">API文档</a>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid">
+            <div class="card stat">
+                <div class="stat-value" id="stat-docs">-</div>
+                <div class="stat-label">文档总数</div>
+            </div>
+            <div class="card stat">
+                <div class="stat-value" id="stat-cache">-</div>
+                <div class="stat-label">缓存命中率</div>
+            </div>
+            <div class="card stat">
+                <div class="stat-value" id="stat-sync">-</div>
+                <div class="stat-label">同步状态</div>
+            </div>
+            <div class="card stat">
+                <div class="stat-value" id="stat-nodes">-</div>
+                <div class="stat-label">图谱节点</div>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="card">
+            <input type="text" class="search-box" id="search-input"
+                   placeholder="搜索知识库 -- 输入关键词..." oninput="onSearch(this.value)">
+        </div>
+
+        <!-- Tabs -->
+        <div class="card">
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('docs')">文档</div>
+                <div class="tab" onclick="switchTab('categories')">分类</div>
+                <div class="tab" onclick="switchTab('graph')">知识图谱</div>
+                <div class="tab" onclick="switchTab('cache')">缓存</div>
+            </div>
+
+            <!-- Tab: Documents -->
+            <div class="tab-content active" id="tab-docs">
+                <ul class="doc-list" id="doc-list">
+                    <li class="loading">加载中...</li>
+                </ul>
+                <div class="detail-panel" id="doc-detail"></div>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;color:#71767b;font-size:0.85em;">
+                    <span id="page-info"></span>
+                    <div style="display:flex;gap:8px;">
+                        <button class="btn btn-ghost btn-sm" onclick="changePage(-1)">上一页</button>
+                        <button class="btn btn-ghost btn-sm" onclick="changePage(1)">下一页</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Categories -->
+            <div class="tab-content" id="tab-categories">
+                <div id="cat-content"><div class="loading">加载中...</div></div>
+            </div>
+
+            <!-- Tab: Graph -->
+            <div class="tab-content" id="tab-graph">
+                <div class="graph-container" id="graph-content">
+                    点击"刷新图谱"加载
+                </div>
+                <div style="text-align:center;margin-top:12px;">
+                    <button class="btn btn-ghost btn-sm" onclick="loadGraph()">刷新图谱</button>
+                </div>
+            </div>
+
+            <!-- Tab: Cache -->
+            <div class="tab-content" id="tab-cache">
+                <div id="cache-content"><div class="loading">加载中...</div></div>
+                <div style="margin-top:12px;">
+                    <button class="btn btn-danger btn-sm" onclick="clearCache()">清除缓存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import Modal -->
+    <div class="modal-overlay" id="modal-import">
+        <div class="modal-box">
+            <h3>导入文档</h3>
+            <p style="color:#71767b;font-size:0.9em;margin-bottom:16px;">
+                支持 .md .txt .pdf .docx 格式，可多选
+            </p>
+            <input type="file" id="file-input" multiple
+                   accept=".md,.txt,.pdf,.docx,.doc"
+                   style="display:block;margin-bottom:12px;">
+            <input type="text" class="modal-input" id="import-category"
+                   placeholder="分类（可选，留空自动分类）">
+            <div class="progress-bar" id="import-progress">
+                <div class="progress-fill" id="import-progress-fill"></div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-ghost" onclick="closeModal()">取消</button>
+                <button class="btn btn-primary" id="btn-import" onclick="doImport()">开始导入</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- URL Import Modal -->
+    <div class="modal-overlay" id="modal-url">
+        <div class="modal-box">
+            <h3>URL导入</h3>
+            <input type="text" class="modal-input" id="url-input"
+                   placeholder="输入文档URL">
+            <input type="text" class="modal-input" id="url-category"
+                   placeholder="分类（可选）">
+            <div class="modal-actions">
+                <button class="btn btn-ghost" onclick="closeModal()">取消</button>
+                <button class="btn btn-primary" onclick="doUrlImport()">导入</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Merge Modal -->
+    <div class="modal-overlay" id="modal-merge">
+        <div class="modal-box">
+            <h3>合并分类</h3>
+            <input type="text" class="modal-input" id="merge-source"
+                   placeholder="源分类名">
+            <input type="text" class="modal-input" id="merge-target"
+                   placeholder="目标分类名">
+            <p style="color:#71767b;font-size:0.85em;">
+                将源分类下的所有文档合并到目标分类
+            </p>
+            <div class="modal-actions">
+                <button class="btn btn-ghost" onclick="closeModal()">取消</button>
+                <button class="btn btn-primary" onclick="doMerge()">合并</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script>
+    // ========================================================================
+    // State
+    // ========================================================================
+    let currentPage = 1;
+    let totalPages = 1;
+    let searchTimer = null;
+
+    // ========================================================================
+    // Toast
+    // ========================================================================
+    function toast(msg, isError) {
+        const el = document.getElementById('toast');
+        el.textContent = msg;
+        el.className = 'toast show' + (isError ? ' error' : '');
+        setTimeout(() => el.className = 'toast', 3000);
+    }
+
+    // ========================================================================
+    // Tab switching
+    // ========================================================================
+    function switchTab(name) {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+        event.target.classList.add('active');
+        document.getElementById('tab-' + name).classList.add('active');
+
+        if (name === 'categories') loadCategories();
+        if (name === 'graph') loadGraph();
+        if (name === 'cache') loadCacheStats();
+    }
+
+    // ========================================================================
+    // Modal
+    // ========================================================================
+    function showModal(name) {
+        document.getElementById('modal-' + name).classList.add('active');
+    }
+    function closeModal() {
+        document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('active'));
+    }
+
+    // ========================================================================
+    // API helpers
+    // ========================================================================
+    async function api(url, opts) {
+        try {
+            const res = await fetch(url, opts);
+            return await res.json();
+        } catch (e) {
+            return { code: 500, msg: e.message };
+        }
+    }
+
+    // ========================================================================
+    // Load documents
+    // ========================================================================
+    async function loadDocs(page, search) {
+        page = page || currentPage;
+        search = search || '';
+        let url = '/api/documents?page=' + page + '&page_size=20';
+        if (search) url += '&search=' + encodeURIComponent(search);
+
+        const res = await api(url);
+        if (res.code !== 200) {
+            document.getElementById('doc-list').innerHTML = '<li class="loading">加载失败</li>';
+            return;
+        }
+
+        const data = res.data;
+        totalPages = Math.max(1, Math.ceil(data.total / 20));
+        currentPage = data.page;
+
+        document.getElementById('page-info').textContent =
+            '第 ' + data.page + '/' + totalPages + ' 页，共 ' + data.total + ' 篇';
+
+        const list = document.getElementById('doc-list');
+        if (!data.documents || data.documents.length === 0) {
+            list.innerHTML = '<li class="loading">暂无文档</li>';
+            return;
+        }
+
+        list.innerHTML = data.documents.map(d => {
+            const tags = (d.tags || []).map(t => '<span class="tag">' + esc(t) + '</span>').join('');
+            const concepts = (d.concepts || []).slice(0, 3).map(t =>
+                '<span class="tag tag-concept">' + esc(t) + '</span>').join('');
+            return '<li class="doc-item" onclick="showDocDetail(\'' + esc(d.path) + '\')">' +
+                '<div><div class="doc-title">' + esc(d.title) + '</div>' +
+                '<div class="doc-meta">' + tags + concepts + '</div></div>' +
+                '<div class="doc-actions">' +
+                '<button class="btn btn-danger btn-sm" onclick="event.stopPropagation();deleteDoc(\'' +
+                esc(d.path) + '\')">删除</button></div></li>';
+        }).join('');
+    }
+
+    function esc(s) {
+        if (!s) return '';
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+            .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+    }
+
+    // ========================================================================
+    // Document detail
+    // ========================================================================
+    async function showDocDetail(path) {
+        const res = await api('/api/documents/' + encodeURIComponent(path));
+        const panel = document.getElementById('doc-detail');
+        if (res.code !== 200) {
+            panel.innerHTML = '<p>加载失败</p>';
+            panel.classList.add('active');
+            return;
+        }
+        const doc = res.data.document;
+        const content = res.data.content || '';
+        panel.innerHTML = '<h4>' + esc(doc.title) + '</h4>' +
+            '<div style="margin-bottom:8px;">' +
+            (doc.tags||[]).map(t => '<span class="tag">' + esc(t) + '</span>').join('') +
+            (doc.concepts||[]).map(t => '<span class="tag tag-concept">' + esc(t) + '</span>').join('') +
+            (doc.entities||[]).map(t => '<span class="tag tag-entity">' + esc(t) + '</span>').join('') +
+            '</div><p style="color:#71767b;font-size:0.85em;margin-bottom:12px;">' +
+            esc(doc.summary || '') + '</p>' +
+            '<pre style="white-space:pre-wrap;font-size:0.85em;line-height:1.5;">' +
+            esc(content.substring(0, 5000)) + '</pre>';
+        panel.classList.toggle('active');
+    }
+
+    // ========================================================================
+    // Search
+    // ========================================================================
+    function onSearch(q) {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(() => {
+            currentPage = 1;
+            loadDocs(1, q);
+        }, 300);
+    }
+
+    // ========================================================================
+    // Pagination
+    // ========================================================================
+    function changePage(delta) {
+        const newPage = currentPage + delta;
+        if (newPage < 1 || newPage > totalPages) return;
+        const q = document.getElementById('search-input').value;
+        loadDocs(newPage, q);
+    }
+
+    // ========================================================================
+    // Delete document
+    // ========================================================================
+    async function deleteDoc(path) {
+        if (!confirm('确认删除此文档？')) return;
+        const res = await api('/api/documents/' + encodeURIComponent(path), { method: 'DELETE' });
+        toast(res.msg || (res.code === 200 ? '已删除' : '删除失败'), res.code !== 200);
+        if (res.code === 200) loadDocs();
+    }
+
+    // ========================================================================
+    // Import files
+    // ========================================================================
+    async function doImport() {
+        const files = document.getElementById('file-input').files;
+        if (!files.length) { toast('请选择文件', true); return; }
+
+        const category = document.getElementById('import-category').value || '';
+        const progress = document.getElementById('import-progress');
+        const fill = document.getElementById('import-progress-fill');
+        const btn = document.getElementById('btn-import');
+
+        progress.style.display = 'block';
+        btn.disabled = true;
+
+        for (let i = 0; i < files.length; i++) {
+            fill.style.width = ((i + 1) / files.length * 100) + '%';
+            const form = new FormData();
+            form.append('file', files[i]);
+            if (category) form.append('category', category);
+            await api('/api/import', { method: 'POST', body: form });
+        }
+
+        btn.disabled = false;
+        progress.style.display = 'none';
+        closeModal();
+        toast('导入完成');
+        loadDocs();
+    }
+
+    // ========================================================================
+    // URL import
+    // ========================================================================
+    async function doUrlImport() {
+        const url = document.getElementById('url-input').value;
+        if (!url) { toast('请输入URL', true); return; }
+        const category = document.getElementById('url-category').value || '';
+        const res = await api('/api/import-url', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ url, category }),
+        });
+        closeModal();
+        toast(res.msg || (res.code === 200 ? '导入成功' : '导入失败'), res.code !== 200);
+        if (res.code === 200) loadDocs();
+    }
+
+    // ========================================================================
+    // Status
+    // ========================================================================
+    async function loadStatus() {
+        const res = await api('/api/status');
+        if (res.code !== 200) return;
+        const d = res.data;
+        document.getElementById('stat-docs').textContent = d.doc_count;
+        document.getElementById('stat-cache').textContent = d.cache_hit_rate;
+        document.getElementById('stat-sync').textContent = d.sync_status;
+    }
+
+    // ========================================================================
+    // Categories
+    // ========================================================================
+    async function loadCategories() {
+        const res = await api('/api/categories');
+        const el = document.getElementById('cat-content');
+        if (res.code !== 200) { el.innerHTML = '<div class="loading">加载失败</div>'; return; }
+        const d = res.data;
+
+        let html = '';
+        if (d.existing && d.existing.length) {
+            html += '<div class="cat-section"><h4>已有分类 (' + d.existing.length + ')</h4>';
+            d.existing.forEach(c => {
+                html += '<div class="cat-item"><span>' + esc(c.category || c) + '</span>' +
+                    '<span class="cat-count">' + (c.count || '') + '</span></div>';
+            });
+            html += '</div>';
+        }
+        if (d.recommended && d.recommended.length) {
+            html += '<div class="cat-section"><h4>建议创建</h4>';
+            d.recommended.forEach(c => {
+                html += '<div class="cat-item"><span>' + esc(c.category || c) + '</span>' +
+                    '<span class="cat-count">' + (c.count || '') + ' 篇</span></div>';
+            });
+            html += '</div>';
+        }
+        if (d.candidates && d.candidates.length) {
+            html += '<div class="cat-section"><h4>候选分类</h4>';
+            d.candidates.forEach(c => {
+                html += '<div class="cat-item"><span>' + esc(c.category || c) + '</span>' +
+                    '<span class="cat-count">' + (c.count || '') + ' 篇</span></div>';
+            });
+            html += '</div>';
+        }
+        if (!html) html = '<div class="loading">暂无分类数据</div>';
+        html += '<div style="margin-top:16px;"><button class="btn btn-ghost btn-sm" onclick="showModal(\'merge\')">合并分类</button></div>';
+        el.innerHTML = html;
+    }
+
+    // ========================================================================
+    // Merge categories
+    // ========================================================================
+    async function doMerge() {
+        const source = document.getElementById('merge-source').value;
+        const target = document.getElementById('merge-target').value;
+        if (!source || !target) { toast('请填写源和目标分类', true); return; }
+        const res = await api('/api/merge', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ source, target }),
+        });
+        closeModal();
+        toast(res.msg || (res.code === 200 ? '合并完成' : '合并失败'), res.code !== 200);
+        if (res.code === 200) loadCategories();
+    }
+
+    // ========================================================================
+    // Graph
+    // ========================================================================
+    async function loadGraph() {
+        const el = document.getElementById('graph-content');
+        el.innerHTML = '<div class="loading">加载中...</div>';
+        const res = await api('/api/graph');
+        if (res.code !== 200) { el.innerHTML = '<div class="loading">加载失败</div>'; return; }
+        const nodes = res.data.nodes || [];
+        const edges = res.data.edges || [];
+
+        document.getElementById('stat-nodes').textContent = nodes.length;
+
+        // Render simple text-based graph summary
+        const docNodes = nodes.filter(n => n.type === 'document');
+        const conceptNodes = nodes.filter(n => n.type === 'concept');
+        const entityNodes = nodes.filter(n => n.type === 'entity');
+
+        let html = '<div style="width:100%;font-size:0.9em;">';
+        html += '<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:16px;">';
+        html += '<div><strong style="color:#1d9bf0;">' + docNodes.length + '</strong> 文档</div>';
+        html += '<div><strong style="color:#00ba7c;">' + conceptNodes.length + '</strong> 概念</div>';
+        html += '<div><strong style="color:#f4212e;">' + entityNodes.length + '</strong> 实体</div>';
+        html += '<div><strong style="color:#71767b;">' + edges.length + '</strong> 连接</div>';
+        html += '</div>';
+
+        // Show top concepts and their connections
+        const conceptMap = {};
+        edges.forEach(e => {
+            if (e.type === 'relates_to') {
+                if (!conceptMap[e.source]) conceptMap[e.source] = [];
+                conceptMap[e.source].push(e.target);
+            }
+        });
+
+        const conceptKeys = Object.keys(conceptMap).slice(0, 20);
+        if (conceptKeys.length) {
+            html += '<div style="margin-top:12px;">';
+            conceptKeys.forEach(ck => {
+                const label = ck.replace('concept:', '');
+                const targets = conceptMap[ck].slice(0, 3);
+                html += '<div style="margin:6px 0;"><span class="tag tag-concept">' + esc(label) + '</span> ';
+                html += '<span style="color:#536471;">--></span> ';
+                html += targets.map(t => '<span class="tag">' + esc(t.split('/').pop()) + '</span>').join(' ');
+                html += '</div>';
+            });
+            html += '</div>';
+        }
+
+        html += '</div>';
+        el.innerHTML = html;
+    }
+
+    // ========================================================================
+    // Cache
+    // ========================================================================
+    async function loadCacheStats() {
+        const res = await api('/api/cache/stats');
+        const el = document.getElementById('cache-content');
+        if (res.code !== 200) { el.innerHTML = '<div class="loading">加载失败</div>'; return; }
+        const s = res.data;
+        el.innerHTML = '<div style="font-size:0.9em;line-height:2;">' +
+            '<div>L1 大小: <strong>' + s.l1_size + ' / ' + s.l1_max + '</strong></div>' +
+            '<div>L1 TTL: <strong>' + s.l1_ttl_s + 's</strong></div>' +
+            '<div>L2 大小: <strong>' + s.l2_size + ' entries</strong></div>' +
+            '<div>L2 TTL: <strong>' + s.l2_ttl_s + 's</strong></div>' +
+            '<div>命中 (L1): <strong>' + s.hits_l1 + '</strong></div>' +
+            '<div>命中 (L2): <strong>' + s.hits_l2 + '</strong></div>' +
+            '<div>未命中: <strong>' + s.misses + '</strong></div>' +
+            '<div>总请求: <strong>' + s.total_requests + '</strong></div>' +
+            '<div>命中率: <strong style="color:#1d9bf0;">' + s.hit_rate + '</strong></div>' +
+            '</div>';
+    }
+
+    async function clearCache() {
+        if (!confirm('确认清除所有缓存？')) return;
+        const res = await api('/api/cache/clear', { method: 'POST' });
+        toast(res.code === 200 ? '缓存已清除' : '清除失败', res.code !== 200);
+        loadCacheStats();
+    }
+
+    // ========================================================================
+    // Sync / Backup
+    // ========================================================================
+    async function doSync() {
+        const res = await api('/api/sync', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: '{}',
+        });
+        toast(res.msg || (res.code === 200 ? '同步完成' : '同步失败'), res.code !== 200);
+        loadStatus();
+    }
+
+    async function doBackup() {
+        const res = await api('/api/backup', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: '{}',
+        });
+        toast(res.msg || (res.code === 200 ? '备份完成' : '备份失败'), res.code !== 200);
+    }
+
+    // ========================================================================
+    // Init
+    // ========================================================================
+    loadDocs();
+    loadStatus();
+    setInterval(loadStatus, 30000);
+    </script>
+</body>
+</html>

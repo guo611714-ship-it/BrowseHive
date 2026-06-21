@@ -1,0 +1,404 @@
+[
+  {
+    "name": "academic-paper-reviewer",
+    "description": "Multi-perspective academic paper review with dynamic reviewer personas. Simulates 5 independent reviewers (EIC + 3 peer reviewers + Devil's Advocate) with field-specific expertise. Supports full review, re-review (verification), quick assessment, methodology focus, Socratic guided, and calibration modes.",
+    "tags": ["academic", "review", "paper"],
+    "source": ".claude/skills/academic-paper-reviewer"
+  },
+  {
+    "name": "agent-team-launcher",
+    "description": "启动 Agent Team — SSE 桥接（常驻内存）+ CLI 直调",
+    "tags": ["agent", "team", "launcher"],
+    "source": ".claude/skills/agent-team-launcher"
+  },
+  {
+    "name": "ai-models",
+    "description": "Latest AI models reference - Claude, OpenAI, Gemini, Eleven Labs, Replicate",
+    "tags": ["ai", "models", "reference"],
+    "source": ".claude/skills/ai-models"
+  },
+  {
+    "name": "autoreview",
+    "description": "Auto Review closeout. Codex review is the default when no engine is set and is the recommended reviewer.",
+    "tags": ["review", "code-review", "autoreview"],
+    "source": ".claude/skills/autoreview"
+  },
+  {
+    "name": "better-auth-best-practices",
+    "description": "Configure Better Auth server and client, set up database adapters, manage sessions, add plugins, and handle environment variables.",
+    "tags": ["auth", "better-auth", "typescript"],
+    "source": ".claude/skills/better-auth-best-practices"
+  },
+  {
+    "name": "brainstorming",
+    "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
+    "tags": ["brainstorming", "design", "creative"],
+    "source": ".claude/skills/brainstorming"
+  },
+  {
+    "name": "browsehive",
+    "description": "BrowseHive浏览器AI工作流：通过browser-harness操控Chrome，与豆包/DeepSeek/欧亿AI/火山引擎协作。",
+    "tags": ["browser", "ai", "workflow"],
+    "source": ".claude/skills/browsehive"
+  },
+  {
+    "name": "build-keil",
+    "description": "当需要通过 Keil MDK 命令行编译嵌入式工程，调用自带脚本解析工程文件、执行构建并定位固件产物时使用。",
+    "tags": ["keil", "embedded", "build"],
+    "source": ".claude/skills/build-keil"
+  },
+  {
+    "name": "ckm:brand",
+    "description": "Brand voice, visual identity, messaging frameworks, asset management, brand consistency.",
+    "tags": ["brand", "identity", "marketing"],
+    "source": ".claude/skills/ckm-brand"
+  },
+  {
+    "name": "ckm:design",
+    "description": "Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini AI), corporate identity program (50 deliverables, CIP mockups), HTML presentations (Chart.js), banner design (22 styles, social/ads/web/print), icon design (15 styles, SVG, Gemini 3.1 Pro), social photos (HTML to screenshot, multi-platform).",
+    "tags": ["design", "logo", "branding"],
+    "source": ".claude/skills/ckm-design"
+  },
+  {
+    "name": "ckm:design-system",
+    "description": "Token architecture, component specifications, and slide generation. Three-layer tokens (primitive, semantic, component), CSS variables, spacing/typography scales, component specs, strategic slide creation.",
+    "tags": ["design-system", "tokens", "components"],
+    "source": ".claude/skills/ckm-design-system"
+  },
+  {
+    "name": "ckm:ui-styling",
+    "description": "Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based visual designs.",
+    "tags": ["ui", "styling", "tailwind"],
+    "source": ".claude/skills/ckm-ui-styling"
+  },
+  {
+    "name": "claude-api",
+    "description": "Build, debug, and optimize Claude API / Anthropic SDK apps. Apps built with this skill should include prompt caching. Also handles migrating existing Claude API code between Claude model versions.",
+    "tags": ["claude", "api", "anthropic"],
+    "source": ".claude/skills/claude-api"
+  },
+  {
+    "name": "continuous-learning-v2",
+    "description": "Instinct-based learning system that observes sessions via hooks, creates atomic instincts with confidence scoring, and evolves them into skills/commands/agents. v2.1 adds project-scoped instincts to prevent cross-project contamination.",
+    "tags": ["learning", "continuous", "instincts"],
+    "source": ".claude/skills/continuous-learning-v2"
+  },
+  {
+    "name": "cost-aware-llm-pipeline",
+    "description": "Cost optimization patterns for LLM API usage - model routing by task complexity, budget tracking, retry logic, and prompt caching.",
+    "tags": ["llm", "cost", "optimization"],
+    "source": ".claude/skills/cost-aware-llm-pipeline"
+  },
+  {
+    "name": "developing-genkit-python",
+    "description": "Develop AI-powered applications using Genkit in Python. Use when the user asks about Genkit, AI agents, flows, or tools in Python, or when encountering Genkit errors, import issues, or API problems.",
+    "tags": ["genkit", "python", "ai"],
+    "source": ".claude/skills/developing-genkit-python"
+  },
+  {
+    "name": "diagram-maker",
+    "description": "Create SVG/HTML or Excalidraw diagrams for concepts, architecture, flows, and whiteboards.",
+    "tags": ["diagram", "svg", "architecture"],
+    "source": ".claude/skills/diagram-maker"
+  },
+  {
+    "name": "find-skills",
+    "description": "Helps users discover and install agent skills when they ask questions like 'how do I do X', 'find a skill for X', 'is there a skill that can...', or express interest in extending capabilities.",
+    "tags": ["skills", "discovery", "install"],
+    "source": ".claude/skills/find-skills"
+  },
+  {
+    "name": "frontend-design",
+    "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications.",
+    "tags": ["frontend", "design", "ui"],
+    "source": ".claude/skills/frontend-design"
+  },
+  {
+    "name": "gemini",
+    "description": "Gemini CLI one-shot prompts, summaries, generation, skills, hooks, MCP, or Gemma routing.",
+    "tags": ["gemini", "google", "cli"],
+    "source": ".claude/skills/gemini"
+  },
+  {
+    "name": "gh-issues",
+    "description": "Fetch GitHub issues, select candidates, spawn background fix agents, open PRs, and optionally process PR review comments.",
+    "tags": ["github", "issues", "pr"],
+    "source": ".claude/skills/gh-issues"
+  },
+  {
+    "name": "github",
+    "description": "GitHub CLI for issues, PRs, CI/check logs, comments, reviews, releases, repos, and gh api queries.",
+    "tags": ["github", "cli", "pr"],
+    "source": ".claude/skills/github"
+  },
+  {
+    "name": "GitHub 镜像加速器",
+    "description": "配置 Git 使用镜像加速 GitHub 下载，特别适用于中国区用户和 WSL 环境",
+    "tags": ["git", "github", "mirror"],
+    "source": ".claude/skills/github-mirror-accelerator"
+  },
+  {
+    "name": "gitnexus-cli",
+    "description": "Use when the user needs to run GitNexus CLI commands like analyze/index a repo, check status, clean the index, generate a wiki, or list indexed repos.",
+    "tags": ["gitnexus", "cli", "index"],
+    "source": ".claude/skills/gitnexus-cli"
+  },
+  {
+    "name": "gitnexus-debugging",
+    "description": "Use when the user is debugging a bug, tracing an error, or asking why something fails.",
+    "tags": ["gitnexus", "debugging", "trace"],
+    "source": ".claude/skills/gitnexus-debugging"
+  },
+  {
+    "name": "gitnexus-exploring",
+    "description": "Use when the user asks how code works, wants to understand architecture, trace execution flows, or explore unfamiliar parts of the codebase.",
+    "tags": ["gitnexus", "exploring", "architecture"],
+    "source": ".claude/skills/gitnexus-exploring"
+  },
+  {
+    "name": "gitnexus-guide",
+    "description": "Use when the user asks about GitNexus itself - available tools, how to query the knowledge graph, MCP resources, graph schema, or workflow reference.",
+    "tags": ["gitnexus", "guide", "reference"],
+    "source": ".claude/skills/gitnexus-guide"
+  },
+  {
+    "name": "gitnexus-pr-review",
+    "description": "Use when the user wants to review a pull request, understand what a PR changes, assess risk of merging, or check for missing test coverage.",
+    "tags": ["gitnexus", "pr-review", "code-review"],
+    "source": ".claude/skills/gitnexus-pr-review"
+  },
+  {
+    "name": "gitnexus-refactoring",
+    "description": "Use when the user wants to rename, extract, split, move, or restructure code safely.",
+    "tags": ["gitnexus", "refactoring", "rename"],
+    "source": ".claude/skills/gitnexus-refactoring"
+  },
+  {
+    "name": "gog",
+    "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "tags": ["google", "workspace", "cli"],
+    "source": ".claude/skills/gog"
+  },
+  {
+    "name": "himalaya",
+    "description": "Himalaya CLI for IMAP/SMTP mail: list, read, search, compose, reply, forward, copy, move, delete.",
+    "tags": ["email", "imap", "cli"],
+    "source": ".claude/skills/himalaya"
+  },
+  {
+    "name": "image-edit",
+    "description": "Edit images on RunComfy - this skill is a smart router that matches the user's intent to the right edit model in the RunComfy catalog.",
+    "tags": ["image", "editing", "runcomfy"],
+    "source": ".claude/skills/image-edit"
+  },
+  {
+    "name": "insights-cn",
+    "description": "中文会话洞察报告生成器（优化版，支持多维度分析）",
+    "tags": ["insights", "analytics", "chinese"],
+    "source": ".claude/skills/insights-cn"
+  },
+  {
+    "name": "karpathy-guidelines",
+    "description": "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.",
+    "tags": ["guidelines", "best-practices", "coding"],
+    "source": ".claude/skills/karpathy-guidelines"
+  },
+  {
+    "name": "kb-batch-import",
+    "description": "Batch import all files from a folder into the knowledge base with AI analysis.",
+    "tags": ["knowledge", "batch", "import"],
+    "source": ".claude/skills/kb-batch-import"
+  },
+  {
+    "name": "kb-browse",
+    "description": "浏览AI知识库结构",
+    "tags": ["knowledge", "browse", "kb"],
+    "source": ".claude/skills/kb-browse"
+  },
+  {
+    "name": "kb-maintenance",
+    "description": "知识库定期维护（同步+重建索引+备份+清理）",
+    "tags": ["knowledge", "maintenance", "sync"],
+    "source": ".claude/skills/kb-maintenance"
+  },
+  {
+    "name": "kb-search",
+    "description": "统一检索知识库（Memory + KB Manager + AI回答）",
+    "tags": ["knowledge", "search", "kb"],
+    "source": ".claude/skills/kb-search"
+  },
+  {
+    "name": "keil",
+    "description": "Keil MDK 工程构建工具，用于扫描 .uvprojx/.uvmpw 工程、枚举 Target、执行 build/rebuild/clean 并解析构建日志，返回可供 jlink/openocd 复用的产物路径。",
+    "tags": ["keil", "embedded", "build"],
+    "source": ".claude/skills/keil"
+  },
+  {
+    "name": "ljg-word",
+    "description": "Deep-dive English word mastery tool. Deconstructs a single English word into core semantics and epiphany.",
+    "tags": ["english", "vocabulary", "learning"],
+    "source": ".claude/skills/ljg-word"
+  },
+  {
+    "name": "llm-patterns",
+    "description": "AI-first application patterns, LLM testing, prompt management",
+    "tags": ["llm", "patterns", "testing"],
+    "source": ".claude/skills/llm-patterns"
+  },
+  {
+    "name": "markitdown",
+    "description": "Convert files (PDF/Word/Excel/PPT/HTML/images/audio/video) to Markdown using Microsoft MarkItDown. For LLM text analysis pipelines.",
+    "tags": ["markdown", "conversion", "document"],
+    "source": ".claude/skills/markitdown"
+  },
+  {
+    "name": "mcporter",
+    "description": "List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.",
+    "tags": ["mcp", "tools", "servers"],
+    "source": ".claude/skills/mcporter"
+  },
+  {
+    "name": "meme-maker",
+    "description": "Search meme templates, suggest formats, and generate local or hosted image memes.",
+    "tags": ["meme", "image", "generator"],
+    "source": ".claude/skills/meme-maker"
+  },
+  {
+    "name": "nano-pdf",
+    "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "tags": ["pdf", "editing", "cli"],
+    "source": ".claude/skills/nano-pdf"
+  },
+  {
+    "name": "next-best-practices",
+    "description": "Next.js best practices - file conventions, RSC boundaries, data patterns, async APIs, metadata, error handling, route handlers, image/font optimization, bundling",
+    "tags": ["nextjs", "react", "best-practices"],
+    "source": ".claude/skills/next-best-practices"
+  },
+  {
+    "name": "node-inspect-debugger",
+    "description": "Debug Node.js with node inspect, --inspect, breakpoints, CDP, heap, and CPU profiles.",
+    "tags": ["nodejs", "debugging", "inspector"],
+    "source": ".claude/skills/node-inspect-debugger"
+  },
+  {
+    "name": "notion",
+    "description": "Notion CLI/API for pages, Markdown content, data sources, files, comments, search, Workers, and raw API calls.",
+    "tags": ["notion", "api", "productivity"],
+    "source": ".claude/skills/notion"
+  },
+  {
+    "name": "obsidian",
+    "description": "Work with Obsidian vaults using the official obsidian CLI: read/search/create/edit notes, tasks, links, properties, plugins.",
+    "tags": ["obsidian", "knowledge", "notes"],
+    "source": ".claude/skills/obsidian"
+  },
+  {
+    "name": "office-addin-workflow",
+    "description": "Office Add-in开发标准化工作流程——设计→实现→测试→修复→部署，一键启动全流程",
+    "tags": ["office", "addin", "workflow"],
+    "source": ".claude/skills/office-addin-workflow"
+  },
+  {
+    "name": "openai-whisper",
+    "description": "Local speech-to-text with the Whisper CLI (no API key).",
+    "tags": ["whisper", "speech", "audio"],
+    "source": ".claude/skills/openai-whisper"
+  },
+  {
+    "name": "openai-whisper-api",
+    "description": "OpenAI Audio Transcriptions API via curl; gpt-4o-transcribe, mini, diarize, or whisper-1.",
+    "tags": ["whisper", "api", "audio"],
+    "source": ".claude/skills/openai-whisper-api"
+  },
+  {
+    "name": "pptx",
+    "description": "Use this skill any time a .pptx file is involved in any way - as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file.",
+    "tags": ["pptx", "presentation", "slides"],
+    "source": ".claude/skills/pptx"
+  },
+  {
+    "name": "python-debugpy",
+    "description": "Debug Python with pdb, breakpoint(), post-mortem inspection, and debugpy remote attach.",
+    "tags": ["python", "debugging", "pdb"],
+    "source": ".claude/skills/python-debugpy"
+  },
+  {
+    "name": "python-testing-patterns",
+    "description": "Implement comprehensive testing strategies with pytest, fixtures, mocking, and test-driven development.",
+    "tags": ["python", "testing", "pytest"],
+    "source": ".claude/skills/python-testing-patterns"
+  },
+  {
+    "name": "receiving-code-review",
+    "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+    "tags": ["code-review", "feedback", "verification"],
+    "source": ".claude/skills/receiving-code-review"
+  },
+  {
+    "name": "remotion-best-practices",
+    "description": "Best practices for Remotion - Video creation in React",
+    "tags": ["remotion", "video", "react"],
+    "source": ".claude/skills/remotion-best-practices"
+  },
+  {
+    "name": "requesting-code-review",
+    "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+    "tags": ["code-review", "verification", "quality"],
+    "source": ".claude/skills/requesting-code-review"
+  },
+  {
+    "name": "sag",
+    "description": "ElevenLabs text-to-speech with mac-style say UX.",
+    "tags": ["tts", "audio", "elevenlabs"],
+    "source": ".claude/skills/sag"
+  },
+  {
+    "name": "search-searxng",
+    "description": "Search web via local searxng (Baidu/Bing/Sogou/Google).",
+    "tags": ["search", "web", "searxng"],
+    "source": ".claude/skills/search-searxng"
+  },
+  {
+    "name": "senior-ml-engineer",
+    "description": "ML engineering skill for productionizing models, building MLOps pipelines, and integrating LLMs. Covers model deployment, feature stores, drift monitoring, RAG systems, and cost optimization.",
+    "tags": ["ml", "mlops", "deployment"],
+    "source": ".claude/skills/senior-ml-engineer"
+  },
+  {
+    "name": "session-logs",
+    "description": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "tags": ["logs", "sessions", "analysis"],
+    "source": ".claude/skills/session-logs"
+  },
+  {
+    "name": "skill-creator",
+    "description": "Create, edit, audit, tidy, validate, or restructure AgentSkills and SKILL.md files.",
+    "tags": ["skills", "creation", "authoring"],
+    "source": ".claude/skills/skill-creator"
+  },
+  {
+    "name": "skill-stocktake",
+    "description": "Use when auditing Claude skills and commands for quality. Supports Quick Scan (changed skills only) and Full Stocktake modes with sequential subagent batch evaluation.",
+    "tags": ["skills", "audit", "quality"],
+    "source": ".claude/skills/skill-stocktake"
+  },
+  {
+    "name": "spike",
+    "description": "Run throwaway prototypes to validate feasibility, compare approaches, and report a verdict.",
+    "tags": ["prototype", "spike", "feasibility"],
+    "source": ".claude/skills/spike"
+  },
+  {
+    "name": "summarize",
+    "description": "Summarize or transcribe URLs, YouTube/videos, podcasts, articles, transcripts, PDFs, and local files.",
+    "tags": ["summarize", "transcription", "content"],
+    "source": ".claude/skills/summarize"
+  },
+  {
+    "name": "word-document-processor",
+    "description": "Comprehensive word document processing with full format support. Handles creation, editing, formatting preservation, tracked changes, and metadata management.",
+    "tags": ["word", "document", "processing"],
+    "source": ".claude/skills/word-document-processor"
+  }
+]

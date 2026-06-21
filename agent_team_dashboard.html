@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Team v3.0 - Architecture Dashboard</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --card: #1a1d27;
+  --border: #2a2d3a;
+  --accent: #6c5ce7;
+  --accent2: #00cec9;
+  --accent3: #fd79a8;
+  --accent4: #fdcb6e;
+  --text: #e2e8f0;
+  --text2: #a0aec0;
+  --green: #00b894;
+  --red: #ff6b6b;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:'Segoe UI',system-ui,sans-serif; overflow-x:hidden; }
+
+/* Header */
+.header {
+  text-align:center; padding:40px 20px 20px;
+  background:linear-gradient(135deg, rgba(108,92,231,0.15), rgba(0,206,201,0.1));
+  border-bottom:1px solid var(--border);
+}
+.header h1 { font-size:2.5em; background:linear-gradient(135deg,var(--accent),var(--accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.header p { color:var(--text2); margin-top:8px; font-size:1.1em; }
+
+/* Metrics bar */
+.metrics {
+  display:flex; justify-content:center; gap:40px; padding:20px;
+  background:var(--card); border-bottom:1px solid var(--border);
+  flex-wrap:wrap;
+}
+.metric { text-align:center; }
+.metric .num { font-size:2em; font-weight:700; color:var(--accent2); }
+.metric .label { color:var(--text2); font-size:0.85em; }
+
+/* Sections */
+.container { max-width:1400px; margin:0 auto; padding:20px; }
+.section { margin:30px 0; }
+.section-title {
+  font-size:1.4em; font-weight:600; margin-bottom:16px;
+  padding-left:12px; border-left:4px solid var(--accent);
+}
+
+/* Grid layouts */
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+@media(max-width:900px) { .grid-2,.grid-3,.grid-4 { grid-template-columns:1fr; } }
+
+/* Cards */
+.card {
+  background:var(--card); border:1px solid var(--border); border-radius:12px;
+  padding:20px; transition:all 0.3s;
+}
+.card:hover { border-color:var(--accent); transform:translateY(-2px); box-shadow:0 8px 24px rgba(108,92,231,0.15); }
+.card h3 { font-size:1.1em; margin-bottom:8px; display:flex; align-items:center; gap:8px; }
+.card p { color:var(--text2); font-size:0.9em; line-height:1.5; }
+
+/* Tags */
+.tag {
+  display:inline-block; padding:3px 10px; border-radius:20px;
+  font-size:0.75em; font-weight:600; margin:2px;
+}
+.tag-purple { background:rgba(108,92,231,0.2); color:#a29bfe; }
+.tag-cyan { background:rgba(0,206,201,0.2); color:#81ecec; }
+.tag-pink { background:rgba(253,121,168,0.2); color:#fab1a0; }
+.tag-yellow { background:rgba(253,203,110,0.2); color:#ffeaa7; }
+.tag-green { background:rgba(0,184,148,0.2); color:#55efc4; }
+
+/* Model pool */
+.model-card {
+  background:var(--card); border:1px solid var(--border); border-radius:10px;
+  padding:14px; text-align:center;
+}
+.model-card .name { font-weight:600; font-size:0.95em; }
+.model-card .speed { color:var(--accent2); font-size:0.8em; margin:4px 0; }
+.model-card .use { color:var(--text2); font-size:0.8em; }
+
+/* Agent cards */
+.agent-card {
+  background:var(--card); border:1px solid var(--border); border-radius:12px;
+  padding:16px; position:relative; overflow:hidden;
+}
+.agent-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:3px;
+}
+.agent-card.main::before { background:var(--accent); }
+.agent-card.secondary::before { background:var(--accent2); }
+.agent-card .agent-name { font-size:1.1em; font-weight:700; }
+.agent-card .agent-model { color:var(--accent2); font-size:0.85em; margin:4px 0; }
+.agent-card .agent-tools { display:flex; flex-wrap:wrap; gap:4px; margin-top:8px; }
+.agent-card .tool-tag {
+  background:rgba(255,255,255,0.06); padding:2px 8px; border-radius:4px;
+  font-size:0.7em; color:var(--text2);
+}
+
+/* Architecture flow */
+.flow {
+  display:flex; align-items:center; justify-content:center; gap:8px;
+  flex-wrap:wrap; padding:20px;
+}
+.flow-box {
+  background:var(--card); border:1px solid var(--border); border-radius:8px;
+  padding:12px 20px; text-align:center; min-width:120px;
+}
+.flow-box .flow-title { font-weight:600; font-size:0.9em; }
+.flow-box .flow-sub { color:var(--text2); font-size:0.75em; }
+.flow-arrow { color:var(--accent); font-size:1.5em; }
+
+/* Tool grid */
+.tool-item {
+  background:rgba(255,255,255,0.03); border:1px solid var(--border);
+  border-radius:6px; padding:8px 12px; font-size:0.8em;
+  display:flex; align-items:center; gap:6px;
+}
+.tool-dot { width:6px; height:6px; border-radius:50%; }
+
+/* Status badge */
+.status {
+  display:inline-flex; align-items:center; gap:4px;
+  padding:4px 12px; border-radius:20px; font-size:0.8em; font-weight:600;
+}
+.status-pass { background:rgba(0,184,148,0.2); color:var(--green); }
+.status-a { background:rgba(108,92,231,0.2); color:var(--accent); }
+
+/* Progress bar */
+.progress-bar { height:4px; background:var(--border); border-radius:2px; margin-top:8px; }
+.progress-fill { height:100%; border-radius:2px; background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+
+/* Animation */
+@keyframes fadeIn { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+.card,.model-card,.agent-card { animation:fadeIn 0.5s ease-out both; }
+.card:nth-child(2){animation-delay:0.05s} .card:nth-child(3){animation-delay:0.1s}
+.card:nth-child(4){animation-delay:0.15s} .card:nth-child(5){animation-delay:0.2s}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Agent Team v3.0</h1>
+  <p>Multi-Model Orchestration / Browser Intelligence / Knowledge Service</p>
+</div>
+
+<div class="metrics">
+  <div class="metric"><div class="num">42</div><div class="label">Tools</div></div>
+  <div class="metric"><div class="num">6</div><div class="label">Sub-Agents</div></div>
+  <div class="metric"><div class="num">10</div><div class="label">Models</div></div>
+  <div class="metric"><div class="num">530</div><div class="label">Tests</div></div>
+  <div class="metric"><div class="num">81</div><div class="label">System Tests</div></div>
+  <div class="metric"><div class="num">21.8K</div><div class="label">GitNexus Nodes</div></div>
+  <div class="metric"><div class="num">A</div><div class="label">Grade</div></div>
+  <div class="metric">
+    <span class="status status-pass">ALL PASS</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- Architecture Flow -->
+  <div class="section">
+    <div class="section-title">Architecture Flow</div>
+    <div class="flow">
+      <div class="flow-box">
+        <div class="flow-title">Claude Code</div>
+        <div class="flow-sub">REPL Entry</div>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-box">
+        <div class="flow-title">AgentLoop</div>
+        <div class="flow-sub">504 lines</div>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-box">
+        <div class="flow-title">ModelOrchestrator</div>
+        <div class="flow-sub">10 Models / Routing Cache</div>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-box">
+        <div class="flow-title">SubagentDispatcher</div>
+        <div class="flow-sub">6 Agents / 8 Modes</div>
+      </div>
+      <div class="flow-arrow">&rarr;</div>
+      <div class="flow-box">
+        <div class="flow-title">42 Tools</div>
+        <div class="flow-sub">27 Browser / 15 Core</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10 Model Pool -->
+  <div class="section">
+    <div class="section-title">10 Model Pool</div>
+    <div class="grid-4">
+      <div class="model-card"><div class="name">gemma-e2b</div><div class="speed">Ultra Fast</div><div class="use">Score 1 / Ultra-Light</div></div>
+      <div class="model-card"><div class="name">gemma-e4b</div><div class="speed">Fast</div><div class="use">Score 1 / Light</div></div>
+      <div class="model-card"><div class="name">step-3.5-flash</div><div class="speed">Fast</div><div class="use">Light Tasks</div></div>
+      <div class="model-card" style="border-color:var(--accent)"><div class="name">step-3.7-flash</div><div class="speed">350 tok/s</div><div class="use">Sub-Agent Default / SWE-bench 74.4%</div></div>
+      <div class="model-card"><div class="name">minimax-m2.7</div><div class="speed">Medium</div><div class="use">Agent Teams Native</div></div>
+      <div class="model-card"><div class="name">mistral-nemotron</div><div class="speed">Medium</div><div class="use">HumanEval 92.68%</div></div>
+      <div class="model-card"><div class="name">qwen3-coder</div><div class="speed">Medium</div><div class="use">Code Specialist / 200K CTX</div></div>
+      <div class="model-card"><div class="name">llama-maverick</div><div class="speed">Fast</div><div class="use">1M Context / Multimodal</div></div>
+      <div class="model-card"><div class="name">mistral-large-3</div><div class="speed">Slow</div><div class="use">675B / Native Function Calling</div></div>
+      <div class="model-card"><div class="name">glm-5.1</div><div class="speed">Slow</div><div class="use">754B / Long Chain Reasoning</div></div>
+    </div>
+  </div>
+
+  <!-- 6 Sub-Agents -->
+  <div class="section">
+    <div class="section-title">6 Sub-Agents</div>
+    <div class="grid-3">
+      <div class="agent-card secondary">
+        <div class="agent-name">xiaohuangmen</div>
+        <div class="agent-model">step-3.7-flash</div>
+        <p>Lightweight read-only / Quick lookups</p>
+        <div class="agent-tools">
+          <span class="tool-tag">read_file</span><span class="tool-tag">glob</span>
+          <span class="tool-tag">grep</span><span class="tool-tag">web_fetch</span>
+        </div>
+      </div>
+      <div class="agent-card secondary">
+        <div class="agent-name">sili_suitang</div>
+        <div class="agent-model">step-3.7-flash</div>
+        <p>Document reading / KB search</p>
+        <div class="agent-tools">
+          <span class="tool-tag">read_file</span><span class="tool-tag">glob</span>
+          <span class="tool-tag">grep</span><span class="tool-tag">web_fetch</span>
+          <span class="tool-tag">load_skill</span><span class="tool-tag">kb_search</span>
+        </div>
+      </div>
+      <div class="agent-card secondary">
+        <div class="agent-name">dongchang_tanshi</div>
+        <div class="agent-model">step-3.7-flash</div>
+        <p>Web research / AI platforms</p>
+        <div class="agent-tools">
+          <span class="tool-tag">web_fetch</span><span class="tool-tag">glob</span>
+          <span class="tool-tag">grep</span><span class="tool-tag">load_skill</span>
+          <span class="tool-tag">ask_doubao</span><span class="tool-tag">ask_deepseek</span>
+          <span class="tool-tag">ask_bing</span><span class="tool-tag">ask_ouyi</span>
+          <span class="tool-tag">smart_ask</span><span class="tool-tag">browser_status</span>
+        </div>
+      </div>
+      <div class="agent-card secondary">
+        <div class="agent-name">shangbao_dianbu</div>
+        <div class="agent-model">mistral-nemotron</div>
+        <p>Quality check / Code review</p>
+        <div class="agent-tools">
+          <span class="tool-tag">read_file</span><span class="tool-tag">glob</span>
+          <span class="tool-tag">grep</span>
+        </div>
+      </div>
+      <div class="agent-card main">
+        <div class="agent-name">neiguan_yingzao</div>
+        <div class="agent-model">minimax-m2.7</div>
+        <p>Engineering execution / File operations</p>
+        <div class="agent-tools">
+          <span class="tool-tag">read_file</span><span class="tool-tag">write_file</span>
+          <span class="tool-tag">edit_file</span><span class="tool-tag">run_command</span>
+          <span class="tool-tag">glob</span><span class="tool-tag">grep</span>
+          <span class="tool-tag">create_backup_branch</span><span class="tool-tag">git_diff</span>
+          <span class="tool-tag">git_revert</span>
+        </div>
+      </div>
+      <div class="agent-card main">
+        <div class="agent-name">liubu_liulanqi</div>
+        <div class="agent-model">step-3.7-flash</div>
+        <p>Browser operations / 25 tools / Multi-modal</p>
+        <div class="agent-tools">
+          <span class="tool-tag">navigate</span><span class="tool-tag">click</span>
+          <span class="tool-tag">type_text</span><span class="tool-tag">scroll</span>
+          <span class="tool-tag">screenshot</span><span class="tool-tag">get_text</span>
+          <span class="tool-tag">ocr</span><span class="tool-tag">exec_js</span>
+          <span class="tool-tag">multi_tab</span><span class="tool-tag">wait_for</span>
+          <span class="tool-tag">fill_form</span><span class="tool-tag">upload</span>
+          <span class="tool-tag">cookie</span><span class="tool-tag">batch_js</span>
+          <span class="tool-tag">smart_ask</span><span class="tool-tag">page_monitor</span>
+          <span class="tool-tag">+9 more</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 42 Tools by Category -->
+  <div class="section">
+    <div class="section-title">42 Tools by Category</div>
+    <div class="grid-2">
+      <div class="card">
+        <h3><span class="tag tag-purple">Browser</span> 27 Tools</h3>
+        <div class="grid-3" style="gap:6px">
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent)"></div>navigate</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent)"></div>click_element</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent)"></div>type_text</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent)"></div>scroll_page</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent)"></div>exec_js_tool</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent)"></div>multi_tab</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent)"></div>wait_for</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent)"></div>fill_form</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent)"></div>upload_file</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent)"></div>manage_cookie</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent2)"></div>batch_js</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent3)"></div>screenshot_analyze</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent3)"></div>get_page_text</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent3)"></div>get_page_ocr</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent4)"></div>smart_ask</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent4)"></div>ask_doubao</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent4)"></div>ask_deepseek</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent4)"></div>ask_bing</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent4)"></div>ask_ouyi</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent4)"></div>browser_status</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--green)"></div>screenshot_and_ask</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--green)"></div>page_monitor</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--text2)"></div>start/end session</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--text2)"></div>session_memory</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--text2)"></div>download_file</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--text2)"></div>wait_for_element</div>
+        </div>
+      </div>
+      <div class="card">
+        <h3><span class="tag tag-cyan">Core</span> 15 Tools</h3>
+        <div class="grid-2" style="gap:6px">
+          <div class="tool-item"><div class="tool-dot" style="background:var(--green)"></div>read_file</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--green)"></div>write_file</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--green)"></div>edit_file</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--green)"></div>glob</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--green)"></div>grep</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent2)"></div>run_command</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent2)"></div>web_fetch</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent2)"></div>search</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent3)"></div>list_skills</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent3)"></div>load_skill</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent4)"></div>git_log</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent4)"></div>git_diff</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent4)"></div>git_revert</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent4)"></div>create_backup</div>
+          <div class="tool-item"><div class="tool-dot" style="background:var(--accent)"></div>deepwiki_*</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core Systems -->
+  <div class="section">
+    <div class="section-title">Core Systems</div>
+    <div class="grid-3">
+      <div class="card">
+        <h3><span class="tag tag-purple">Routing</span></h3>
+        <p>10-model complexity scoring with routing cache. Fallback: step-3.7 &rarr; nemotron &rarr; minimax on 502.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div>
+      </div>
+      <div class="card">
+        <h3><span class="tag tag-cyan">Memory</span></h3>
+        <p>3-layer memory: working + episodic + long-term. Auto-compression on context overflow.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width:90%"></div></div>
+      </div>
+      <div class="card">
+        <h3><span class="tag tag-pink">Knowledge</span></h3>
+        <p>DeepWiki 325K project index + KB search + KnowledgeService unified API.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width:85%"></div></div>
+      </div>
+      <div class="card">
+        <h3><span class="tag tag-yellow">API Pool</span></h3>
+        <p>10 keys / per-key rate limiting / account 60 req/min / project sub-pools for 3 parallel projects.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width:95%"></div></div>
+      </div>
+      <div class="card">
+        <h3><span class="tag tag-green">Tool Cache</span></h3>
+        <p>@cached(ttl) decorator. browser_status 30s / deepwiki 300s / page_text 10s. Thread-safe.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width:80%"></div></div>
+      </div>
+      <div class="card">
+        <h3><span class="tag tag-purple">Event Bus</span></h3>
+        <p>Decoupled publish/subscribe for component communication. Thread-safe event dispatching.</p>
+        <div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8 Dispatch Modes -->
+  <div class="section">
+    <div class="section-title">8 Dispatch Modes</div>
+    <div class="grid-4">
+      <div class="card" style="text-align:center"><h3 style="justify-content:center">Serial</h3><p>Sequential execution</p></div>
+      <div class="card" style="text-align:center"><h3 style="justify-content:center">Parallel</h3><p>Concurrent dispatch</p></div>
+      <div class="card" style="text-align:center"><h3 style="justify-content:center">Handoff</h3><p>Agent-to-agent transfer</p></div>
+      <div class="card" style="text-align:center"><h3 style="justify-content:center">Approval</h3><p>Human-in-the-loop</p></div>
+      <div class="card" style="text-align:center"><h3 style="justify-content:center">Replan</h3><p>Dynamic re-planning</p></div>
+      <div class="card" style="text-align:center"><h3 style="justify-content:center">Iterative Refine</h3><p>Writer + Reviewer loop</p></div>
+      <div class="card" style="text-align:center"><h3 style="justify-content:center">Kanban</h3><p>Task board tracking</p></div>
+      <div class="card" style="text-align:center"><h3 style="justify-content:center">LLM Select</h3><p>Model-driven routing</p></div>
+    </div>
+  </div>
+
+  <!-- File Structure -->
+  <div class="section">
+    <div class="section-title">Project Structure</div>
+    <div class="card">
+      <pre style="color:var(--text2);font-size:0.85em;line-height:1.6;overflow-x:auto">
+agent/
+  loop.py (504)           AgentLoop core
+  model_orchestrator.py   10-model routing + cache
+  llm_client.py (444)     LLM client with retry
+  memory.py (338)         3-layer memory
+  knowledge_service.py    KB + DeepWiki
+  event_bus.py            Publish/subscribe
+  team_store.py (417)     Team state
+  config.py               Configuration
+  tools/
+    tool_registry.py      @tool + @cached decorator
+    file_tools.py         read/write/edit/glob/grep
+    shell_tools.py        run_command
+    search_tools.py       search
+    git_tools.py          git operations
+    deepwiki_tools.py     DeepWiki index
+    skill_tools.py        skill management
+    todo_tools.py         task management
+    web_tools.py          web_fetch
+    browser_tools.py      facade (27 tools)
+    browser/
+      advanced.py (556)   JS/multi-tab/wait/form/cookie/batch
+      ai_search.py        4-platform AI federation
+      intelligence.py     screenshot+AI / page monitor
+      page.py             CDP page operations
+      browser_pool.py     connection pool
+      client.py           CDP client
+      session.py          session management
+      analysis.py         multimodal analysis
+      utils.py            shared utilities
+    dispatch/
+      parallel_core.py    SubagentDispatcher (1136)
+      approval.py         approval mode
+      handoff.py          handoff mode
+      refine.py           iterative refine
+  subagents/
+    registry.py           6 sub-agent definitions
+  kb/
+    commands/             9 KB command modules
+    daemon_core.py        daemon PID/health
+    daemon_startup.py     OS auto-start
+    daemon_logging.py     logging helpers
+    kb_daemon.py          facade + CLI
+  state/
+    task_plan.py          task planning
+    task_state.py         state management
+      </pre>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:40px;color:var(--text2);font-size:0.85em">
+    <p>Agent Team v3.0 | 530 Unit Tests + 81 System Tests | GitNexus 21,840 Nodes</p>
+    <p style="margin-top:4px">Built with Python 3.11 | Claude Code | NVIDIA API</p>
+  </div>
+
+</div>
+</body>
+</html>

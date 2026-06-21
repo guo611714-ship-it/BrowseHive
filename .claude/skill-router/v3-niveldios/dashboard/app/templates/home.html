@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% block title %}Mission Control — Overview{% endblock %}
+
+{% block content %}
+<section class="mb-8">
+  <div class="flex items-center justify-between mb-4">
+    <div>
+      <h1 class="text-2xl text-nasa-accent">Mission Control</h1>
+      <p class="text-sm text-nasa-muted">Skill router · últimos 7 días · live polling cada 15s</p>
+    </div>
+    <div class="flex gap-2">
+      <button hx-post="/actions/rebuild-embeddings" hx-swap="none"
+              class="px-3 py-1.5 text-xs mono border border-nasa-border bg-nasa-panel hover:bg-nasa-border rounded">
+        rebuild embeddings
+      </button>
+      <button hx-post="/actions/evolve?dry_run=true" hx-swap="none"
+              class="px-3 py-1.5 text-xs mono border border-nasa-cyan/40 bg-nasa-panel text-nasa-cyan hover:bg-nasa-cyan/10 rounded">
+        router-evolve --dry-run
+      </button>
+    </div>
+  </div>
+
+  <div id="overview-cards"
+       hx-get="/partials/overview-cards"
+       hx-trigger="every 15s"
+       hx-swap="innerHTML">
+    {% include "partials/overview_cards.html" %}
+  </div>
+</section>
+
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+    <h2 class="text-sm uppercase tracking-wider text-nasa-cyan mb-3">Activaciones diarias (14d)</h2>
+    <canvas id="dailyChart" height="120"></canvas>
+  </div>
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+    <h2 class="text-sm uppercase tracking-wider text-nasa-cyan mb-3">Top clusters (7d)</h2>
+    {% if summary.top_clusters %}
+    <table class="w-full text-sm">
+      <thead><tr><th>cluster</th><th class="text-right">activations</th></tr></thead>
+      <tbody>
+        {% for cid, n in summary.top_clusters %}
+        <tr><td><a href="/clusters/{{ cid }}" class="mono">{{ cid }}</a></td><td class="text-right mono">{{ n }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p class="text-sm text-nasa-muted">Sin datos — el router todavía no ha registrado eventos.</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+    <h2 class="text-sm uppercase tracking-wider text-nasa-cyan mb-3">Gap queries (prompts sin cluster)</h2>
+    {% if gap.samples %}
+    <ul class="space-y-2 text-sm">
+      {% for s in gap.samples %}
+      <li class="border-l-2 border-nasa-warn pl-3">
+        <div class="text-xs text-nasa-muted mono">{{ s.ts }}</div>
+        <div class="text-nasa-warn">{{ s.excerpt }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="text-sm text-nasa-muted">Sin gaps — todos los prompts matchean cluster.</p>
+    {% endif %}
+  </div>
+  <div class="border border-nasa-border bg-nasa-panel rounded-md p-4">
+    <h2 class="text-sm uppercase tracking-wider text-nasa-cyan mb-3">Skills más sugeridas (7d)</h2>
+    {% if summary.top_skills_suggested %}
+    <table class="w-full text-sm">
+      <thead><tr><th>skill</th><th class="text-right">sug</th><th class="text-right">inv</th></tr></thead>
+      <tbody>
+        {% set invoked_map = dict(summary.top_skills_invoked) %}
+        {% for s, n in summary.top_skills_suggested %}
+        <tr>
+          <td class="mono text-xs">{{ s }}</td>
+          <td class="text-right mono">{{ n }}</td>
+          <td class="text-right mono text-nasa-accent">{{ invoked_map.get(s, 0) }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p class="text-sm text-nasa-muted">Sin sugerencias registradas.</p>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  const dailyData = {{ daily | tojson }};
+  const labels = dailyData.map(d => d.date.slice(5));
+  const counts = dailyData.map(d => d.count);
+  const ctx = document.getElementById('dailyChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'cluster activations',
+        data: counts,
+        borderColor: '#00ff9c',
+        backgroundColor: 'rgba(0,255,156,0.1)',
+        tension: 0.3,
+        pointRadius: 3,
+        fill: true,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      plugins: { legend: { labels: { color: '#9aa6b4' } } },
+      scales: {
+        x: { ticks: { color: '#5b6776', font: { family: 'JetBrains Mono', size: 10 } }, grid: { color: '#1c2530' } },
+        y: { ticks: { color: '#5b6776', font: { family: 'JetBrains Mono', size: 10 } }, grid: { color: '#1c2530' }, beginAtZero: true }
+      }
+    }
+  });
+</script>
+{% endblock %}

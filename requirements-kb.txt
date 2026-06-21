@@ -1,0 +1,17 @@
+# AI知识库系统 - 额外依赖
+# 核心依赖见 requirements.txt
+
+# P0: 自动同步
+watchdog>=4.0.0
+
+# P0: 测试框架
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# P1: 本地缓存（SQLite为Python内置，无需额外依赖）
+
+# 可选: PDF解析
+# pypdf>=3.0.0
+
+# 可选: DOCX解析
+# python-docx>=0.8.11

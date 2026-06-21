@@ -1,0 +1,178 @@
+<!doctype html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI 工作流系统架构图</title>
+<style>
+  body { margin:0; background:#0f172a; color:#e5e7eb; font:14px/1.4 "Microsoft YaHei","PingFang SC",ui-sans-serif,system-ui,sans-serif; }
+  main { max-width:1200px; margin:24px auto; padding:0 20px; }
+  svg { width:100%; height:auto; display:block; }
+</style>
+<main>
+<svg viewBox="0 0 1100 780" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="a" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#64748b"/></marker>
+    <marker id="as" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="6" markerHeight="5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#475569"/></marker>
+  </defs>
+
+  <!-- 标题 -->
+  <text x="550" y="32" text-anchor="middle" font-size="22" font-weight="700" fill="#e5e7eb">AI 工作流系统架构图</text>
+  <text x="550" y="52" text-anchor="middle" font-size="12" fill="#94a3b8">Agent Team + AI-Chat MCP + 浏览器自动化</text>
+
+  <!-- ===== 顶层：用户 ===== -->
+  <rect x="420" y="72" width="260" height="44" rx="8" fill="#1e40af" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="550" y="100" text-anchor="middle" font-size="14" font-weight="600" fill="#fff">用户 / Claude Code CLI</text>
+  <line x1="550" y1="116" x2="550" y2="152" stroke="#64748b" stroke-width="1.8" marker-end="url(#a)"/>
+
+  <!-- ===== 中间层：Agent Team ===== -->
+  <rect x="40" y="158" width="310" height="270" rx="12" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="8 4"/>
+  <text x="195" y="182" text-anchor="middle" font-size="13" font-weight="600" fill="#22c55e">Agent Team（Python 多智能体）</text>
+
+  <rect x="60" y="198" width="115" height="36" rx="7" fill="#166534" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="117" y="221" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">领导 Lead</text>
+  <rect x="195" y="198" width="115" height="36" rx="7" fill="#166534" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="252" y="221" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">工程师 Coder</text>
+  <rect x="60" y="244" width="115" height="36" rx="7" fill="#166534" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="117" y="267" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">研究员</text>
+  <rect x="195" y="244" width="115" height="36" rx="7" fill="#166534" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="252" y="267" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">审查员</text>
+  <rect x="127" y="290" width="115" height="36" rx="7" fill="#166534" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="185" y="313" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">阅读员</text>
+
+  <text x="195" y="348" text-anchor="middle" font-size="10" fill="#86efac">5 类子代理并发派遣</text>
+
+  <rect x="70" y="360" width="250" height="30" rx="6" fill="#1e3a5f" stroke="#60a5fa" stroke-width="1"/>
+  <text x="195" y="380" text-anchor="middle" font-size="10" fill="#93c5fd">LLMClient → DeepSeek / Anthropic / OpenAI</text>
+
+  <!-- ===== 中间层：AI-Chat MCP Server ===== -->
+  <rect x="390" y="158" width="310" height="270" rx="12" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="8 4"/>
+  <text x="545" y="182" text-anchor="middle" font-size="13" font-weight="600" fill="#a855f7">AI-Chat MCP 服务器（FastMCP）</text>
+
+  <rect x="410" y="198" width="130" height="36" rx="7" fill="#581c87" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="475" y="221" text-anchor="middle" font-size="12" font-weight="600" fill="#e9d5ff">智能路由</text>
+  <rect x="560" y="198" width="130" height="36" rx="7" fill="#581c87" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="625" y="221" text-anchor="middle" font-size="12" font-weight="600" fill="#e9d5ff">批量并行</text>
+
+  <rect x="410" y="244" width="280" height="44" rx="7" fill="#581c87" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="550" y="264" text-anchor="middle" font-size="12" font-weight="600" fill="#e9d5ff">ChatEngine 聊天引擎</text>
+  <text x="550" y="282" text-anchor="middle" font-size="10" fill="#c4b5fd">缓存 / 限流 / 重试 / 去重 / 并发合并</text>
+
+  <rect x="410" y="298" width="88" height="26" rx="5" fill="#3b0764" stroke="#7c3aed" stroke-width="1"/>
+  <text x="454" y="316" text-anchor="middle" font-size="10" fill="#c4b5fd">响应缓存</text>
+  <rect x="506" y="298" width="88" height="26" rx="5" fill="#3b0764" stroke="#7c3aed" stroke-width="1"/>
+  <text x="550" y="316" text-anchor="middle" font-size="10" fill="#c4b5fd">消息去重</text>
+  <rect x="602" y="298" width="88" height="26" rx="5" fill="#3b0764" stroke="#7c3aed" stroke-width="1"/>
+  <text x="646" y="316" text-anchor="middle" font-size="10" fill="#c4b5fd">限流+重试</text>
+
+  <rect x="410" y="334" width="280" height="26" rx="5" fill="#3b0764" stroke="#7c3aed" stroke-width="1"/>
+  <text x="550" y="352" text-anchor="middle" font-size="10" fill="#c4b5fd">健康监控：磁盘 / 网络延迟 / 评分 0-100</text>
+
+  <rect x="410" y="368" width="280" height="24" rx="5" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="550" y="385" text-anchor="middle" font-size="10" fill="#94a3b8">配置热重载：ConfigWatcher JSON 轮询</text>
+
+  <!-- ===== 中间层：AIRouter ===== -->
+  <rect x="740" y="158" width="200" height="52" rx="8" fill="#92400e" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="840" y="182" text-anchor="middle" font-size="13" font-weight="600" fill="#fef3c7">AIRouter 统一路由</text>
+  <text x="840" y="200" text-anchor="middle" font-size="10" fill="#fde68a">统一 API 路由器</text>
+
+  <rect x="740" y="222" width="200" height="180" rx="10" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="840" y="242" text-anchor="middle" font-size="10" fill="#fbbf24">平台客户端</text>
+
+  <rect x="755" y="252" width="170" height="24" rx="4" fill="#78350f" stroke="#d97706" stroke-width="1"/>
+  <text x="840" y="269" text-anchor="middle" font-size="10" fill="#fef3c7">deepseek_client.py</text>
+  <rect x="755" y="282" width="170" height="24" rx="4" fill="#78350f" stroke="#d97706" stroke-width="1"/>
+  <text x="840" y="299" text-anchor="middle" font-size="10" fill="#fef3c7">doubao_client.py</text>
+  <rect x="755" y="312" width="170" height="24" rx="4" fill="#78350f" stroke="#d97706" stroke-width="1"/>
+  <text x="840" y="329" text-anchor="middle" font-size="10" fill="#fef3c7">volcengine_client.py</text>
+  <rect x="755" y="342" width="170" height="24" rx="4" fill="#78350f" stroke="#d97706" stroke-width="1"/>
+  <text x="840" y="359" text-anchor="middle" font-size="10" fill="#fef3c7">anthropic_client.py</text>
+
+  <!-- 系统间箭头 -->
+  <path d="M350 290 Q375 280 395 260" fill="none" stroke="#475569" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#as)"/>
+  <path d="M700 260 L740 190" fill="none" stroke="#475569" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#as)"/>
+
+  <!-- ===== 底层：浏览器层 ===== -->
+  <rect x="40" y="460" width="230" height="50" rx="8" fill="#164e63" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="155" y="482" text-anchor="middle" font-size="13" font-weight="600" fill="#67e8f9">browser-harness</text>
+  <text x="155" y="500" text-anchor="middle" font-size="10" fill="#a5f3fc">CDP 直连 Chrome 浏览器</text>
+
+  <rect x="300" y="460" width="160" height="50" rx="8" fill="#1e3a5f" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="380" y="482" text-anchor="middle" font-size="13" font-weight="600" fill="#93c5fd">Chrome CDP</text>
+  <text x="380" y="500" text-anchor="middle" font-size="10" fill="#bfdbfe">远程调试协议</text>
+
+  <line x1="270" y1="485" x2="300" y2="485" stroke="#22d3ee" stroke-width="1.8" marker-end="url(#a)"/>
+  <path d="M475 428 L155 460" fill="none" stroke="#a855f7" stroke-width="1.8" marker-end="url(#a)"/>
+
+  <!-- ===== 底层：4 大 AI 平台 ===== -->
+  <rect x="50" y="555" width="140" height="50" rx="8" fill="#7c2d12" stroke="#f97316" stroke-width="1.5"/>
+  <text x="120" y="576" text-anchor="middle" font-size="12" font-weight="600" fill="#fed7aa">豆包 Doubao</text>
+  <text x="120" y="594" text-anchor="middle" font-size="10" fill="#fdba74">中文 / 写作 / 联网</text>
+
+  <rect x="205" y="555" width="140" height="50" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="275" y="576" text-anchor="middle" font-size="12" font-weight="600" fill="#bfdbfe">DeepSeek</text>
+  <text x="275" y="594" text-anchor="middle" font-size="10" fill="#93c5fd">代码 / 推理 / 数学</text>
+
+  <rect x="360" y="555" width="140" height="50" rx="8" fill="#7c2d12" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="430" y="576" text-anchor="middle" font-size="12" font-weight="600" fill="#fecaca">火山引擎</text>
+  <text x="430" y="594" text-anchor="middle" font-size="10" fill="#fca5a5">企业级 / AI Agents</text>
+
+  <rect x="515" y="555" width="140" height="50" rx="8" fill="#581c87" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="585" y="576" text-anchor="middle" font-size="12" font-weight="600" fill="#e9d5ff">欧亿AI Ouyi</text>
+  <text x="585" y="594" text-anchor="middle" font-size="10" fill="#d8b4fe">绘图 / 思维导图</text>
+
+  <path d="M380 510 L120 555" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#a)"/>
+  <path d="M380 510 L275 555" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#a)"/>
+  <path d="M380 510 L430 555" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#a)"/>
+  <path d="M380 510 L585 555" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#a)"/>
+
+  <!-- ===== 底层：记忆系统 ===== -->
+  <rect x="700" y="460" width="200" height="50" rx="8" fill="#713f12" stroke="#eab308" stroke-width="1.5"/>
+  <text x="800" y="481" text-anchor="middle" font-size="13" font-weight="600" fill="#fef08a">记忆系统</text>
+  <text x="800" y="499" text-anchor="middle" font-size="10" fill="#fde047">工作记忆 / 情景记忆 / 长期记忆</text>
+
+  <rect x="700" y="522" width="92" height="26" rx="5" fill="#422006" stroke="#a16207" stroke-width="1"/>
+  <text x="746" y="540" text-anchor="middle" font-size="10" fill="#fde047">工作记忆</text>
+  <rect x="800" y="522" width="100" height="26" rx="5" fill="#422006" stroke="#a16207" stroke-width="1"/>
+  <text x="850" y="540" text-anchor="middle" font-size="10" fill="#fde047">情景记忆</text>
+
+  <!-- ===== 底层：配置系统 ===== -->
+  <rect x="700" y="560" width="200" height="44" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+  <text x="800" y="580" text-anchor="middle" font-size="12" font-weight="600" fill="#cbd5e1">配置系统 config.py</text>
+  <text x="800" y="597" text-anchor="middle" font-size="10" fill="#94a3b8">热重载 / JSON 轮询</text>
+
+  <path d="M700 485 L690 415" fill="none" stroke="#eab308" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#as)"/>
+  <path d="M700 582 L690 430" fill="none" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#as)"/>
+
+  <!-- 数据流标注 -->
+  <text x="80" y="448" font-size="10" fill="#64748b">工具派遣</text>
+  <text x="575" y="448" font-size="10" fill="#64748b">浏览器操控</text>
+  <text x="330" y="540" font-size="10" fill="#64748b">CDP 通信</text>
+
+  <!-- ===== 图例 ===== -->
+  <rect x="40" y="630" width="900" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="60" y="660" font-size="12" font-weight="600" fill="#e5e7eb">图例：</text>
+
+  <rect x="120" y="648" width="18" height="10" rx="3" fill="#1e40af" stroke="#3b82f6"/>
+  <text x="144" y="658" font-size="10" fill="#e5e7eb">用户入口</text>
+
+  <rect x="210" y="648" width="18" height="10" rx="3" fill="#166534" stroke="#22c55e"/>
+  <text x="234" y="658" font-size="10" fill="#e5e7eb">智能体团队</text>
+
+  <rect x="320" y="648" width="18" height="10" rx="3" fill="#581c87" stroke="#a855f7"/>
+  <text x="344" y="658" font-size="10" fill="#e5e7eb">MCP 服务</text>
+
+  <rect x="410" y="648" width="18" height="10" rx="3" fill="#92400e" stroke="#f59e0b"/>
+  <text x="434" y="658" font-size="10" fill="#e5e7eb">API 路由</text>
+
+  <rect x="500" y="648" width="18" height="10" rx="3" fill="#164e63" stroke="#22d3ee"/>
+  <text x="524" y="658" font-size="10" fill="#e5e7eb">浏览器层</text>
+
+  <rect x="590" y="648" width="18" height="10" rx="3" fill="#713f12" stroke="#eab308"/>
+  <text x="614" y="658" font-size="10" fill="#e5e7eb">记忆系统</text>
+
+  <line x1="690" y1="653" x2="718" y2="653" stroke="#64748b" stroke-width="1.8" marker-end="url(#a)"/>
+  <text x="726" y="658" font-size="10" fill="#e5e7eb">同步调用</text>
+
+  <line x1="790" y1="653" x2="818" y2="653" stroke="#475569" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#as)"/>
+  <text x="826" y="658" font-size="10" fill="#e5e7eb">异步/间接</text>
+</svg>
+</main>

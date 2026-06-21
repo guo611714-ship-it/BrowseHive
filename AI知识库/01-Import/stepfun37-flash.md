@@ -1,0 +1,109 @@
+---
+title: "stepfun3.7-flash"
+category: "ai"
+date: "2026-06-01"
+source: "kb-manager batch-import"
+---
+
+# stepfun3.7-flash
+
+Step 3.7 Flash
+Description
+Step-3.7-Flash is a StepFun vision-language model built on Step 3.5 Flash with additional vision capability for native multimodal, agentic, and coding-related use cases. The model is intended to process text and image inputs and produce text outputs, with emphasis on image understanding, fast throughput, and tool-use workflows.
+
+This model is ready for commercial/non-commercial use.
+
+Third-Party Community Consideration:
+This model is not owned or developed by NVIDIA. This model has been developed and built to a third-party's requirements for this application and use case; see link to Non-NVIDIA Step-3.7-Flash Model Card.
+
+License and Terms of Use:
+GOVERNING TERMS: The trial service is governed by the NVIDIA API Trial Terms of Service; and use of this model is governed by the NVIDIA Open Model Agreement. Additional Information: Apache 2.0 License.
+
+Deployment Geography:
+Global
+
+Use Case:
+Use Case: Step-3.7-Flash is intended for multimodal understanding, agentic workflow support, coding and frontend-generation workflows, tool calling, and GUI-oriented tasks that use text, screenshots, or images as input.
+
+Key Features:
+
+Sparse MoE Efficiency: 196B parameters with only ~11B active per token, combining elite intelligence with 11B-class inference speed
+MTP-3 Acceleration: 3-way Multi-Token Prediction enables 100-300 tok/s throughput, peaking at 350 tok/s for coding
+Efficient Long Context: 256K context window using 3:1 Sliding Window Attention ratio for cost-efficient processing
+Agentic Mastery: 74.4% on SWE-bench Verified, 51.0% on Terminal-Bench 2.0, 88.2 on τ²-Bench
+Release Date:
+Build.NVIDIA.com: 05/28/2026 via link
+Huggingface: 05/28/2026 via link
+
+Reference(s):
+Step-3.7-Flash Model Card
+Model Architecture:
+Architecture Type: Transformer
+Network Architecture: Mixture-of-Experts
+Total Parameters: 198B
+Active Parameters: Approximately 11B per token
+Text backbone based on Step 3.5 Flash
+
+Input:
+Input Types: Text, Image
+Input Formats: String, Red, Green, Blue (RGB)
+Input Parameters: One-Dimensional (1D), Two-Dimensional (2D)
+Other Input Properties: The vision module uses an image size of 728x728 pixels.
+Input Context Length (ISL): 256k
+
+Output:
+Output Types: Text
+Output Format: String
+Output Parameters: One-Dimensional (1D)
+Other Output Properties: None
+
+Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated systems. By leveraging NVIDIA's hardware (e.g. GPU cores) and software frameworks (e.g., CUDA libraries), the model achieves faster training and inference times compared to CPU-only solutions.
+
+Software Integration:
+Runtime Engines:
+
+vLLM
+SGLang
+Supported Hardware:
+
+NVIDIA Blackwell: B200, B100, GB200
+NVIDIA Hopper: H100, H200
+Preferred Operating Systems: Linux
+
+The integration of foundation and fine-tuned models into AI systems requires additional testing using use-case-specific data to ensure safe and effective deployment. Following the V-model methodology, iterative testing and validation at both unit and system levels are essential to mitigate risks, meet technical and functional requirements, and ensure compliance with safety and ethical standards before deployment.
+
+Model Version(s)
+Step-3.7-Flash v1.0
+
+Training, Testing, and Evaluation Datasets:
+Training Dataset
+Data Modality: Text, Image
+Image Training Data Size: Undisclosed
+Text Training Data Size: Undisclosed
+Training Data Collection: Undisclosed
+Training Labeling: Undisclosed
+Training Properties: Undisclosed
+
+Testing Dataset
+Testing Data Collection: Undisclosed
+Testing Labeling: Undisclosed
+Testing Properties: Undisclosed
+
+Evaluation Dataset
+Evaluation Benchmark Score: Undisclosed
+Evaluation Data Collection: Undisclosed
+Evaluation Labeling: Undisclosed
+Evaluation Properties: Undisclosed
+
+Inference
+Acceleration Engine: vLLM
+Test Hardware: NVIDIA 4xH100
+
+Ethical Considerations
+NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications. Developers should work with their internal developer team to ensure these software components meet requirements for the relevant industry and use case and address unforeseen product misuse.
+
+Please make sure you have proper rights and permissions for all input image content; if image includes people, personal health information, or intellectual property, the image generated will not blur or maintain proportions of image subjects included.
+
+Users are responsible for model inputs and outputs. Users are responsible for ensuring safe integration of this model, including implementing guardrails as well as other safety mechanisms, prior to deployment.
+
+Please report model quality, risk, security vulnerabilities or NVIDIA AI Concerns here.

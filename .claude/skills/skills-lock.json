@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "gws-docs-write": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "skillPath": "skills/gws-docs-write/SKILL.md",
+      "computedHash": "a5d9b287951c0758759cb8ce03c5d1b7234da607d774ebc878aa3afadc4b72d9"
+    },
+    "write-a-skill": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/write-a-skill/SKILL.md",
+      "computedHash": "3b58a16bde08f84ed490cd449ecdc40289216d660e070c485f53bc2d1ed2b843"
+    }
+  }
+}

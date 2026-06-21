@@ -1,0 +1,483 @@
+# Skill Router V2 — Example clusters reference (NOT loaded by default)
+#
+# example: customize for your stack
+#
+# This file documents 20+ clusters from a real-world setup, useful as a
+# reference when designing your own clusters. The router loads
+# `clusters.yaml` (minimal universal set). To adopt any cluster from here,
+# copy the block into `clusters.yaml` and tune the skills list to whatever
+# you have installed.
+#
+# Includes domain examples: finance, marketing, pitch decks, c-level
+# advisory, vendor integrations (Vercel, Supabase, etc.), session rituals,
+# debugging protocols, deploy gates, documentation, code review,
+# Playwright/E2E testing. Triggers and gate_reminders use mixed
+# Spanish/English — customize for your stack and language.
+#
+# Each cluster groups skills/plugins by domain. The LLM (Gemini Flash)
+# semantically matches the user prompt to descriptions/triggers. If
+# confidence >= threshold, a reminder is injected with the cluster's skills.
+#
+# How to add a new cluster:
+#   1. Define `description` (1 line, what this cluster does)
+#   2. List `triggers_natural` (phrases users would say)
+#   3. List `skills` with exact names (matching SKILL.md `name:` field)
+#   4. Mark `auto_invoke: true` for aggressive reminders
+#   5. Re-run the router (no Claude Code restart required)
+
+clusters:
+  finance:
+    description: "Análisis financiero, contabilidad, métricas SaaS, decisiones de inversión, modelos DCF, valoración"
+    triggers_natural:
+      - "abre el panel financiero"
+      - "vamos con finanzas"
+      - "necesito analizar las métricas"
+      - "modelo DCF"
+      - "valoración de la empresa"
+      - "ratios financieros"
+      - "estado financiero"
+      - "presupuesto"
+      - "ROI"
+      - "burn rate"
+      - "MRR"
+      - "ARR"
+      - "unit economics"
+    skills:
+      - finance-skills:financial-analyst
+      - finance-skills:saas-metrics-coach
+      - finance-skills:business-investment-advisor
+    confidence_threshold: 0.7
+
+  pitch:
+    description: "Crear pitch decks, presentaciones para inversores, decks de venta, M&A, banca de inversión"
+    triggers_natural:
+      - "vamos a hacer pitch"
+      - "preparar pitch deck"
+      - "presentación para inversores"
+      - "deck para banco"
+      - "necesito hacer una presentación de venta"
+      - "fundraising deck"
+      - "investment banking pitch"
+    skills:
+      - pitch-agent:pitch-deck
+      - pitch-agent:dcf-model
+      - pitch-agent:comps-analysis
+      - pitch-agent:ib-check-deck
+      - investment-banking:pitch-deck
+    confidence_threshold: 0.7
+
+  marketing:
+    description: "Estrategia de marketing, copywriting, SEO, contenido, CRO, lanzamientos, redes sociales, growth"
+    triggers_natural:
+      - "vamos con marketing"
+      - "abre marketing"
+      - "necesito copy"
+      - "campaña publicitaria"
+      - "estrategia SEO"
+      - "lanzamiento de producto"
+      - "contenido para redes"
+      - "ideas de marketing"
+      - "growth hacking"
+      - "email marketing"
+      - "landing page conversion"
+    skills:
+      - marketing-skills:copywriting
+      - marketing-skills:marketing-ideas
+      - marketing-skills:seo-audit
+      - marketing-skills:launch-strategy
+      - marketing-skills:content-strategy
+      - marketing-skills:social-content
+    confidence_threshold: 0.7
+
+  pr_review:
+    description: "Revisar pull requests, code review, auditoría de código antes de merge"
+    triggers_natural:
+      - "hoy va de revisar PRs"
+      - "revisar pull request"
+      - "code review"
+      - "audita este PR"
+      - "revisa el merge"
+      - "PR review"
+    skills:
+      - pr-review-toolkit:review-pr
+      - code-review:code-review
+      - superpowers:requesting-code-review
+    confidence_threshold: 0.7
+
+  research:
+    description: "Investigar librerías, leer documentación oficial, consultar APIs de frameworks/SDKs/CLIs"
+    triggers_natural:
+      - "necesito investigar X librería"
+      - "consulta la documentación de"
+      - "cómo funciona el API de"
+      - "buscar en docs"
+      - "documentación oficial"
+      - "research sobre"
+      - "investigación profunda"
+    skills:
+      - context7:context7
+      - research
+      - research-deep
+    confidence_threshold: 0.65
+
+  cks_session:
+    description: "Inicio o cierre de sesión del proyecto CKS — contexto Car Key System, dailies, ORDENES.md"
+    triggers_natural:
+      - "vamos"
+      - "empezamos"
+      - "ponme al día"
+      - "dónde estábamos"
+      - "inicio CKS"
+      - "cerramos por hoy"
+      - "hasta mañana"
+      - "cierra sesión"
+    skills:
+      - anthropic-skills:cks-inicio
+      - anthropic-skills:cks-cierre
+    cwd_required: cks-system
+    confidence_threshold: 0.75
+    gate: true
+    gate_confidence: 0.8
+    gate_reminder: |
+      🎯 Ejecuto el plan LITERAL — no invento alternativas ni divago.
+      Memoria: feedback_no_tirar_por_mi_cuenta.md
+      Inicio: cks-inicio (puesta al día VPS + diff config + gaps + TodoWrite).
+      Cierre: cks-cierre (daily log narrativo + session-end-express).
+
+  cks_debug:
+    description: "Bug, fallo, regresión, error en consola, deploy roto en CKS System"
+    triggers_natural:
+      - "no funciona"
+      - "está roto"
+      - "el dashboard no carga"
+      - "tira error"
+      - "regresión"
+      - "se rompió"
+      - "el build falla"
+    skills:
+      - cks-debug-protocol
+      - superpowers:systematic-debugging
+    cwd_required: cks-system
+    confidence_threshold: 0.7
+    gate: true
+    gate_confidence: 0.8
+    gate_reminder: |
+      🔐 Disciplina secretos: NUNCA `env | grep` ni `cat .env` completo.
+      Mask con sed (`sed 's/=.\{6,\}/=***/'`) o `${VAR:0:6}...`.
+      Memorias: feedback_disciplina_secretos_debug.md + feedback_secrets_disciplina_F116_reincidencia.md
+      Aplica `cks-debug-protocol` (anti-patrones prohibidos) ANTES de tocar una sola línea.
+
+  cks_deploy:
+    description: "Deploy a producción del proyecto CKS, push a main, verificación pre-deploy"
+    triggers_natural:
+      - "subir a producción"
+      - "deploy a Vercel"
+      - "push a main"
+      - "pre-deploy"
+      - "vamos a producción"
+    skills:
+      - cks-deploy-checklist
+      - cks-verify-done
+      - vercel:deploy
+    cwd_required: cks-system
+    confidence_threshold: 0.7
+    gate: true
+    gate_confidence: 0.8
+    gate_reminder: |
+      🚀 Pre-deploy: verify build local + types + Playwright E2E + Sentry config + env vars Vercel.
+      Symlink .env.local en worktree. Regla "commit antes de romper".
+      Skill obligatoria: `cks-deploy-checklist`. Verify post-deploy: `cks-verify-done`.
+
+  vercel:
+    description: "Despliegue, configuración o desarrollo en Vercel — Next.js, Edge functions, AI SDK, env vars"
+    triggers_natural:
+      - "deploy a Vercel"
+      - "abre Vercel"
+      - "configurar Vercel"
+      - "env vars Vercel"
+      - "Next.js producción"
+      - "AI SDK"
+      - "preview deployment"
+    skills:
+      - vercel:deploy
+      - vercel:nextjs
+      - vercel:env-vars
+      - vercel:vercel-cli
+    confidence_threshold: 0.7
+
+  supabase:
+    description: "Trabajar con Supabase — DB, Auth, RLS, Edge Functions, Realtime, Storage, migraciones"
+    triggers_natural:
+      - "abre Supabase"
+      - "Supabase RLS"
+      - "migración Supabase"
+      - "consulta Supabase"
+      - "policy RLS"
+      - "edge function"
+      - "Postgres"
+    skills:
+      - supabase:supabase
+      - supabase:supabase-postgres-best-practices
+      - cks-supabase-rls
+    paths:
+      - "**/supabase/migrations/**.sql"
+      - "**/migrations/**.sql"
+      - "**/*.sql"
+    commands:
+      - "psql"
+      - "supabase db"
+      - "supabase migration"
+      - "supabase functions"
+    confidence_threshold: 0.75
+    gate: true
+    gate_confidence: 0.85
+    gate_reminder: |
+      🗄️ Patrón obligatorio: `auth.getUser()` + RLS multi-sede (BCN+MAD vs SEV) + 7 roles.
+      Checklist pre-migration. `cks-supabase-rls` ANTES de cualquier SQL.
+      Para tests: `cks-supabase-rls-tests`.
+
+  c_level:
+    description: "Asesoramiento ejecutivo C-level — CEO, CFO, CTO, CMO, CHRO, CRO, board meetings, decisiones estratégicas"
+    triggers_natural:
+      - "consejo ejecutivo"
+      - "decisión estratégica"
+      - "board meeting"
+      - "asesor CEO"
+      - "asesor CFO"
+      - "asesor CTO"
+      - "expansión internacional"
+      - "salud organizacional"
+    skills:
+      - c-level-skills:ceo-advisor
+      - c-level-skills:cfo-advisor
+      - c-level-skills:cto-advisor
+      - c-level-skills:cmo-advisor
+      - c-level-skills:executive-mentor
+    confidence_threshold: 0.7
+
+  agenthub:
+    description: "Lanzar múltiples agentes en paralelo en worktrees aislados, competición de agentes, dispatching"
+    triggers_natural:
+      - "lanza varios agentes"
+      - "agentes en paralelo"
+      - "agenthub"
+      - "competición de agentes"
+      - "dispatching paralelo"
+      - "varios subagentes"
+    skills:
+      - agenthub:spawn
+      - agenthub:run
+      - superpowers:dispatching-parallel-agents
+    confidence_threshold: 0.7
+
+  skill_creation:
+    description: "Crear, editar o auditar skills propios de Claude Code"
+    triggers_natural:
+      - "crear skill nuevo"
+      - "nueva skill"
+      - "editar skill"
+      - "skill creator"
+      - "skill propio"
+      - "auditar skill"
+    skills:
+      - skill-creator:skill-creator
+      - superpowers:writing-skills
+      - skill-judge
+    confidence_threshold: 0.75
+
+  testing_e2e:
+    description: "Tests end-to-end con Playwright, smoke tests, webapp testing, verificación visual de UI"
+    triggers_natural:
+      - "test E2E"
+      - "Playwright"
+      - "smoke test"
+      - "verificar UI"
+      - "webapp testing"
+      - "test de regresión visual"
+    skills:
+      - webapp-testing
+      - cks-verify-done
+      - superpowers:verification-before-completion
+    confidence_threshold: 0.75
+
+  documentation:
+    description: "Redactar documentación técnica, specs, PRDs, READMEs, diagramas, handoffs"
+    triggers_natural:
+      - "redactar documentación"
+      - "escribir spec"
+      - "PRD nuevo"
+      - "diagrama arquitectura"
+      - "documentación técnica"
+      - "handoff de sesión"
+    skills:
+      - doc-coauthoring
+      - mermaid-diagrams
+      - superpowers:session-handoff
+    confidence_threshold: 0.7
+
+  kommo_n8n:
+    description: "Workflow n8n agente WhatsApp Kommo, automatización CRM, integraciones Kommo + Gemini, auditoría n8n, webhook Digital Pipeline"
+    triggers_natural:
+      - "agente WhatsApp Kommo"
+      - "workflow n8n"
+      - "webhook Kommo"
+      - "Digital Pipeline Kommo"
+      - "auditar Kommo"
+      - "mejorar agente IA"
+      - "telemetría agente"
+      - "Gemini extracción mensaje"
+      - "DRY_RUN Kommo"
+      - "Salesbot Kommo"
+      - "Itgrix Zerovoz"
+      - "filtro tag IA-test"
+    skills:
+      - n8n-validation-expert
+      - n8n-workflow-patterns
+      - n8n-expression-syntax
+      - n8n-mcp-tools-expert
+      - n8n-node-configuration
+      - kommo
+    confidence_threshold: 0.7
+    gate: true
+    gate_confidence: 0.8
+    gate_reminder: |
+      🔒 KOMMO SOLO LECTURA. Prohibido write/update/delete sin OK explícito del CEO.
+      Itgrix Zerovoz es lectura por construcción.
+      Memoria: feedback_kommo_zerovoz_readonly.md
+      Para workflows n8n nuevos: validar con `n8n-validation-expert` antes de deploy.
+
+  worktree_ops:
+    description: "Limpieza, sincronización o gestión de git worktrees y ramas Claude"
+    triggers_natural:
+      - "limpia worktrees"
+      - "sync worktrees"
+      - "borra ramas claude"
+      - "gestión worktrees"
+    skills:
+      - worktree-sync-pro
+      - superpowers:using-git-worktrees
+    confidence_threshold: 0.8
+    gate: true
+    gate_confidence: 0.85
+    gate_reminder: |
+      Antes de borrar worktrees: push de rescate + backup tarball obligatorios.
+      Usa siempre `worktree-sync-pro` (nivel dios) — nunca `git worktree remove --force` a mano.
+
+  # ───────────────────── Fase 1 quirúrgica (17-may-2026) ─────────────────────
+  # Clusters añadidos por trabajo diario CKS/OpenClaw. Cada uno declara los
+  # campos canónicos (description + triggers_natural + skills + threshold) y
+  # campos extra que consume `process_pretool` (paths, commands, tool_match).
+
+  code_implementation:
+    description: "Implementación de componentes React/Next.js, hooks, TSX/TS, server components, frontend del producto CKS"
+    triggers_natural:
+      - "implementa el componente"
+      - "crea una página Next"
+      - "edita el TSX"
+      - "ajusta el hook useEffect"
+      - "server component"
+      - "refactoriza el componente"
+      - "crea el form"
+    keywords:
+      - "react"
+      - "tsx"
+      - "jsx"
+      - "next.js"
+      - "next js"
+      - "componente"
+      - "component"
+      - "hooks"
+      - "useEffect"
+      - "server component"
+      - "client component"
+    paths:
+      - "src/app/**/*.tsx"
+      - "src/app/**/*.ts"
+      - "src/components/**"
+      - "**/*.tsx"
+    skills:
+      - react-dev
+      - next-best-practices
+      - cks-form-optimization
+    confidence_threshold: 0.65
+    gate: false   # sugerencia, no bloqueo (gate suave)
+    gate_reminder: |
+      Sugerencia: invoca `react-dev` para typing/hooks y `next-best-practices`
+      para RSC/data patterns antes de tocar src/app/**. Si es un form CKS,
+      `cks-form-optimization` es OBLIGATORIA.
+
+  commit_push_pr:
+    description: "Crear commits, push a remote, abrir/mergear pull requests — operaciones git escritura que tocan historia"
+    triggers_natural:
+      - "commit"
+      - "push a github"
+      - "abre el PR"
+      - "crea pull request"
+      - "merge el PR"
+      - "haz commit y push"
+      - "vamos a commitear"
+    keywords:
+      - "commit"
+      - "push"
+      - "git add"
+      - "gh pr"
+      - "pull request"
+      - "merge"
+    commands:
+      - "git commit"
+      - "git push"
+      - "gh pr create"
+      - "gh pr merge"
+    skills:
+      - commit-work
+      - verification-before-completion
+      - cks-verify-done
+    confidence_threshold: 0.85
+    gate: true
+    gate_confidence: 0.85
+    gate_reminder: |
+      🔴 Antes de commit/push/PR: invoca `verification-before-completion`
+      para evidencia (build/tests pass) y `commit-work` para commit limpio.
+      En cks-system, `cks-verify-done` es obligatoria (Playwright + Sentry).
+
+  agent_dispatch_bg:
+    description: "Lanzar agentes en background, paralelización via Agent tool, dispatching de subagentes"
+    triggers_natural:
+      - "lanza agente background"
+      - "agentes en paralelo"
+      - "background agent"
+      - "lanza varios agents"
+      - "agentes simultáneos"
+      - "dispatch parallel"
+    keywords:
+      - "agente background"
+      - "parallel agents"
+      - "background agent"
+      - "lanza agente"
+      - "dispatch"
+    tool_match:
+      - tool_name: Agent
+        tool_input_contains:
+          run_in_background: true
+    skills:
+      - superpowers:dispatching-parallel-agents
+      - superpowers:subagent-driven-development
+    confidence_threshold: 0.85
+    gate: true
+    gate_confidence: 0.85
+    gate_reminder: |
+      🔴 Antes de lanzar agentes background: invoca
+      `dispatching-parallel-agents` para coordinarte bien.
+      Si encadenas tareas dependientes en la misma sesión,
+      mejor `subagent-driven-development`.
+
+# Ajustes globales del router
+settings:
+  llm_model: "gemini-2.5-flash"   # Modelo verificado activo (2026-may). Fallback automático a gemini-flash-latest.
+  fallback_to_v1: true        # Si LLM falla, usar regex V1
+  dedup_turns: 5              # No re-sugerir skill si se invocó hace <N turnos
+  min_prompt_words: 3         # No llamar al LLM con prompts triviales
+  max_prompt_chars: 2000      # Truncar prompts muy largos antes de mandar a LLM
+  cache_ttl_seconds: 3600     # Cache decisiones LLM por 1h (mismo prompt → misma respuesta)
+  log_level: "INFO"           # DEBUG | INFO | WARN | ERROR
+  cost_alert_threshold_usd: 1.0   # Avisar si gasto mensual estimado supera esto

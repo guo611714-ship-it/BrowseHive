@@ -1,0 +1,92 @@
+[
+  {
+    "file": "agent/llm_client.py",
+    "line": 81,
+    "summary": "Anthropic API 请求头键名前有空格导致无效",
+    "failure_scenario": "HTTP 请求头为 ' Content-Type'（注意前导空格），而非标准的 'Content-Type'， servers 可能拒绝请求或忽略该头，导致 API 调用失败"
+  },
+  {
+    "file": "agent/llm_client.py",
+    "line": 73,
+    "summary": "DeepSeek API 响应解析未检查 choices 是否存在或非空",
+    "failure_scenario": "API 返回错误响应或空 choices 数组时，data['choices'][0] 抛出 IndexError/KeyError，导致整个调用崩溃"
+  },
+  {
+    "file": "agent/llm_client.py",
+    "line": 100,
+    "summary": "Anthropic API 响应 content 列表未检查是否为空",
+    "failure_scenario": "data.get('content') 返回空列表 []（视为真），但访问 [0] 时抛出 IndexError"
+  },
+  {
+    "file": "agent/llm_client.py",
+    "line": 124,
+    "summary": "OpenAI/NVIDIA API 响应解析未检查 choices 是否存在或非空",
+    "failure_scenario": "同 DeepSeek，API 异常响应导致 IndexError/KeyError 崩溃"
+  },
+  {
+    "file": "agent/llm_client.py",
+    "line": 70,
+    "summary": "HTTP 请求未处理 JSON 解析错误和网络异常",
+    "failure_scenario": "resp.json() 在响应非有效 JSON 时抛出 JSONDecodeError；网络超时或连接失败时 httpx 异常未捕获，向上传播导致崩溃"
+  },
+  {
+    "file": "agent/model_orchestrator.py",
+    "line": 21,
+    "summary": "_load_config 未捕获 JSONDecodeError 和文件操作异常",
+    "failure_scenario": "model_config.json 格式错误、权限不足或 IO 错误时，json.load() 抛出异常导致 ModelOrchestrator 初始化失败，进而使 AgentLoop 启动崩溃"
+  },
+  {
+    "file": "agent/loop.py",
+    "line": 42,
+    "summary": "ModelOrchestrator 初始化缺少异常保护",
+    "failure_scenario": "配置文件缺失或格式错误时，ModelOrchestrator.__init__ 调用 _load_config 会抛出未捕获的异常，导致 AgentLoop.__init__ 失败，服务启动直接退出"
+  },
+  {
+    "file": "agent/model_orchestrator.py",
+    "line": 19,
+    "summary": "__init__ 使用未验证的 _default_model 预加载客户端",
+    "failure_scenario": "_default_model 为 None 时，_get_or_create_client(None) 打印警告并返回 None，虽不崩溃但浪费资源且后续可能重复尝试"
+  },
+  {
+    "file": "agent/model_orchestrator.py",
+    "line": 28,
+    "summary": "_get_or_create_client 未验证 model_name 参数",
+    "failure_scenario": "model_name 为 None 或空字符串时遍历查找无结果，返回 None。调用者若未检查会使用 None 客户端，导致后续 AttributeError"
+  },
+  {
+    "file": "agent/model_orchestrator.py",
+    "line": 44,
+    "summary": "provider 字段缺失时传递 None 给 LLMClient",
+    "failure_scenario": "模型配置缺少 provider 字段，LLMClient.provider = None，chat() 返回错误 '[错误] 不支持的 provider: None'，任务执行失败"
+  },
+  {
+    "file": "agent/model_orchestrator.py",
+    "line": 48,
+    "summary": "使用 'or' 运算符会错误覆盖显式配置的零值",
+    "failure_scenario": "若配置 temperature: 0，'0 or 0.1' 结果为 0.1，覆盖了用户意图的 temperature=0 设置"
+  },
+  {
+    "file": "agent/llm_client.py",
+    "line": 151,
+    "summary": "配置值的类型可能不匹配（API key、maxTokens、temperature）",
+    "failure_scenario": "配置文件中 maxTokens 为字符串 '20000' 时，传入 httpx 可能类型错误；temperature 非浮点数导致请求失败"
+  },
+  {
+    "file": "agent/loop.py",
+    "line": 50,
+    "summary": "dispatch_tools 注入异常处理过于宽泛且忽略错误",
+    "failure_scenario": "except Exception 捕获所有异常并 print 后 pass，如果 dispatch_tools 模块 API 不兼容或缺少方法，错误被静默，相关工具不可用但系统继续运行，难以调试"
+  },
+  {
+    "file": "agent/loop.py",
+    "line": 81,
+    "summary": "工具注册使用 callable() 可能包含非函数对象",
+    "failure_scenario": "遍历 module.__dict__ 时 callable(func) 对类也返回 True，若模块中存在类定义会被误注册为工具，调用时因签名不匹配失败"
+  },
+  {
+    "file": "agent/loop.py",
+    "line": 88,
+    "summary": "_get_system_status 和 _show_system_status 依赖 llm_client 但保护不完整",
+    "failure_scenario": "若 llm_client 为 None 且未正确守卫，访问 .provider/.model/.api_base 会抛出 AttributeError"
+  }
+]

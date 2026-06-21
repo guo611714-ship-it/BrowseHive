@@ -1,0 +1,118 @@
+---
+title: "minimax-m2.7"
+category: "ai"
+date: "2026-06-01"
+source: "kb-manager batch-import"
+---
+
+# minimax-m2.7
+
+MiniMax M2.7
+Description
+MiniMax M2.7 is a large language model for complex software engineering, agentic tool use, and office productivity workflows. It is presented as a model deeply participating in its own evolution, with support for complex agent harnesses, dynamic tool search, Agent Teams, and high-fidelity coding and document-editing tasks.
+
+This model is for research and development only.
+
+Third-Party Community Consideration:
+This model is not owned or developed by NVIDIA. This model has been developed and built to a third-party's requirements for this application and use case; see link to Non-NVIDIA MiniMax M2.7 Model Card
+
+License and Terms of Use:
+GOVERNING TERMS: The trial service is governed by the NVIDIA API Trial Terms of Service; use of this model is governed by the NVIDIA Software and Model Evaluation license. ADDITIONAL INFORMATION: Non-Commercial MiniMax License. Copyright (c) 2026 MiniMax.
+
+Deployment Geography:
+Global
+
+Use Case:
+Use Case: Designed for advanced coding assistance, agentic workflows, long-horizon software engineering, live production troubleshooting, office document generation and editing, and other complex multi-step productivity tasks.
+
+Release Date:
+Build.NVIDIA.com: 04/11/2026 via link
+Huggingface: 04/11/2026 via link
+
+Reference(s):
+References:
+
+MiniMax M2.7 model page
+MiniMax M2.7 launch report
+MiniMax M2.7 Hugging Face repository
+MiniMax M2.7 GitHub repository
+MiniMax text generation docs
+MiniMax model release notes
+MiniMax API platform
+OpenRoom
+Model Architecture:
+Architecture Type: Transformer
+Network Architecture: Mixture-of-Experts
+Total Parameters: 230B
+Active Parameters: 10B
+Layers: 62
+Hidden Size: 3072
+Experts: 256 local experts, with 8 experts activated per token
+
+Input:
+Input Types: Text
+Input Formats: String
+Input Parameters: One-Dimensional (1D)
+Other Input Properties: Supports long system prompts.
+Input Context Length (ISL): 204,800
+
+Output:
+Output Types: Text
+Output Format: String
+Output Parameters: One-Dimensional (1D)
+Other Output Properties: Not applicable.
+
+Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated systems. By leveraging NVIDIA's hardware (e.g. GPU cores) and software frameworks (e.g., CUDA libraries), the model achieves faster training and inference times compared to CPU-only solutions.
+
+Software Integration:
+Runtime Engines:
+
+SGLang
+Transformers
+vLLM
+Supported Hardware:
+
+NVIDIA Blackwell: B100, B200, GB200
+NVIDIA Hopper: H100, H200
+Operating Systems: Linux
+
+The integration of foundation and fine-tuned models into AI systems requires additional testing using use-case-specific data to ensure safe and effective deployment. Following the V-model methodology, iterative testing and validation at both unit and system levels are essential to mitigate risks, meet technical and functional requirements, and ensure compliance with safety and ethical standards before deployment.
+
+Model Version(s)
+MiniMax M2.7 v2.7
+
+Training, Testing, and Evaluation Datasets:
+Training Dataset
+Data Modality: Text
+Training Data Collection: Undisclosed
+Training Labeling: Undisclosed
+Training Properties: Undisclosed
+
+Testing Dataset
+Testing Data Collection: Undisclosed
+Testing Labeling: Undisclosed
+Testing Properties: Undisclosed
+
+Evaluation Dataset
+Evaluation Benchmark Score: Publicly reported results include 56.22% on SWE-Pro, 55.6% on VIBE-Pro, 57.0% on Terminal Bench 2, 39.8% on NL2Repo, 1495 ELO on GDPval-AA, 46.3% on Toolathon, 62.7% on MM Claw, and a 66.6% medal rate on MLE Bench Lite. The GDPval-AA result is presented as the highest among open-source models.
+Evaluation Data Collection: Undisclosed
+Evaluation Labeling: Undisclosed
+Evaluation Properties: Evaluation results span software engineering, office productivity, agentic tool-use, and machine learning competition benchmarks, including SWE-Pro, SWE Multilingual, Multi SWE Bench, VIBE-Pro, Terminal Bench 2, NL2Repo, GDPval-AA, Toolathon, MM Claw, and MLE Bench Lite (22 ML competitions). MM Claw testing also cites 97% skill compliance across 40+ complex skills.
+
+View Selected Publicly Reported Benchmarks
+Inference
+Acceleration Engine: vLLM
+Test Hardware: NVIDIA H100x4
+
+Additional Details
+Production Troubleshooting
+M2.7 is described as supporting live production debugging workflows involving monitoring metrics, trace analysis, database verification, and SRE-style decision-making. Its use is also described as reducing recovery time for live production incidents to under three minutes on multiple occasions.
+
+Model Self-Evolution
+M2.7 is positioned as MiniMax's first model deeply participating in its own evolution. During development, the model updated memory, built complex skills for reinforcement learning experiments, improved its learning process based on experiment results, and autonomously optimized a programming scaffold over 100+ rounds for a reported 30% performance improvement.
+
+Recommended Deployment Settings
+Recommended deployment settings include temperature=1.0, top_p=0.95, and top_k=40. The model is also described as supporting Agent Teams, dynamic tool search, and multi-agent collaboration in complex agent harnesses.
+
+Interactive Entertainment
+M2.7 is also described as having strengthened character consistency and emotional intelligence for interactive entertainment use cases. OpenRoom is presented as an interactive demo that places AI interaction in a Web GUI space with real-time visual feedback and scene interactions.

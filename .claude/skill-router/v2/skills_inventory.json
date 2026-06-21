@@ -1,0 +1,1472 @@
+[
+  {
+    "name": "1password",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\1password",
+    "description": "Set up and use 1Password CLI for sign-in, desktop integration, and reading or injecting secrets.",
+    "status": "未配置"
+  },
+  {
+    "name": "3-statement-model",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\3-statement-model",
+    "description": "Build fully-integrated 3-statement models (IS, BS, CF) in Excel with working capital schedules, D&A roll-forwards, debt schedule, and the plugs that make cash and retained earnings tie. Pairs with excel-author.",
+    "status": "未配置"
+  },
+  {
+    "name": "academic-paper-reviewer",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\academic-paper-reviewer",
+    "description": "Multi-perspective academic paper review with dynamic reviewer personas. Simulates 5 independent reviewers (EIC + 3 peer reviewers + Devil's Advocate) with field-specific expertise. Supports full review, re-review (verification), quick assessment, methodology focus, Socratic guided, and calibration modes. Triggers on: review paper, peer review, manuscript review, referee report, review my paper, critique paper, simulate review, editorial review, calibrate reviewer, reviewer calibration, measure reviewer accuracy.",
+    "status": "已配置"
+  },
+  {
+    "name": "accelerate",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\accelerate",
+    "description": "Simplest distributed training API. 4 lines to add distributed support to any PyTorch script. Unified API for DeepSpeed/FSDP/Megatron/DDP. Automatic device placement, mixed precision (FP16/BF16/FP8). Interactive config, single launch command. HuggingFace ecosystem standard.",
+    "status": "未配置"
+  },
+  {
+    "name": "adversarial-ux-test",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\adversarial-ux-test",
+    "description": "Roleplay the most difficult, tech-resistant user for your product. Browse the app as that persona, find every UX pain point, then filter complaints through a pragmatism layer to separate real problems from noise. Creates actionable tickets from genuine issues only.",
+    "status": "未配置"
+  },
+  {
+    "name": "agent-tools",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\agent-tools",
+    "description": "Run 250+ AI apps via inference.sh CLI - image generation, video creation, LLMs, search, 3D, Twitter automation. Models: FLUX, Veo, Gemini, Grok, Claude, Seedance, OmniHuman, Tavily, Exa, OpenRouter, and many more. Use when running AI apps, generating images/videos, calling LLMs, web search, or automating Twitter. Triggers: inference.sh, infsh, ai model, run ai, serverless ai, ai api, flux, veo, claude api, image generation, video generation, openrouter, tavily, exa search, twitter api, grok",
+    "status": "未配置"
+  },
+  {
+    "name": "agentmail",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\agentmail",
+    "description": "Give the agent its own dedicated email inbox via AgentMail. Send, receive, and manage email autonomously using agent-owned email addresses (e.g. hermes-agent@agentmail.to).",
+    "status": "未配置"
+  },
+  {
+    "name": "agents-sdk",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\agents-sdk",
+    "description": "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, chat applications, voice agents, or browser automation. Covers Agent class, state management, callable RPC, Workflows, durable execution, queues, retries, observability, and React hooks. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+    "status": "未配置"
+  },
+  {
+    "name": "ai-avatar-video",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\ai-avatar-video",
+    "description": "Create AI avatar and talking head videos via inference.sh CLI. Recommended: P-Video-Avatar (fastest, cheapest, built-in TTS). Also: OmniHuman, Fabric, PixVerse. Audio: Inworld TTS-2 (100+ languages, emotion steering for characters), ElevenLabs, Kokoro. Capabilities: audio-driven avatars, text-to-avatar, lipsync videos, talking head generation, virtual presenters, UGC content. Use for: AI presenters, explainer videos, virtual influencers, dubbing, marketing videos, UGC ads, gaming avatars, NPC dialogue. Triggers: ai avatar, talking head, lipsync, avatar video, virtual presenter, ai spokesperson, audio driven video, heygen alternative, synthesia alternative, talking avatar, lip sync, video avatar, ai presenter, digital human, ugc, ugc video, ugc ad, avatar ugc",
+    "status": "未配置"
+  },
+  {
+    "name": "ai-image-generation",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\ai-image-generation",
+    "description": "Generate AI images with GPT-Image-2, FLUX, Gemini, Grok, Seedream, Reve and 50+ models via inference.sh CLI. Models: GPT-Image-2, FLUX Dev LoRA, FLUX.2 Klein LoRA, Gemini 3 Pro Image, Grok Imagine, Seedream 4.5, Reve, ImagineArt. Capabilities: text-to-image, image-to-image, inpainting, LoRA, image editing, upscaling, text rendering. Use for: AI art, product mockups, concept art, social media graphics, marketing visuals, illustrations. Triggers: flux, image generation, ai image, text to image, stable diffusion, generate image, ai art, midjourney alternative, dall-e alternative, text2img, t2i, image generator, ai picture, create image with ai, generative ai, ai illustration, grok image, gemini image, gpt image, openai image, chatgpt image",
+    "status": "未配置"
+  },
+  {
+    "name": "ai-models",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\ai-models",
+    "description": "Latest AI models reference - Claude, OpenAI, Gemini, Eleven Labs, Replicate",
+    "status": "已配置"
+  },
+  {
+    "name": "ai-video-generation",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\ai-video-generation",
+    "description": "Generate AI videos with Google Veo, Seedance 2.0, HappyHorse, Wan, Grok and 40+ models via inference.sh CLI. Models: Veo 3.1, Veo 3, Seedance 2.0, HappyHorse 1.0, Wan 2.5, Grok Imagine Video, OmniHuman, Fabric, HunyuanVideo. Capabilities: text-to-video, image-to-video, reference-to-video, video editing, lipsync, avatar animation, video upscaling, foley sound. Use for: social media videos, marketing content, explainer videos, product demos, AI avatars. Triggers: video generation, ai video, text to video, image to video, veo, animate image, video from image, ai animation, video generator, generate video, t2v, i2v, ai video maker, create video with ai, runway alternative, pika alternative, sora alternative, kling alternative, seedance, happyhorse",
+    "status": "未配置"
+  },
+  {
+    "name": "apple-notes",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\apple-notes",
+    "description": "Create, view, edit, delete, search, move, or export Apple Notes via the memo CLI on macOS.",
+    "status": "未配置"
+  },
+  {
+    "name": "apple-reminders",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\apple-reminders",
+    "description": "List, add, edit, complete, or delete Apple Reminders and reminder lists via remindctl.",
+    "status": "未配置"
+  },
+  {
+    "name": "autoreview",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\autoreview",
+    "description": "Auto Review closeout. Codex review is the default when no engine is set and is the recommended reviewer.",
+    "status": "已配置"
+  },
+  {
+    "name": "azure-deploy",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\azure-deploy",
+    "description": "Execute Azure deployments for ALREADY-PREPARED applications that have existing .azure/deployment-plan.md and infrastructure files. DO NOT use this skill when the user asks to CREATE a new application — use azure-prepare instead. This skill runs azd up, azd deploy, terraform apply, and az deployment commands with built-in error recovery. Requires .azure/deployment-plan.md from azure-prepare and validated status from azure-validate. WHEN: \\\"run azd up\\\", \\\"run azd deploy\\\", \\\"execute deployment\\\", \\\"push to production\\\", \\\"push to cloud\\\", \\\"go live\\\", \\\"ship it\\\", \\\"bicep deploy\\\", \\\"terraform apply\\\", \\\"publish to Azure\\\", \\\"launch on Azure\\\". DO NOT USE WHEN: \\\"create and deploy\\\", \\\"build and deploy\\\", \\\"create a new app\\\", \\\"set up infrastructure\\\", \\\"create and deploy to Azure using Terraform\\\" — use azure-prepare for these.",
+    "status": "已配置"
+  },
+  {
+    "name": "baoyu-format-markdown",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\baoyu-format-markdown",
+    "description": "Formats plain text or markdown files with frontmatter, titles, summaries, headings, bold, lists, and code blocks. Use when user asks to \"format markdown\", \"beautify article\", \"add formatting\", or improve article layout. Outputs to {filename}-formatted.md.",
+    "status": "未配置"
+  },
+  {
+    "name": "baoyu-image-gen",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\baoyu-image-gen",
+    "description": "[Deprecated: use baoyu-imagine] AI image generation with OpenAI, Azure OpenAI, Google, OpenRouter, DashScope, Z.AI GLM-Image, MiniMax, Jimeng, Seedream and Replicate APIs. Supports text-to-image, reference images, aspect ratios, and batch generation from saved prompt files. Sequential by default; use batch parallel generation when the user already has multiple prompts or wants stable multi-image throughput. Use when user asks to generate, create, or draw images.",
+    "status": "未配置"
+  },
+  {
+    "name": "baoyu-infographic",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\baoyu-infographic",
+    "description": "Generate professional infographics with 21 layout types and 22 visual styles. Analyzes content, recommends layout×style combinations, and generates publication-ready infographics. Use when user asks to create \"infographic\", \"信息图\", \"visual summary\", \"可视化\", or \"高密度信息大图\".",
+    "status": "未配置"
+  },
+  {
+    "name": "baoyu-markdown-to-html",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\baoyu-markdown-to-html",
+    "description": "Converts Markdown to styled HTML with WeChat-compatible themes. Supports code highlighting, math, PlantUML, footnotes, alerts, infographics, and optional bottom citations for external links. Use when user asks for \"markdown to html\", \"convert md to html\", \"md 转 html\", \"微信外链转底部引用\", or needs styled HTML output from markdown.",
+    "status": "未配置"
+  },
+  {
+    "name": "baoyu-translate",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\baoyu-translate",
+    "description": "Translates articles and documents between languages with three modes - quick (direct), normal (analyze then translate), and refined (analyze, translate, review, polish). Supports custom glossaries and terminology consistency via EXTEND.md. Use when user asks to \"translate\", \"翻译\", \"精翻\", \"translate article\", \"translate to Chinese/English\", \"改成中文\", \"改成英文\", \"convert to Chinese\", \"localize\", \"本地化\", or needs any document translation. Also triggers for \"refined translation\", \"精细翻译\", \"proofread translation\", \"快速翻译\", \"快翻\", \"这篇文章翻译一下\", or when a URL or file is provided with translation intent.",
+    "status": "未配置"
+  },
+  {
+    "name": "baoyu-url-to-markdown",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\baoyu-url-to-markdown",
+    "description": "Fetch any URL and convert to markdown using baoyu-fetch CLI (Chrome CDP with site-specific adapters). Built-in adapters for X/Twitter, YouTube transcripts, Hacker News threads, and generic pages via Defuddle. Handles login/CAPTCHA via interaction wait modes. Use when user wants to save a webpage as markdown.",
+    "status": "未配置"
+  },
+  {
+    "name": "bear-notes",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\bear-notes",
+    "description": "Create, search, and manage Bear notes via grizzly CLI.",
+    "status": "未配置"
+  },
+  {
+    "name": "better-auth-best-practices",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\better-auth-best-practices",
+    "description": "Configure Better Auth server and client, set up database adapters, manage sessions, add plugins, and handle environment variables. Use when users mention Better Auth, betterauth, auth.ts, or need to set up TypeScript authentication with email/password, OAuth, or plugin configuration.",
+    "status": "已配置"
+  },
+  {
+    "name": "bioinformatics",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\bioinformatics",
+    "description": "Gateway to 400+ bioinformatics skills from bioSkills and ClawBio. Covers genomics, transcriptomics, single-cell, variant calling, pharmacogenomics, metagenomics, structural biology, and more. Fetches domain-specific reference material on demand.",
+    "status": "未配置"
+  },
+  {
+    "name": "blackbox",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\blackbox",
+    "description": "Delegate coding tasks to Blackbox AI CLI agent. Multi-model agent with built-in judge that runs tasks through multiple LLMs and picks the best result. Requires the blackbox CLI and a Blackbox AI API key.",
+    "status": "未配置"
+  },
+  {
+    "name": "blender-mcp",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\blender-mcp",
+    "description": "Control Blender directly from Hermes via socket connection to the blender-mcp addon. Create 3D objects, materials, animations, and run arbitrary Blender Python (bpy) code. Use when user wants to create or modify anything in Blender.",
+    "status": "未配置"
+  },
+  {
+    "name": "blogwatcher",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\blogwatcher",
+    "description": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+    "status": "未配置"
+  },
+  {
+    "name": "blucli",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\blucli",
+    "description": "BluOS CLI (blu) for discovery, playback, grouping, and volume.",
+    "status": "未配置"
+  },
+  {
+    "name": "blueprinter",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\blueprinter",
+    "description": "Generate technical diagrams using HTML/CSS in Flat Engineering Blueprint style. Use when the user wants to create architecture diagrams, system diagrams, flowcharts, or technical specification sheets that look like engineering blueprints. Triggers on requests for flat diagrams, blueprint-style visualizations, or technical drawings.",
+    "status": "未配置"
+  },
+  {
+    "name": "brainstorming",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\brainstorming",
+    "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
+    "status": "已配置"
+  },
+  {
+    "name": "build-keil",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\build-keil",
+    "description": "当需要通过 Keil MDK 命令行编译嵌入式工程，调用自带脚本解析工程文件、执行构建并定位固件产物时使用。",
+    "status": "已配置"
+  },
+  {
+    "name": "camsnap",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\camsnap",
+    "description": "Capture frames or clips from RTSP/ONVIF cameras.",
+    "status": "未配置"
+  },
+  {
+    "name": "canvas",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\canvas",
+    "description": "Present HTML on connected OpenClaw node canvases, navigate/eval/snapshot, and debug canvas host URLs.",
+    "status": "未配置"
+  },
+  {
+    "name": "channel-message-flows",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\channel-message-flows",
+    "description": "Use when previewing local channel message flow fixtures.",
+    "status": "未配置"
+  },
+  {
+    "name": "chroma",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\chroma",
+    "description": "Open-source embedding database for AI applications. Store embeddings and metadata, perform vector and full-text search, filter by metadata. Simple 4-function API. Scales from notebooks to production clusters. Use for semantic search, RAG applications, or document retrieval. Best for local development and open-source projects.",
+    "status": "未配置"
+  },
+  {
+    "name": "claude-api",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\claude-api",
+    "description": "Build, debug, and optimize Claude API / Anthropic SDK apps. Apps built with this skill should include prompt caching. Also handles migrating existing Claude API code between Claude model versions (4.5 → 4.6, 4.6 → 4.7, retired-model replacements). TRIGGER when: code imports `anthropic`/`@anthropic-ai/sdk`; user asks for the Claude API, Anthropic SDK, or Managed Agents; user adds/modifies/tunes a Claude feature (caching, thinking, compaction, tool use, batch, files, citations, memory) or model (Opus/Sonnet/Haiku) in a file; questions about prompt caching / cache hit rate in an Anthropic SDK project. SKIP: file imports `openai`/other-provider SDK, filename like `*-openai.py`/`*-generic.py`, provider-neutral code, general programming/ML.",
+    "status": "已配置"
+  },
+  {
+    "name": "clawdtributor",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\clawdtributor",
+    "description": "Use for OpenClaw clawtributors PR/issue triage: Discrawl discovery, live-open rechecks, deep review, topic grouping, and compact @handle/LOC/type/blast/verification summaries.",
+    "status": "未配置"
+  },
+  {
+    "name": "clawhub",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\clawhub",
+    "description": "Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.",
+    "status": "未配置"
+  },
+  {
+    "name": "clawsweeper",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\clawsweeper",
+    "description": "Use for all ClawSweeper work: OpenClaw issue/PR sweep reports, commit-review reports, repair jobs, cloud fix PRs, @clawsweeper maintainer mention commands, trusted ClawSweeper-reviewed autofix/automerge, GitHub Actions monitoring, permissions, gates, and manual backfills.",
+    "status": "未配置"
+  },
+  {
+    "name": "cli",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\cli",
+    "description": "Run 150+ AI apps via inference.sh CLI (infsh) — image generation, video creation, LLMs, search, 3D, social automation. Uses the terminal tool. Triggers: inference.sh, infsh, ai apps, flux, veo, image generation, video generation, seedream, seedance, tavily",
+    "status": "未配置"
+  },
+  {
+    "name": "clip",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\clip",
+    "description": "OpenAI's model connecting vision and language. Enables zero-shot image classification, image-text matching, and cross-modal retrieval. Trained on 400M image-text pairs. Use for image search, content moderation, or vision-language tasks without fine-tuning. Best for general-purpose image understanding.",
+    "status": "未配置"
+  },
+  {
+    "name": "coding-agent",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\coding-agent",
+    "description": "Delegate coding work to Codex, Claude Code, OpenCode, or Pi as background workers; not simple edits or read-only code lookup.",
+    "status": "未配置"
+  },
+  {
+    "name": "comps-analysis",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\comps-analysis",
+    "description": "Build comparable company analysis in Excel — operating metrics, valuation multiples, statistical benchmarking vs peer sets. Pairs with excel-author. Use for public-company valuation, IPO pricing, sector benchmarking, or outlier detection.",
+    "status": "未配置"
+  },
+  {
+    "name": "concept-diagrams",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\concept-diagrams",
+    "description": "Generate flat, minimal light/dark-aware SVG diagrams as standalone HTML files, using a unified educational visual language with 9 semantic color ramps, sentence-case typography, and automatic dark mode. Best suited for educational and non-software visuals — physics setups, chemistry mechanisms, math curves, physical objects (aircraft, turbines, smartphones, mechanical watches), anatomy, floor plans, cross-sections, narrative journeys (lifecycle of X, process of Y), hub-spoke system integrations (smart city, IoT), and exploded layer views. If a more specialized skill exists for the subject (dedicated software/cloud architecture, hand-drawn sketches, animated explainers, etc.), prefer that — otherwise this skill can also serve as a general-purpose SVG diagram fallback with a clean educational look. Ships with 15 example diagrams.",
+    "status": "未配置"
+  },
+  {
+    "name": "continuous-learning-v2",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\continuous-learning-v2",
+    "description": "Instinct-based learning system that observes sessions via hooks, creates atomic instincts with confidence scoring, and evolves them into skills/commands/agents. v2.1 adds project-scoped instincts to prevent cross-project contamination.",
+    "status": "已配置"
+  },
+  {
+    "name": "control-ui-e2e",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\control-ui-e2e",
+    "description": "Use when testing, fixing, or extending the OpenClaw Control UI GUI with Vitest + Playwright end-to-end checks, mocked Gateway WebSocket flows, or agent-verifiable browser proof.",
+    "status": "未配置"
+  },
+  {
+    "name": "cost-aware-llm-pipeline",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\cost-aware-llm-pipeline",
+    "description": "﻿---",
+    "status": "已配置"
+  },
+  {
+    "name": "crabbox",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\crabbox",
+    "description": "Use the Crabbox wrapper for OpenClaw remote validation across Linux, macOS, Windows, and WSL2, including delegated Blacksmith Testbox proof. Report the actual provider and id.",
+    "status": "未配置"
+  },
+  {
+    "name": "darwin-skill",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\darwin-skill",
+    "description": "Darwin Skill (达尔文.skill): autonomous skill optimizer inspired by Karpathy's autoresearch. Evaluates SKILL.md files using an 8-dimension rubric (structure + effectiveness), runs hill-climbing with git version control, validates improvements through test prompts, and generates visual result cards. Use when user mentions \\\"优化skill\\\", \\\"skill评分\\\", \\\"自动优化\\\", \\\"auto optimize\\\", \\\"skill质量检查\\\", \\\"达尔文\\\", \\\"darwin\\\", \\\"帮我改改skill\\\", \\\"skill怎么样\\\", \\\"提升skill质量\\\", \\\"skill review\\\", \\\"skill打分\\\".",
+    "status": "未配置"
+  },
+  {
+    "name": "dcf-model",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\dcf-model",
+    "description": "Build institutional-quality DCF valuation models in Excel — revenue projections, FCF build, WACC, terminal value, Bear/Base/Bull scenarios, 5x5 sensitivity tables. Pairs with excel-author. Use for intrinsic-value equity analysis.",
+    "status": "未配置"
+  },
+  {
+    "name": "deploy-to-vercel",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\deploy-to-vercel",
+    "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
+    "status": "未配置"
+  },
+  {
+    "name": "developing-genkit-python",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\developing-genkit-python",
+    "description": "Develop AI-powered applications using Genkit in Python. Use when the user asks about Genkit, AI agents, flows, or tools in Python, or when encountering Genkit errors, import issues, or API problems.",
+    "status": "已配置"
+  },
+  {
+    "name": "diagram-maker",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\diagram-maker",
+    "description": "Create SVG/HTML or Excalidraw diagrams for concepts, architecture, flows, and whiteboards.",
+    "status": "已配置"
+  },
+  {
+    "name": "diagram-monochrome",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\diagram-monochrome",
+    "description": "This skill should be used when the user asks to create a monochrome technical diagram, schematic, or systems/architecture diagram in black-and-white line-art style. Trigger phrases include \"create a diagram\", \"monochrome diagram\", \"systems diagram\", \"draw a schematic\".",
+    "status": "未配置"
+  },
+  {
+    "name": "discord",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\discord",
+    "description": "Discord message-tool ops: send/read/edit/delete, react, poll, pin, thread, search, presence, media/components.",
+    "status": "未配置"
+  },
+  {
+    "name": "discord-clawd",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\discord-clawd",
+    "description": "Use to talk to the Discord-backed OpenClaw agent/session; not for archive search.",
+    "status": "未配置"
+  },
+  {
+    "name": "discrawl",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\discrawl",
+    "description": "Discord archive: search, sync freshness, DMs, channel slices, SQL counts, and Discrawl repo work.",
+    "status": "未配置"
+  },
+  {
+    "name": "docker-management",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\docker-management",
+    "description": "Manage Docker containers, images, volumes, networks, and Compose stacks — lifecycle ops, debugging, cleanup, and Dockerfile optimization.",
+    "status": "未配置"
+  },
+  {
+    "name": "domain-intel",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\domain-intel",
+    "description": "Passive domain reconnaissance using Python stdlib. Subdomain discovery, SSL certificate inspection, WHOIS lookups, DNS records, domain availability checks, and bulk multi-domain analysis. No API keys required.",
+    "status": "未配置"
+  },
+  {
+    "name": "drug-discovery",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\drug-discovery",
+    "description": ">",
+    "status": "未配置"
+  },
+  {
+    "name": "duckduckgo-search",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\duckduckgo-search",
+    "description": "Free web search via DuckDuckGo — text, news, images, videos. No API key needed. Prefer the `ddgs` CLI when installed; use the Python DDGS library only after verifying that `ddgs` is available in the current runtime.",
+    "status": "未配置"
+  },
+  {
+    "name": "eightctl",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\eightctl",
+    "description": "Control Eight Sleep pods (status, temperature, alarms, schedules).",
+    "status": "未配置"
+  },
+  {
+    "name": "evm",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\evm",
+    "description": "Read-only EVM client: wallets, tokens, gas across 8 chains.",
+    "status": "未配置"
+  },
+  {
+    "name": "excel-author",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\excel-author",
+    "description": "Build auditable Excel workbooks headless with openpyxl — blue/black/green cell conventions, formulas over hardcodes, named ranges, balance checks, sensitivity tables. Use for financial models, audit outputs, reconciliations.",
+    "status": "未配置"
+  },
+  {
+    "name": "excel-automation",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\excel-automation",
+    "description": ">",
+    "status": "已配置"
+  },
+  {
+    "name": "faiss",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\faiss",
+    "description": "Facebook's library for efficient similarity search and clustering of dense vectors. Supports billions of vectors, GPU acceleration, and various index types (Flat, IVF, HNSW). Use for fast k-NN search, large-scale vector retrieval, or when you need pure similarity search without metadata. Best for high-performance applications.",
+    "status": "未配置"
+  },
+  {
+    "name": "fastmcp",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\fastmcp",
+    "description": "Build, test, inspect, install, and deploy MCP servers with FastMCP in Python. Use when creating a new MCP server, wrapping an API or database as MCP tools, exposing resources or prompts, or preparing a FastMCP server for Claude Code, Cursor, or HTTP deployment.",
+    "status": "未配置"
+  },
+  {
+    "name": "find-skills",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\find-skills",
+    "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+    "status": "已配置"
+  },
+  {
+    "name": "fitness-nutrition",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\fitness-nutrition",
+    "description": ">",
+    "status": "未配置"
+  },
+  {
+    "name": "flash-attention",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\flash-attention",
+    "description": "Optimizes transformer attention with Flash Attention for 2-4x speedup and 10-20x memory reduction. Use when training/running transformers with long sequences (>512 tokens), encountering GPU memory issues with attention, or need faster inference. Supports PyTorch native SDPA, flash-attn library, H100 FP8, and sliding window attention.",
+    "status": "未配置"
+  },
+  {
+    "name": "gemini",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\gemini",
+    "description": "Gemini CLI one-shot prompts, summaries, generation, skills, hooks, MCP, or Gemma routing.",
+    "status": "未配置"
+  },
+  {
+    "name": "gh-issues",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\gh-issues",
+    "description": "Fetch GitHub issues, select candidates, spawn background fix agents, open PRs, and optionally process PR review comments.",
+    "status": "已配置"
+  },
+  {
+    "name": "gifgrep",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\gifgrep",
+    "description": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+    "status": "未配置"
+  },
+  {
+    "name": "gitcrawl",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\gitcrawl",
+    "description": "GitHub archive: issue/PR search, sync freshness, duplicate clusters, gh-shim PR status, and Gitcrawl repo work.",
+    "status": "未配置"
+  },
+  {
+    "name": "github",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\github",
+    "description": "GitHub CLI for issues, PRs, CI/check logs, comments, reviews, releases, repos, and gh api queries.",
+    "status": "已配置"
+  },
+  {
+    "name": "gitnexus-explorer",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\gitnexus-explorer",
+    "description": "Index a codebase with GitNexus and serve an interactive knowledge graph via web UI + Cloudflare tunnel.",
+    "status": "未配置"
+  },
+  {
+    "name": "gog",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\gog",
+    "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+    "status": "未配置"
+  },
+  {
+    "name": "goplaces",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\goplaces",
+    "description": "Query Google Places for text search, place details, resolve, reviews, or scriptable JSON via goplaces.",
+    "status": "未配置"
+  },
+  {
+    "name": "gpt-image-2",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\gpt-image-2",
+    "description": ">",
+    "status": "已配置"
+  },
+  {
+    "name": "graincrawl",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\graincrawl",
+    "description": "Granola archive: search, sync freshness, notes, transcripts, panels, SQL counts, and Graincrawl repo work.",
+    "status": "未配置"
+  },
+  {
+    "name": "guidance",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\guidance",
+    "description": "Control LLM output with regex and grammars, guarantee valid JSON/XML/code generation, enforce structured formats, and build multi-step workflows with Guidance - Microsoft Research's constrained generation framework",
+    "status": "未配置"
+  },
+  {
+    "name": "healthcheck",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\healthcheck",
+    "description": "Audit/harden OpenClaw hosts: SSH, firewall, updates, exposure, backups, disk encryption, gateway security.",
+    "status": "已配置"
+  },
+  {
+    "name": "here-now",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\here-now",
+    "description": "Publish static sites to {slug}.here.now and store private files in cloud Drives for agent-to-agent handoff.",
+    "status": "未配置"
+  },
+  {
+    "name": "hermes-atropos-environments",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\hermes-atropos-environments",
+    "description": "Build, test, and debug Hermes Agent RL environments for Atropos training. Covers the HermesAgentBaseEnv interface, reward functions, agent loop integration, evaluation with tools, wandb logging, and the three CLI modes (serve/process/evaluate). Use when creating, reviewing, or fixing RL environments in the hermes-agent repo.",
+    "status": "未配置"
+  },
+  {
+    "name": "himalaya",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\himalaya",
+    "description": "Himalaya CLI for IMAP/SMTP mail: list, read, search, compose, reply, forward, copy, move, delete.",
+    "status": "已配置"
+  },
+  {
+    "name": "honcho",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\honcho",
+    "description": "Configure and use Honcho memory with Hermes -- cross-session user modeling, multi-profile peer isolation, observation config, dialectic reasoning, session summaries, and context budget enforcement. Use when setting up Honcho, troubleshooting memory, managing profiles with Honcho peers, or tuning observation, recall, and dialectic settings.",
+    "status": "未配置"
+  },
+  {
+    "name": "huashu-design",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\huashu-design",
+    "description": "花叔Design（Huashu-Design）——用HTML做高保真原型、交互Demo、幻灯片、动画、设计变体探索+设计方向顾问+专家评审的一体化设计能力。HTML是工具不是媒介，根据任务embody不同专家（UX设计师/动画师/幻灯片设计师/原型师），避免web design tropes。触发词：做原型、设计Demo、交互原型、HTML演示、动画Demo、设计变体、hi-fi设计、UI mockup、prototype、设计探索、做个HTML页面、做个可视化、app原型、iOS原型、移动应用mockup、导出MP4、导出GIF、60fps视频、设计风格、设计方向、设计哲学、配色方案、视觉风格、推荐风格、选个风格、做个好看的、评审、好不好看、review this design、带解说的动画、解说视频、概念解释视频、长视频科普、配音动画、voiceover、narration、TTS+动画、5分钟讲清楚什么是XX。**主干能力**：Junior Designer工作流（先给假设+reasoning+placeholder再迭代）、反AI slop清单、React+Babel最佳实践、Tweaks变体切换、Speaker Notes演示、Starter Components（幻灯片外壳/变体画布/动画引擎/设备边框/解说Stage）、App原型专属守则（默认从Wikimedia/Met/Unsplash取真图、每台iPhone包AppPhone状态管理器可交互、交付前跑Playwright点击测试）、Playwright验证、HTML动画→MP4/GIF视频导出（25fps基础 + 60fps插帧 + palette优化GIF + 6首场景化BGM + 自动fade）、**带解说的长动画pipeline**（豆包TTS生人声+实测时长生timeline.json+NarrationStage驱动画面+ducking混音→交付HTML实播+发布MP4双形态；铁律：整片是一个连续的运动叙事，禁PowerPoint切换）。**需求模糊时的Fallback**：设计方向顾问模式——从5流派×20种设计哲学（Pentagram信息建筑/Field.io运动诗学/Kenya Hara东方极简/Sagmeister实验先锋等）推荐3个差异化方向，展示24个预制showcase（8场景×3风格），并行生成3个视觉Demo让用户选。**交付后可选**：专家级5维度评审（哲学一致性/视觉层级/细节执行/功能性/创新性各打10分+修复清单）。",
+    "status": "未配置"
+  },
+  {
+    "name": "huggingface-tokenizers",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\huggingface-tokenizers",
+    "description": "Fast tokenizers optimized for research and production. Rust-based implementation tokenizes 1GB in <20 seconds. Supports BPE, WordPiece, and Unigram algorithms. Train custom vocabularies, track alignments, handle padding/truncation. Integrates seamlessly with transformers. Use when you need high-performance tokenization or custom tokenizer training.",
+    "status": "未配置"
+  },
+  {
+    "name": "hyperframes",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\hyperframes",
+    "description": "Create HTML-based video compositions, animated title cards, social overlays, captioned talking-head videos, audio-reactive visuals, and shader transitions using HyperFrames. HTML is the source of truth for video. Use when the user wants a rendered MP4/WebM from an HTML composition, wants to animate text/logos/charts over media, needs captions synced to audio, wants TTS narration, or wants to convert a website into a video.",
+    "status": "未配置"
+  },
+  {
+    "name": "hyperliquid",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\hyperliquid",
+    "description": "Hyperliquid market data, account history, trade review.",
+    "status": "未配置"
+  },
+  {
+    "name": "iec61131",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\iec61131",
+    "description": "IEC 61131-3 programming languages reference (LD, FBD, ST, IL, SFC), PLCopen standards, program organization units, data types. Use when discussing PLC programming standards or cross-platform compatibility.",
+    "status": "未配置"
+  },
+  {
+    "name": "image-edit",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\image-edit",
+    "description": ">",
+    "status": "已配置"
+  },
+  {
+    "name": "imsg",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\imsg",
+    "description": "iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.",
+    "status": "未配置"
+  },
+  {
+    "name": "outlines",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\inference\\outlines",
+    "description": "Outlines: structured JSON/regex/Pydantic LLM generation.",
+    "status": "未配置"
+  },
+  {
+    "name": "instructor",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\instructor",
+    "description": "Extract structured data from LLM responses with Pydantic validation, retry failed extractions automatically, parse complex JSON with type safety, and stream partial results with Instructor - battle-tested structured output library",
+    "status": "未配置"
+  },
+  {
+    "name": "kanban-video-orchestrator",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\kanban-video-orchestrator",
+    "description": "Plan, set up, and monitor a multi-agent video production pipeline backed by Hermes Kanban. Use when the user wants to make ANY video — narrative film, product/marketing, music video, explainer, ASCII/terminal art, abstract/generative loop, comic, 3D, real-time/installation — and the work warrants decomposition into specialized profiles (writer, designer, animator, renderer, voice, editor, etc.) coordinated through a kanban board. Performs adaptive discovery to scope the brief, designs an appropriate team for the requested style, generates the setup script that creates Hermes profiles + initial kanban task, then helps monitor execution and intervene when tasks stall or fail. Routes scenes to whichever Hermes rendering / audio / design skill fits each beat (`ascii-video`, `manim-video`, `p5js`, `comfyui`, `touchdesigner-mcp`, `blender-mcp`, `pixel-art`, `baoyu-comic`, `claude-design`, `excalidraw`, `songsee`, `heartmula`, …) plus external APIs for TTS, image-gen, and image-to-video as needed.",
+    "status": "未配置"
+  },
+  {
+    "name": "karpathy-guidelines",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\karpathy-guidelines",
+    "description": "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.",
+    "status": "已配置"
+  },
+  {
+    "name": "keil",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\keil",
+    "description": ">-",
+    "status": "已配置"
+  },
+  {
+    "name": "lambda-labs",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\lambda-labs",
+    "description": "Reserved and on-demand GPU cloud instances for ML training and inference. Use when you need dedicated GPU instances with simple SSH access, persistent filesystems, or high-performance multi-node clusters for large-scale training.",
+    "status": "未配置"
+  },
+  {
+    "name": "lbo-model",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\lbo-model",
+    "description": "Build leveraged buyout models in Excel — sources & uses, debt schedule, cash sweep, exit multiple, IRR/MOIC sensitivity. Pairs with excel-author. Use for PE screening, sponsor-case valuation, or illustrative LBO in a pitch.",
+    "status": "未配置"
+  },
+  {
+    "name": "legacy-circuit-mockups",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\legacy-circuit-mockups",
+    "description": "Generate breadboard circuit mockups and visual diagrams using HTML5 Canvas drawing techniques. Use when asked to create circuit layouts, visualize electronic component placements, draw breadboard diagrams, mockup 6502 builds, generate retro computer schematics, or design vintage electronics projects. Supports 555 timers, W65C02S microprocessors, 28C256 EEPROMs, W65C22 VIA chips, 7400-series logic gates, LEDs, resistors, capacitors, switches, buttons, crystals, and wires.",
+    "status": "未配置"
+  },
+  {
+    "name": "ljg-word",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\ljg-word",
+    "description": "Deep-dive English word mastery tool. Deconstructs a single English word into core semantics and epiphany. Use when user asks to explain/master a specific English word.",
+    "status": "未配置"
+  },
+  {
+    "name": "llava",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\llava",
+    "description": "Large Language and Vision Assistant. Enables visual instruction tuning and image-based conversations. Combines CLIP vision encoder with Vicuna/LLaMA language models. Supports multi-turn image chat, visual question answering, and instruction following. Use for vision-language chatbots or image understanding tasks. Best for conversational image analysis.",
+    "status": "未配置"
+  },
+  {
+    "name": "llm-patterns",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\llm-patterns",
+    "description": "AI-first application patterns, LLM testing, prompt management",
+    "status": "已配置"
+  },
+  {
+    "name": "mcporter",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\mcporter",
+    "description": "List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.",
+    "status": "未配置"
+  },
+  {
+    "name": "meme-generation",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\meme-generation",
+    "description": "Generate real meme images by picking a template and overlaying text with Pillow. Produces actual .png meme files.",
+    "status": "未配置"
+  },
+  {
+    "name": "meme-maker",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\meme-maker",
+    "description": "Search meme templates, suggest formats, and generate local or hosted image memes.",
+    "status": "未配置"
+  },
+  {
+    "name": "memento-flashcards",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\memento-flashcards",
+    "description": ">-",
+    "status": "未配置"
+  },
+  {
+    "name": "merger-model",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\merger-model",
+    "description": "Build accretion/dilution (merger) models in Excel — pro-forma P&L, synergies, financing mix, EPS impact. Pairs with excel-author. Use for M&A pitches, board materials, or deal evaluation.",
+    "status": "未配置"
+  },
+  {
+    "name": "modal",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\modal",
+    "description": "Serverless GPU cloud platform for running ML workloads. Use when you need on-demand GPU access without infrastructure management, deploying ML models as APIs, or running batch jobs with automatic scaling.",
+    "status": "未配置"
+  },
+  {
+    "name": "model-usage",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\model-usage",
+    "description": "Summarize CodexBar local cost logs by model for Codex or Claude, including current or full breakdowns.",
+    "status": "已配置"
+  },
+  {
+    "name": "motor-control",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\motor-control",
+    "description": "Patterns for electric motor control including Field Oriented Control (FOC), stepper motor control, encoder interfaces, current sensing, and power electronics. Covers BLDC, PMSM, DC brushed, and stepper motor applications. Use when \", \" mentioned.",
+    "status": "未配置"
+  },
+  {
+    "name": "nano-banana-edit",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\nano-banana-edit",
+    "description": ">",
+    "status": "已配置"
+  },
+  {
+    "name": "nano-pdf",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\nano-pdf",
+    "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+    "status": "已配置"
+  },
+  {
+    "name": "nemo-curator",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\nemo-curator",
+    "description": "GPU-accelerated data curation for LLM training. Supports text/image/video/audio. Features fuzzy deduplication (16× faster), quality filtering (30+ heuristics), semantic deduplication, PII redaction, NSFW detection. Scales across GPUs with RAPIDS. Use for preparing high-quality training datasets, cleaning web data, or deduplicating large corpora.",
+    "status": "未配置"
+  },
+  {
+    "name": "neuroskill-bci",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\neuroskill-bci",
+    "description": ">",
+    "status": "未配置"
+  },
+  {
+    "name": "next-best-practices",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\next-best-practices",
+    "description": "Next.js best practices - file conventions, RSC boundaries, data patterns, async APIs, metadata, error handling, route handlers, image/font optimization, bundling",
+    "status": "已配置"
+  },
+  {
+    "name": "node-connect",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\node-connect",
+    "description": "Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.",
+    "status": "未配置"
+  },
+  {
+    "name": "node-inspect-debugger",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\node-inspect-debugger",
+    "description": "Debug Node.js with node inspect, --inspect, breakpoints, CDP, heap, and CPU profiles.",
+    "status": "未配置"
+  },
+  {
+    "name": "notcrawl",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\notcrawl",
+    "description": "Notion archive: search, sync freshness, pages/databases, Markdown exports, SQL counts, and Notcrawl repo work.",
+    "status": "未配置"
+  },
+  {
+    "name": "notion",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\notion",
+    "description": "Notion CLI/API for pages, Markdown content, data sources, files, comments, search, Workers, and raw API calls.",
+    "status": "已配置"
+  },
+  {
+    "name": "obsidian",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\obsidian",
+    "description": "Work with Obsidian vaults using the official obsidian CLI: read/search/create/edit notes, tasks, links, properties, plugins.",
+    "status": "已配置"
+  },
+  {
+    "name": "office-automation",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\office-automation",
+    "description": "自动化处理 Word 和 Excel 文件。使用 Python 脚本读取、写入、格式化文档和表格。支持批量处理、模板填充、数据提取和格式转换。",
+    "status": "未配置"
+  },
+  {
+    "name": "one-three-one-rule",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\one-three-one-rule",
+    "description": ">",
+    "status": "未配置"
+  },
+  {
+    "name": "openai-whisper",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openai-whisper",
+    "description": "Local speech-to-text with the Whisper CLI (no API key).",
+    "status": "已配置"
+  },
+  {
+    "name": "openai-whisper-api",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openai-whisper-api",
+    "description": "OpenAI Audio Transcriptions API via curl; gpt-4o-transcribe, mini, diarize, or whisper-1.",
+    "status": "已配置"
+  },
+  {
+    "name": "openclaw-debugging",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-debugging",
+    "description": "Debug OpenClaw model, provider, tool-surface, code-mode, streaming, and live/Crabbox behavior by choosing the right logs, probes, and proof path before changing code.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-docker-e2e-authoring",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-docker-e2e-authoring",
+    "description": "Author OpenClaw Docker E2E and live provider Docker lanes.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-docs",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-docs",
+    "description": "Write or review high-quality OpenClaw developer documentation.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-ghsa-maintainer",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-ghsa-maintainer",
+    "description": "Inspect, patch, validate, publish, or confirm OpenClaw GHSA security advisories and private-fork state.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-landable-bug-sweep",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-landable-bug-sweep",
+    "description": "Find or repair small high-confidence OpenClaw bugfix PRs until five are landable.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-mac-release",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-mac-release",
+    "description": "Run or recover OpenClaw macOS release signing, notarization, appcast, and asset promotion.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-migration",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-migration",
+    "description": "Migrate a user's OpenClaw customization footprint into Hermes Agent. Imports Hermes-compatible memories, SOUL.md, command allowlists, user skills, and selected workspace assets from ~/.openclaw, then reports exactly what could not be migrated and why.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-parallels-smoke",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-parallels-smoke",
+    "description": "Run, rerun, debug, or interpret OpenClaw Parallels install, onboarding, gateway smoke, and upgrade checks.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-pr-maintainer",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-pr-maintainer",
+    "description": "Use immediately for any pasted OpenClaw GitHub issue or PR URL/number, and for OpenClaw issue/PR review, triage, duplicate search, opener identity/who wrote it, author account age/activity, comments, labels, close, land, or maintainer evidence checks.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-pre-release-plugin-testing",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-pre-release-plugin-testing",
+    "description": "Plan and run pre-release OpenClaw plugin validation across bundled plugins, package artifacts, lifecycle commands, doctor/fix, config round-trip, gateway startup, SDK compatibility, Docker E2E, Package Acceptance, and Testbox proof.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-qa-testing",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-qa-testing",
+    "description": "Run, watch, debug, extend, or explain OpenClaw qa-lab and qa-channel scenarios, artifacts, and live lanes.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-refactor-docs",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-refactor-docs",
+    "description": "Refactor an existing OpenClaw docs page with source-audited preservation, restructuring, and verification.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-release-ci",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-release-ci",
+    "description": "Run, watch, debug, and summarize OpenClaw full release CI, release checks, live provider gates, install/update proofs, and release-secret preflights.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-release-maintainer",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-release-maintainer",
+    "description": "Prepare or verify OpenClaw stable/beta releases, changelogs, release notes, publish commands, and artifacts.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-secret-scanning-maintainer",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-secret-scanning-maintainer",
+    "description": "Triage, redact, clean up, and resolve OpenClaw GitHub Secret Scanning alerts in issues or PRs.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-small-bugfix-sweep",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-small-bugfix-sweep",
+    "description": "Fix only small, high-certainty OpenClaw bugs from a pasted issue/PR list after deep code review.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-test-heap-leaks",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-test-heap-leaks",
+    "description": "Investigate OpenClaw pnpm test memory growth, Vitest OOMs, RSS spikes, and heap snapshot deltas.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-test-performance",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-test-performance",
+    "description": "Benchmark, diagnose, and optimize OpenClaw test and plugin-suite runtime, import hotspots, CPU/RSS, heap growth, and slow coverage paths.",
+    "status": "未配置"
+  },
+  {
+    "name": "openclaw-testing",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openclaw-testing",
+    "description": "Choose, run, rerun, or debug OpenClaw tests, CI checks, Docker E2E lanes, release validation, and the cheapest safe verification path.",
+    "status": "未配置"
+  },
+  {
+    "name": "openhue",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\openhue",
+    "description": "Control Philips Hue lights and scenes via the OpenHue CLI.",
+    "status": "未配置"
+  },
+  {
+    "name": "optimizetests",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\optimizetests",
+    "description": "Optimize OpenClaw slow tests, imports, misplaced coverage, and CI wall time without dropping coverage.",
+    "status": "未配置"
+  },
+  {
+    "name": "oracle",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\oracle",
+    "description": "Oracle CLI second-model review/debug/refactor/design with selected files, dry-run token checks, API or browser engine.",
+    "status": "未配置"
+  },
+  {
+    "name": "ordercli",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\ordercli",
+    "description": "Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).",
+    "status": "未配置"
+  },
+  {
+    "name": "oss-forensics",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\oss-forensics",
+    "description": "|",
+    "status": "未配置"
+  },
+  {
+    "name": "page-agent",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\page-agent",
+    "description": "Embed alibaba/page-agent into your own web application — a pure-JavaScript in-page GUI agent that ships as a single <script> tag or npm package and lets end-users of your site drive the UI with natural language (\"click login, fill username as John\"). No Python, no headless browser, no extension required. Use this skill when the user is a web developer who wants to add an AI copilot to their SaaS / admin panel / B2B tool, make a legacy web app accessible via natural language, or evaluate page-agent against a local (Ollama) or cloud (Qwen / OpenAI / OpenRouter) LLM. NOT for server-side browser automation — point those users to Hermes' built-in browser tool instead.",
+    "status": "未配置"
+  },
+  {
+    "name": "parallel-cli",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\parallel-cli",
+    "description": "Optional vendor skill for Parallel CLI — agent-native web search, extraction, deep research, enrichment, FindAll, and monitoring. Prefer JSON output and non-interactive flows.",
+    "status": "未配置"
+  },
+  {
+    "name": "parallels-discord-roundtrip",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\parallels-discord-roundtrip",
+    "description": "Run macOS Parallels smoke with Discord send, host verification, host reply, and guest readback proof.",
+    "status": "未配置"
+  },
+  {
+    "name": "pdf-extraction",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\pdf-extraction",
+    "description": "Extract text, tables, and metadata from PDFs using pdfplumber",
+    "status": "未配置"
+  },
+  {
+    "name": "peekaboo",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\peekaboo",
+    "description": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "status": "未配置"
+  },
+  {
+    "name": "peft",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\peft",
+    "description": "Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use when fine-tuning large models (7B-70B) with limited GPU memory, when you need to train <1% of parameters with minimal accuracy loss, or for multi-adapter serving. HuggingFace's official library integrated with transformers ecosystem.",
+    "status": "未配置"
+  },
+  {
+    "name": "pinecone",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\pinecone",
+    "description": "Managed vector database for production AI applications. Fully managed, auto-scaling, with hybrid search (dense + sparse), metadata filtering, and namespaces. Low latency (<100ms p95). Use for production RAG, recommendation systems, or semantic search at scale. Best for serverless, managed infrastructure.",
+    "status": "未配置"
+  },
+  {
+    "name": "ppt-visual",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\ppt-visual",
+    "description": "Design presentation visuals and slide layouts. Create visual concepts, suggest graphics, and provide design specifications for impactful PowerPoint slides.",
+    "status": "未配置"
+  },
+  {
+    "name": "pptx",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\pptx",
+    "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \\\"deck,\\\" \\\"slides,\\\" \\\"presentation,\\\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
+    "status": "已配置"
+  },
+  {
+    "name": "pptx-author",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\pptx-author",
+    "description": "Build PowerPoint decks headless with python-pptx. Pairs with excel-author for model-backed decks where every number traces to a workbook cell. Use for pitch decks, IC memos, earnings notes.",
+    "status": "未配置"
+  },
+  {
+    "name": "python-debugpy",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\python-debugpy",
+    "description": "Debug Python with pdb, breakpoint(), post-mortem inspection, and debugpy remote attach.",
+    "status": "已配置"
+  },
+  {
+    "name": "python-design-patterns",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\python-design-patterns",
+    "description": "Python design patterns including KISS, Separation of Concerns, Single Responsibility, and composition over inheritance. Use this skill when designing a new service or component from scratch and choosing how to layer responsibilities, when refactoring a God class or monolithic function that has grown too large, when deciding whether to add a new abstraction or live with duplication, when evaluating a pull request for structural issues like tight coupling or leaking internal types, when choosing between inheritance and composition for a new class hierarchy, or when a codebase is becoming hard to test because of entangled I/O and business logic.",
+    "status": "未配置"
+  },
+  {
+    "name": "python-performance-optimization",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\python-performance-optimization",
+    "description": "Profile and optimize Python code using cProfile, memory profilers, and performance best practices. Use when debugging slow Python code, optimizing bottlenecks, or improving application performance.",
+    "status": "未配置"
+  },
+  {
+    "name": "python-testing-patterns",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\python-testing-patterns",
+    "description": "Implement comprehensive testing strategies with pytest, fixtures, mocking, and test-driven development. Use when writing Python tests, setting up test suites, or implementing testing best practices.",
+    "status": "已配置"
+  },
+  {
+    "name": "pytorch-fsdp",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\pytorch-fsdp",
+    "description": "Expert guidance for Fully Sharded Data Parallel training with PyTorch FSDP - parameter sharding, mixed precision, CPU offloading, FSDP2",
+    "status": "未配置"
+  },
+  {
+    "name": "pytorch-lightning",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\pytorch-lightning",
+    "description": "High-level PyTorch framework with Trainer class, automatic distributed training (DDP/FSDP/DeepSpeed), callbacks system, and minimal boilerplate. Scales from laptop to supercomputer with same code. Use when you want clean training loops with built-in best practices.",
+    "status": "未配置"
+  },
+  {
+    "name": "qdrant",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\qdrant",
+    "description": "High-performance vector similarity search engine for RAG and semantic search. Use when building production RAG systems requiring fast nearest neighbor search, hybrid search with filtering, or scalable vector storage with Rust-powered performance.",
+    "status": "未配置"
+  },
+  {
+    "name": "qmd",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\qmd",
+    "description": "Search personal knowledge bases, notes, docs, and meeting transcripts locally using qmd — a hybrid retrieval engine with BM25, vector search, and LLM reranking. Supports CLI and MCP integration.",
+    "status": "未配置"
+  },
+  {
+    "name": "react",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\react",
+    "description": "React renderer for json-render that turns JSON specs into React components. Use when working with @json-render/react, building React UIs from JSON, creating component catalogs, or rendering AI-generated specs.",
+    "status": "已配置"
+  },
+  {
+    "name": "react-three-fiber",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\react-three-fiber",
+    "description": "React Three Fiber 3D renderer for json-render. Use when working with @json-render/react-three-fiber, building 3D scenes from JSON specs, rendering meshes/lights/models/environments, or integrating Three.js with json-render catalogs.",
+    "status": "已配置"
+  },
+  {
+    "name": "receiving-code-review",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\receiving-code-review",
+    "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+    "status": "已配置"
+  },
+  {
+    "name": "remotion-best-practices",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\remotion-best-practices",
+    "description": "Best practices for Remotion - Video creation in React",
+    "status": "已配置"
+  },
+  {
+    "name": "requesting-code-review",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\requesting-code-review",
+    "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+    "status": "已配置"
+  },
+  {
+    "name": "rest-graphql-debug",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\rest-graphql-debug",
+    "description": "Debug REST/GraphQL APIs: status codes, auth, schemas, repro.",
+    "status": "未配置"
+  },
+  {
+    "name": "saelens",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\saelens",
+    "description": "Provides guidance for training and analyzing Sparse Autoencoders (SAEs) using SAELens to decompose neural network activations into interpretable features. Use when discovering interpretable features, analyzing superposition, or studying monosemantic representations in language models.",
+    "status": "未配置"
+  },
+  {
+    "name": "sag",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\sag",
+    "description": "ElevenLabs text-to-speech with mac-style say UX.",
+    "status": "已配置"
+  },
+  {
+    "name": "scientific-schematics",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\scientific-schematics",
+    "description": "Create publication-quality scientific diagrams using Nano Banana Pro AI with smart iterative refinement. Uses Gemini 3 Pro for quality review. Only regenerates if quality is below threshold for your document type. Specialized in neural network architectures, system diagrams, flowcharts, biological pathways, and complex scientific visualizations.",
+    "status": "未配置"
+  },
+  {
+    "name": "scrapling",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\scrapling",
+    "description": "Web scraping with Scrapling - HTTP fetching, stealth browser automation, Cloudflare bypass, and spider crawling via CLI and Python.",
+    "status": "未配置"
+  },
+  {
+    "name": "searxng-search",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\searxng-search",
+    "description": "Free meta-search via SearXNG — aggregates results from 70+ search engines. Self-hosted or use a public instance. No API key needed. Falls back automatically when the web search toolset is unavailable.",
+    "status": "未配置"
+  },
+  {
+    "name": "security-triage",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\security-triage",
+    "description": "Triage OpenClaw security advisories, drafts, and GHSA reports with shipped-tag and trust-model proof.",
+    "status": "未配置"
+  },
+  {
+    "name": "senior-ml-engineer",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\senior-ml-engineer",
+    "description": "ML engineering skill for productionizing models, building MLOps pipelines, and integrating LLMs. Covers model deployment, feature stores, drift monitoring, RAG systems, and cost optimization. Use when the user asks about deploying ML models to production, setting up MLOps infrastructure (MLflow, Kubeflow, Kubernetes, Docker), monitoring model performance or drift, building RAG pipelines, or integrating LLM APIs with retry logic and cost controls. Focused on production and operational concerns rather than model research or initial training.",
+    "status": "已配置"
+  },
+  {
+    "name": "session-logs",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\session-logs",
+    "description": "Search and analyze your own session logs (older/parent conversations) using jq.",
+    "status": "已配置"
+  },
+  {
+    "name": "sherlock",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\sherlock",
+    "description": "OSINT username search across 400+ social networks. Hunt down social media accounts by username.",
+    "status": "未配置"
+  },
+  {
+    "name": "sherpa-onnx-tts",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\sherpa-onnx-tts",
+    "description": "Local text-to-speech via sherpa-onnx (offline, no cloud)",
+    "status": "已配置"
+  },
+  {
+    "name": "shop-app",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\shop-app",
+    "description": "Shop.app: product search, order tracking, returns, reorder.",
+    "status": "未配置"
+  },
+  {
+    "name": "shopify",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\shopify",
+    "description": "Shopify Admin & Storefront GraphQL APIs via curl. Products, orders, customers, inventory, metafields.",
+    "status": "未配置"
+  },
+  {
+    "name": "simpo",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\simpo",
+    "description": "Simple Preference Optimization for LLM alignment. Reference-free alternative to DPO with better performance (+6.4 points on AlpacaEval 2.0). No reference model needed, more efficient than DPO. Use for preference alignment when want simpler, faster training than DPO/PPO.",
+    "status": "未配置"
+  },
+  {
+    "name": "siyuan",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\siyuan",
+    "description": "SiYuan Note API for searching, reading, creating, and managing blocks and documents in a self-hosted knowledge base via curl.",
+    "status": "未配置"
+  },
+  {
+    "name": "skill-creator",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\skill-creator",
+    "description": "Create, edit, audit, tidy, validate, or restructure AgentSkills and SKILL.md files.",
+    "status": "已配置"
+  },
+  {
+    "name": "slack",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\slack",
+    "description": "Slack tool actions: send/read/edit/delete messages, react, pin/unpin, list pins/reactions/emoji, member info.",
+    "status": "未配置"
+  },
+  {
+    "name": "slacrawl",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\slacrawl",
+    "description": "Slack archive: search, sync freshness, threads/DMs, SQL counts, and Slacrawl repo work.",
+    "status": "未配置"
+  },
+  {
+    "name": "slime",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\slime",
+    "description": "Provides guidance for LLM post-training with RL using slime, a Megatron+SGLang framework. Use when training GLM models, implementing custom data generation workflows, or needing tight Megatron-LM integration for RL scaling.",
+    "status": "未配置"
+  },
+  {
+    "name": "smart-ocr",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\smart-ocr",
+    "description": ">",
+    "status": "未配置"
+  },
+  {
+    "name": "smart-skill-orchestrator",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\smart-skill-orchestrator",
+    "description": "Intelligent natural language skill router that understands user intent and automatically invokes the appropriate installed skills. Enables seamless skill usage through conversational commands.",
+    "status": "已配置"
+  },
+  {
+    "name": "solana",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\solana",
+    "description": "Query Solana blockchain data with USD pricing — wallet balances, token portfolios with values, transaction details, NFTs, whale detection, and live network stats. Uses Solana RPC + CoinGecko. No API key required.",
+    "status": "未配置"
+  },
+  {
+    "name": "songsee",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\songsee",
+    "description": "Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.",
+    "status": "未配置"
+  },
+  {
+    "name": "sonoscli",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\sonoscli",
+    "description": "Control Sonos speakers (discover/status/play/volume/group).",
+    "status": "未配置"
+  },
+  {
+    "name": "spike",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\spike",
+    "description": "Run throwaway prototypes to validate feasibility, compare approaches, and report a verdict.",
+    "status": "已配置"
+  },
+  {
+    "name": "spotify-player",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\spotify-player",
+    "description": "Terminal Spotify playback/search via spogo (preferred) or spotify_player.",
+    "status": "未配置"
+  },
+  {
+    "name": "stable-diffusion",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\stable-diffusion",
+    "description": "State-of-the-art text-to-image generation with Stable Diffusion models via HuggingFace Diffusers. Use when generating images from text prompts, performing image-to-image translation, inpainting, or building custom diffusion pipelines.",
+    "status": "未配置"
+  },
+  {
+    "name": "stock-analysis",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\stock-analysis",
+    "description": "Analyze stocks with fundamental and technical analysis. Supports US, China A-shares, and Hong Kong markets. Generate investment reports with key metrics.",
+    "status": "未配置"
+  },
+  {
+    "name": "stocks",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\stocks",
+    "description": "Stock quotes, history, search, compare, crypto via Yahoo.",
+    "status": "未配置"
+  },
+  {
+    "name": "summarize",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\summarize",
+    "description": "Summarize or transcribe URLs, YouTube/videos, podcasts, articles, transcripts, PDFs, and local files.",
+    "status": "已配置"
+  },
+  {
+    "name": "tag-duplicate-prs-issues",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\tag-duplicate-prs-issues",
+    "description": "Use gitcrawl to search duplicate OpenClaw PRs/issues, group related work in prtags, and sync duplicate state to GitHub.",
+    "status": "未配置"
+  },
+  {
+    "name": "taskflow",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\taskflow",
+    "description": "Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.",
+    "status": "已配置"
+  },
+  {
+    "name": "taskflow-inbox-triage",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\taskflow-inbox-triage",
+    "description": "Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.",
+    "status": "已配置"
+  },
+  {
+    "name": "telegram-crabbox-e2e-proof",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\telegram-crabbox-e2e-proof",
+    "description": "Use when reviewing, reproducing, or proving OpenClaw Telegram behavior with a real Telegram user on Crabbox, including PR review workflows that need an agent-controlled Telegram Desktop recording, TDLib user-driver commands, Convex-leased credentials, WebVNC observation, and motion-trimmed artifacts.",
+    "status": "未配置"
+  },
+  {
+    "name": "telephony",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\telephony",
+    "description": "Give Hermes phone capabilities without core tool changes. Provision and persist a Twilio number, send and receive SMS/MMS, make direct calls, and place AI-driven outbound calls through Bland.ai or Vapi.",
+    "status": "未配置"
+  },
+  {
+    "name": "tensorrt-llm",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\tensorrt-llm",
+    "description": "Optimizes LLM inference with NVIDIA TensorRT for maximum throughput and lowest latency. Use for production deployment on NVIDIA GPUs (A100/H100), when you need 10-100x faster inference than PyTorch, or for serving models with quantization (FP8/INT4), in-flight batching, and multi-GPU scaling.",
+    "status": "未配置"
+  },
+  {
+    "name": "things-mac",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\things-mac",
+    "description": "Add, update, list, search, or inspect Things 3 todos, inbox, today, projects, areas, and tags on macOS.",
+    "status": "未配置"
+  },
+  {
+    "name": "tmux",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\tmux",
+    "description": "Control tmux sessions/panes for interactive CLIs: list, capture output, send keys, paste text, monitor prompts.",
+    "status": "已配置"
+  },
+  {
+    "name": "torchtitan",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\torchtitan",
+    "description": "Provides PyTorch-native distributed LLM pretraining using torchtitan with 4D parallelism (FSDP2, TP, PP, CP). Use when pretraining Llama 3.1, DeepSeek V3, or custom models at scale from 8 to 512+ GPUs with Float8, torch.compile, and distributed checkpointing.",
+    "status": "未配置"
+  },
+  {
+    "name": "axolotl",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\training\\axolotl",
+    "description": "Axolotl: YAML LLM fine-tuning (LoRA, DPO, GRPO).",
+    "status": "未配置"
+  },
+  {
+    "name": "trl-fine-tuning",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\training\\trl-fine-tuning",
+    "description": "TRL: SFT, DPO, PPO, GRPO, reward modeling for LLM RLHF.",
+    "status": "未配置"
+  },
+  {
+    "name": "unsloth",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\training\\unsloth",
+    "description": "Unsloth: 2-5x faster LoRA/QLoRA fine-tuning, less VRAM.",
+    "status": "未配置"
+  },
+  {
+    "name": "trello",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\trello",
+    "description": "Manage Trello boards, lists, and cards via the Trello REST API.",
+    "status": "未配置"
+  },
+  {
+    "name": "tscircuit",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\tscircuit",
+    "description": "Build, modify, and debug tscircuit (React/TypeScript) PCB designs. Use when working with tsci CLI (init/dev/search/add/import/build/export/snapshot/push), choosing footprints, placing parts, wiring nets/traces, or preparing fabrication outputs (Gerbers/BOM/PnP).",
+    "status": "未配置"
+  },
+  {
+    "name": "vercel-cli-with-tokens",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\vercel-cli-with-tokens",
+    "description": "Deploy and manage projects on Vercel using token-based authentication. Use when working with Vercel CLI using access tokens rather than interactive login — e.g. \"deploy to vercel\", \"set up vercel\", \"add environment variables to vercel\".",
+    "status": "未配置"
+  },
+  {
+    "name": "vercel-composition-patterns",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\vercel-composition-patterns",
+    "description": "---",
+    "status": "未配置"
+  },
+  {
+    "name": "vercel-react-best-practices",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\vercel-react-best-practices",
+    "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
+    "status": "未配置"
+  },
+  {
+    "name": "vercel-react-native-skills",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\vercel-react-native-skills",
+    "description": "---",
+    "status": "未配置"
+  },
+  {
+    "name": "video-frames",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\video-frames",
+    "description": "Extract frames or short clips from videos using ffmpeg.",
+    "status": "已配置"
+  },
+  {
+    "name": "voice-call",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\voice-call",
+    "description": "Start voice calls via the OpenClaw voice-call plugin.",
+    "status": "未配置"
+  },
+  {
+    "name": "wacli",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\wacli",
+    "description": "Send third-party WhatsApp messages or sync/search WhatsApp history via wacli, not normal active chats.",
+    "status": "未配置"
+  },
+  {
+    "name": "watchers",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\watchers",
+    "description": "Poll RSS, JSON APIs, and GitHub with watermark dedup.",
+    "status": "未配置"
+  },
+  {
+    "name": "weather",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\weather",
+    "description": "Current weather and forecasts with wttr.in via curl for locations, rain, temperature, travel planning.",
+    "status": "未配置"
+  },
+  {
+    "name": "web-design-guidelines",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\web-design-guidelines",
+    "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+    "status": "未配置"
+  },
+  {
+    "name": "webapp-testing",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\webapp-testing",
+    "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+    "status": "未配置"
+  },
+  {
+    "name": "whisper",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\whisper",
+    "description": "OpenAI's general-purpose speech recognition model. Supports 99 languages, transcription, translation to English, and language identification. Six model sizes from tiny (39M params) to large (1550M params). Use for speech-to-text, podcast transcription, or multilingual audio processing. Best for robust, multilingual ASR.",
+    "status": "未配置"
+  },
+  {
+    "name": "word-document-processor",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\word-document-processor",
+    "description": "Comprehensive word document processing with full format support. Handles creation, editing, formatting preservation, tracked changes, and metadata management.",
+    "status": "已配置"
+  },
+  {
+    "name": "xurl",
+    "path": "C:\\Users\\lenovo\\.agents\\skills\\xurl",
+    "description": "xurl CLI for authenticated X posts, replies, reads/search, DMs, media upload, followers, auth status, or raw v2 API calls.",
+    "status": "未配置"
+  },
+  {
+    "name": "gws-docs-write",
+    "path": "C:\\Users\\lenovo\\.claude\\skills\\.agents\\skills\\gws-docs-write",
+    "description": "Google Docs: Append text to a document.",
+    "status": "未配置"
+  },
+  {
+    "name": "write-a-skill",
+    "path": "C:\\Users\\lenovo\\.claude\\skills\\.agents\\skills\\write-a-skill",
+    "description": "Create new agent skills with proper structure, progressive disclosure, and bundled resources. Use when user wants to create, write, or build a new skill.",
+    "status": "未配置"
+  },
+  {
+    "name": "browsehive",
+    "path": "C:\\Users\\lenovo\\.claude\\skills\\browsehive",
+    "description": "BrowseHive浏览器AI工作流：通过browser-harness操控Chrome，与豆包/DeepSeek/欧亿AI/火山引擎协作。触发词：bh、hive、联网、打开AI平台",
+    "status": "已配置"
+  },
+  {
+    "name": "github-mirror-accelerator",
+    "path": "C:\\Users\\lenovo\\.claude\\skills\\github-mirror-accelerator",
+    "description": "配置 Git 使用镜像加速 GitHub 下载，特别适用于中国区用户和 WSL 环境",
+    "status": "已配置"
+  },
+  {
+    "name": "gitnexus-cli",
+    "path": "C:\\Users\\lenovo\\.claude\\skills\\gitnexus-cli",
+    "description": "Use when the user needs to run GitNexus CLI commands like analyze/index a repo, check status, clean the index, generate a wiki, or list indexed repos. Examples: \\\"Index this repo\\\", \\\"Reanalyze the codebase\\\", \\\"Generate a wiki\\",
+    "status": "已配置"
+  },
+  {
+    "name": "gitnexus-debugging",
+    "path": "C:\\Users\\lenovo\\.claude\\skills\\gitnexus-debugging",
+    "description": "Use when the user is debugging a bug, tracing an error, or asking why something fails. Examples: \\\"Why is X failing?\\\", \\\"Where does this error come from?\\\", \\\"Trace this bug\\",
+    "status": "已配置"
+  },
+  {
+    "name": "gitnexus-exploring",
+    "path": "C:\\Users\\lenovo\\.claude\\skills\\gitnexus-exploring",
+    "description": "Use when the user asks how code works, wants to understand architecture, trace execution flows, or explore unfamiliar parts of the codebase. Examples: \\\"How does X work?\\\", \\\"What calls this function?\\\", \\\"Show me the auth flow\\",
+    "status": "已配置"
+  },
+  {
+    "name": "gitnexus-guide",
+    "path": "C:\\Users\\lenovo\\.claude\\skills\\gitnexus-guide",
+    "description": "Use when the user asks about GitNexus itself — available tools, how to query the knowledge graph, MCP resources, graph schema, or workflow reference. Examples: \\\"What GitNexus tools are available?\\\", \\\"How do I use GitNexus?\\",
+    "status": "已配置"
+  },
+  {
+    "name": "gitnexus-pr-review",
+    "path": "C:\\Users\\lenovo\\.claude\\skills\\gitnexus-pr-review",
+    "description": "Use when the user wants to review a pull request, understand what a PR changes, assess risk of merging, or check for missing test coverage. Examples: \\\"Review this PR\\\", \\\"What does PR #42 change?\\\", \\\"Is this PR safe to merge?\\",
+    "status": "已配置"
+  },
+  {
+    "name": "gitnexus-refactoring",
+    "path": "C:\\Users\\lenovo\\.claude\\skills\\gitnexus-refactoring",
+    "description": "Use when the user wants to rename, extract, split, move, or restructure code safely. Examples: \\\"Rename this function\\\", \\\"Extract this into a module\\\", \\\"Refactor this class\\\", \\\"Move this to a separate file\\",
+    "status": "已配置"
+  },
+  {
+    "name": "model-router",
+    "path": "C:\\Users\\lenovo\\.claude\\skills\\model-router",
+    "description": "智能模型路由器 - 根据任务复杂度自动选择最优模型（NVIDIA/豆包/DeepSeek/Claude），节省token成本",
+    "status": "已配置"
+  },
+  {
+    "name": "ouyi-ai",
+    "path": "C:\\Users\\lenovo\\.claude\\skills\\ouyi-ai",
+    "description": "欧亿-Ai API: 对话、写作、思维导图、绘图。调用 GPT/Claude/Gemini/DeepSeek + DALL-E 绘图。",
+    "status": "未配置"
+  },
+  {
+    "name": "search-searxng",
+    "path": "C:\\Users\\lenovo\\.claude\\skills\\search-searxng",
+    "description": "Search Chinese web via local searxng (Baidu/Bing/Sogou). For foreign search, use built-in WebSearch tool.",
+    "status": "已配置"
+  }
+]

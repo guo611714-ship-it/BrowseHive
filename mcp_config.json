@@ -1,0 +1,38 @@
+{
+  "servers": {
+    "filesystem": {
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."],
+      "enabled": true,
+      "tool_overrides": {
+        "read_file": { "read_only": true }
+      }
+    },
+    "fetch": {
+      "transport": "stdio",
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
+      "enabled": true
+    },
+    "search": {
+      "transport": "stdio",
+      "command": "uvx",
+      "args": ["mcp-server-searxng"],
+      "env": {
+        "SEARXNG_URL": "http://localhost:8889"
+      },
+      "enabled": true
+    },
+    "codegraph": {
+      "transport": "stdio",
+      "command": "codegraph",
+      "args": ["serve", "--mcp"],
+      "enabled": true
+    }
+  },
+  "defaults": {
+    "read_only": false,
+    "exclusive": false
+  }
+}

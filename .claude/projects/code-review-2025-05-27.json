@@ -1,0 +1,92 @@
+[
+  {
+    "file": "agent/loop.py",
+    "line": 20,
+    "summary": "AgentLoop.service_mode 的 self.running 标志无法被外部控制",
+    "failure_scenario": "run_agent.py 设置 AgentService.running = False，但 AgentLoop 的 self.running 始终为 True，无法通过 running 标志停止服务，只能依赖 shutdown_event"
+  },
+  {
+    "file": "agent/loop.py",
+    "line": 249,
+    "summary": "服务模式使用 is_set() 轮询而非 await，CPU 空转且无法及时响应",
+    "failure_scenario": "while True 中每 1 秒检查一次 shutdown_event，如果事件在两次检查之间设置和清除，可能错过退出信号；且轮询浪费 CPU"
+  },
+  {
+    "file": "agent/loop.py",
+    "line": 17,
+    "summary": "AgentLoop 缺少公共 shutdown()/stop() 方法，外部无法正确停止",
+    "failure_scenario": "没有 stop() 方法，只能通过直接设置 shutdown_event（但该事件由外部管理，AgentLoop 自身无控制权）"
+  },
+  {
+    "file": "agent/loop.py",
+    "line": 238,
+    "summary": "run() 方法的 service_mode 参数冗余，应使用 __init__ 设置的值",
+    "failure_scenario": "调用者可能传入不同值导致行为不一致；design altitude 低，状态应在初始化时确定而非运行时重复传递"
+  },
+  {
+    "file": "agent/loop.py",
+    "line": 273,
+    "summary": "工具注册过滤不够精确，isinstance(obj, type) 可能排除有效工具",
+    "failure_scenario": "如果工具是类实例（如 functools.partial 包装的函数），isinstance(obj, type) 返回 False 但实际可调用，导致工具未被注册"
+  },
+  {
+    "file": "run_agent.py",
+    "line": 97,
+    "summary": "AgentLoop 实例化在 try 块外，初始化异常无法被捕获并清理",
+    "failure_scenario": "AgentLoop.__init__ 抛出异常（如配置错误），会直接导致 AgentService.start() 退出，_cleanup() 不会执行，sys.stdout/stderr 保持重定向状态"
+  },
+  {
+    "file": "run_agent.py",
+    "line": 77,
+    "summary": "Logger 类接口不完整，缺少标准文件对象属性",
+    "failure_scenario": "某些库或 asyncio 调试代码会查询 .encoding/.errors/.isatty/.readable 等属性，Logger 未实现会导致 AttributeError"
+  },
+  {
+    "file": "run_agent.py",
+    "line": 52,
+    "summary": "信号处理函数中调用 print()，可能阻塞或与主循环 I/O 冲突",
+    "failure_scenario": "如果日志重定向已设置，print 会写入 Logger，而信号处理应尽可能快；如果 Logger 正在写入，可能产生竞态"
+  },
+  {
+    "file": "agent/loop.py",
+    "line": 247,
+    "summary": "服务模式循环中 shutdown_event 检查使用 or 连接，逻辑冗余",
+    "failure_scenario": "self.running 永远为 True，检查 or not self.running 毫无意义；应只检查 shutdown_event"
+  },
+  {
+    "file": "agent/loop.py",
+    "line": 302,
+    "summary": "CLI 模式重启逻辑中 missing restart_count 递增和 sleep",
+    "failure_scenario": "CLI 模式下异常会直接抛出，不会进行重启；但 run_agent 的重启逻辑只会重启一次（重启后异常仍会退出）；与预期不符"
+  },
+  {
+    "file": "install_service.ps1",
+    "line": 61,
+    "summary": "AppParameters 设置仅传递 run_agent.py，但 run_agent.py 期望接收工作区参数",
+    "failure_scenario": "NSSM 调用 'python run_agent.py' 时，sys.argv 只有 1 个元素，workspace 使用 Path.cwd()，如果 AppDirectory 未正确设置或服务在其他目录启动，会使用错误工作区"
+  },
+  {
+    "file": "install_service.ps1",
+    "line": 84,
+    "summary": "日志轮转周期设置为 86400 秒（24 小时），但未设置 CreationDisposition（4=CREATE_ALWAYS）",
+    "failure_scenario": "默认日志追加模式，重启服务后新日志会追加到旧文件，导致日志文件无限增长且难以按天分割"
+  },
+  {
+    "file": "agent/model_orchestrator.py",
+    "line": 24,
+    "summary": "import logging 后创建 logger，但未配置 Handler/Formatter，日志不会输出到文件",
+    "failure_scenario": "logger.error() 调用时若无 root logger 配置，默认仅输出到 stderr（服务中可能被 NSSM 捕获），但无法控制级别和格式"
+  },
+  {
+    "file": "agent/llm_client.py",
+    "line": 189,
+    "summary": "配置类型转换缺失 int/float 边界检查，负数或超大值不会拒绝",
+    "failure_scenario": "maxTokens=-1 或 temperature=2.0（超出有效范围 [0,2]）会传给 API，导致服务器拒绝或意外行为"
+  },
+  {
+    "file": "agent/loop.py",
+    "line": 97,
+    "summary": "ModelOrchestrator 初始化成功但 get_client_for_agent 返回 None 时未降级到模拟模式",
+    "failure_scenario": "配置了模型但 apiKey 为空，get_client_for_agent 返回 None（因 _get_or_create_client 中 LLMClient constructor 不验证 api_key），后续 chat() 会使用 None，导致 AttributeError"
+  }
+]

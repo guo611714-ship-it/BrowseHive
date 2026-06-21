@@ -1,0 +1,26 @@
+# Memory Index
+
+- [Office Add-in Project](project_office_addin.md) — v1.0完整架构、pro-office-组件库、Warm Editorial设计、已实装到Office
+- [Office Add-in Workflow](office-addin-workflow.md) — 优化测试修复标准工作流程：设计→实现→测试→修复→部署→版本管理
+- [Office Testing Feedback](feedback_office_testing.md) — Office 2021限制、browser-harness用法、Chrome调试配置、API调用经验
+- [NVIDIA API Reference](reference_nvidia_api.md) — API端点、模型配置、请求/响应格式
+- [AI Workflows Overview](project_ai_workflows.md) — Agent Team + Browser AI 全景架构、调度决策、路径C渐进式统一进度
+- [Agent Team Production](project_agent_team.md) — 10模型路由、7子代理、8编排模式、492测试通过、核心模块100%覆盖、mypy+ruff pre-commit、死锁修复、知识服务集成、综合成熟度4.3/5
+- [Default Model](feedback_default_model.md) — 默认使用 Opus 4.7
+- [Agent Entry Preference](feedback_agent_entry.md) — 启动 Agent Team 优先用 agent_stream.py
+- [Always Agent Team](feedback_default_agent_team.md) — 所有任务默认启动 Agent Team 工作
+- [Output Paths](feedback_output_paths.md) — 备份→bak，图片→picture，不写工作区
+- [Knowledge Index](knowledge/INDEX.md) — 知识库分类索引，AI/编程/领域/工具/参考
+- [Skill Registration Rule](feedback_skill_registration.md) — 安装skill后必须注册到skills-index.json
+- [Knowledge Base System](project_knowledge_base.md) — 双轨知识库完整架构、13个命令、NVIDIA API免费、5个skill
+- [No Emoji in Python](feedback_no_emoji_python.md) — Python文件禁止使用emoji，用纯文本符号替代
+- [MCP HTTP Migration](project_mcp_http_migration.md) — 5个MCP从stdio迁移到Streamable HTTP，改造方案、踩坑经验
+- [Office Add-in Phase 2](project_office_addin_phase2.md) — 第二阶段路线图：esbuild构建(3周)+自动化测试(4周)+长期演进
+- [Office Add-in UI Redesign](project_office_addin_ui_redesign.md) — UI重设计方案v1.0：智能浮动+分屏协作，暖Editorial+毛玻璃
+- [Agent Team Fix Round 1](project_agent_team_fix_round1.md) — 4项核心问题修复：浏览器AI/LLM超时/挂起/稳定性 + Code Review 7项
+- [OfficeMind UI Redesign v2](project_officemind_ui_redesign_v2.md) — 深色模式WCAG AAA+双模式切换+弹窗移除+品牌统一+图标差异化，C/D阶段待实现
+- [OfficeMind GA Sprint](project_officemind_ga_sprint.md) — Phase 1+2完成：347测试/覆盖率65%/0 ESLint errors/死代码清零/esc统一/CHANGELOG
+- [Always Chinese](feedback_always_chinese.md) — 始终用中文回复
+- [KB Maturity Improvement](project_kb_maturity_improvement.md) — 知识库B+→A-，51测试通过，P0-P3全部完成：测试/同步/缓存/分类/别名/i18n/版本管理
+- [OfficeMind Beta 0.8](project_officemind_beta_08.md) — 三项优化完成：pro-office测试79%+semantic-release+pre-commit覆盖率门禁
+- [Always Productive](feedback_always_productive.md) — 等待后台代理时必须并行工作，不能空闲等待

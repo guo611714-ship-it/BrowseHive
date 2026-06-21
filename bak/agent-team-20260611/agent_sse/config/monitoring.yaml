@@ -1,0 +1,76 @@
+# agent_sse/config/monitoring.yaml
+# 监控配置：指标 + 告警规则
+
+metrics:
+  - name: "llm_call_success_rate"
+    type: "gauge"
+    description: "LLM 调用成功率"
+    labels: ["model", "key_pool"]
+
+  - name: "tool_call_success_rate"
+    type: "gauge"
+    description: "工具调用成功率"
+    labels: ["tool_name"]
+
+  - name: "key_usage"
+    type: "counter"
+    description: "Key 用量统计"
+    labels: ["key_pool"]
+
+  - name: "dual_write_success_rate"
+    type: "gauge"
+    description: "双写一致性成功率"
+
+  - name: "memory_hit_rate"
+    type: "gauge"
+    description: "记忆系统命中率"
+
+  - name: "sub_agent_task_count"
+    type: "counter"
+    description: "子代理任务执行数"
+    labels: ["agent_name"]
+
+  - name: "middleware_latency_ms"
+    type: "histogram"
+    description: "中间件处理延迟"
+    labels: ["middleware_name"]
+
+  - name: "active_sessions"
+    type: "gauge"
+    description: "当前活跃会话数"
+
+alerts:
+  - name: "llm_call_failure"
+    condition: "llm_call_success_rate < 0.95"
+    action: "通知管理员"
+    severity: "warning"
+
+  - name: "llm_call_critical"
+    condition: "llm_call_success_rate < 0.80"
+    action: "切换到备用 Key 池 + 通知管理员"
+    severity: "critical"
+
+  - name: "key_quota_exceeded"
+    condition: "key_usage > 0.9"
+    action: "切换到备用 Key"
+    severity: "warning"
+
+  - name: "dual_write_inconsistent"
+    condition: "dual_write_success_rate < 0.99"
+    action: "检查新旧系统连接状态"
+    severity: "warning"
+
+  - name: "tool_call_failure"
+    condition: "tool_call_success_rate < 0.90"
+    action: "检查工具服务健康状态"
+    severity: "warning"
+
+  - name: "high_latency"
+    condition: "middleware_latency_ms > 5000"
+    action: "检查下游服务响应时间"
+    severity: "warning"
+
+  - name: "session_leak"
+    condition: "active_sessions > 1000"
+    action: "检查会话清理机制"
+    severity: "critical"

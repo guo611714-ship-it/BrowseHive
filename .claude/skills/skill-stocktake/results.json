@@ -1,0 +1,319 @@
+{
+  "evaluated_at": "2026-06-02T09:52:27Z",
+  "mode": "full",
+  "batch_progress": {
+    "total": 70,
+    "evaluated": 70,
+    "status": "completed"
+  },
+  "summary": {
+    "keep": 50,
+    "retire": 11,
+    "merge": 3,
+    "update": 6,
+    "improve": 4
+  },
+  "skills": {
+    "academic-paper-reviewer": {
+      "verdict": "Keep",
+      "reason": "Well-maintained v1.9.1, domain-specific academic review, no overlap."
+    },
+    "agent-team-launcher": {
+      "verdict": "Retire",
+      "reason": "File no longer exists. Already removed."
+    },
+    "AT": {
+      "verdict": "Keep",
+      "reason": "Updated: absorbed ag loop logic as Step 6b. Test count reconciled (492->497 per MEMORY.md). Comprehensive workflow skill covering full Agent Team lifecycle."
+    },
+    "ai-models": {
+      "verdict": "Update",
+      "reason": "Updated: UNVERIFIED flags for speculative models, warning banner added."
+    },
+    "autoreview": {
+      "verdict": "Keep",
+      "reason": "Structured code review workflow. Note: Mac paths need generalization."
+    },
+    "better-auth-best-practices": {
+      "verdict": "Keep",
+      "reason": "Standalone Better Auth reference, no overlap."
+    },
+    "brainstorming": {
+      "verdict": "Keep",
+      "reason": "Structured ideation-to-design pipeline with hard gate."
+    },
+    "browsehive": {
+      "verdict": "Keep",
+      "reason": "Multi-platform browser orchestration, complements browser-harness."
+    },
+    "build-keil": {
+      "verdict": "Keep",
+      "reason": "Unique Keil MDK embedded systems skill."
+    },
+    "ckm-banner-design": {
+      "verdict": "Retire",
+      "reason": "Fully duplicated by ckm:design built-in banner section."
+    },
+    "ckm-brand": {
+      "verdict": "Keep",
+      "reason": "Unique brand scripts not in ckm:design."
+    },
+    "ckm-design": {
+      "verdict": "Keep",
+      "reason": "Unified design hub routing to brand/design-system/ui-styling."
+    },
+    "ckm-design-system": {
+      "verdict": "Improve",
+      "reason": "Slide System section duplicates ckm:slides. Consolidate."
+    },
+    "ckm-ui-styling": {
+      "verdict": "Keep",
+      "reason": "Comprehensive shadcn/ui + Tailwind reference."
+    },
+    "claude-api": {
+      "verdict": "Keep",
+      "reason": "Extensive Anthropic SDK reference. Fresh as of 2026-04-15."
+    },
+    "continuous-learning-v2": {
+      "verdict": "Keep",
+      "reason": "Unique hook-based instinct learning system."
+    },
+    "cost-aware-llm-pipeline": {
+      "verdict": "Update",
+      "reason": "Verify Haiku 4.5 pricing against claude-api data."
+    },
+    "developing-genkit-python": {
+      "verdict": "Keep",
+      "reason": "Google Genkit Python SDK reference, self-contained."
+    },
+    "diagram-maker": {
+      "verdict": "Keep",
+      "reason": "Unique SVG/Excalidraw diagram generation."
+    },
+    "excel-automation": {
+      "verdict": "Retire",
+      "reason": "Hallucinated MCP tools, no usage evidence."
+    },
+    "find-skills": {
+      "verdict": "Keep",
+      "reason": "Meta-skill for discovering/installing skills via npx."
+    },
+    "frontend-design": {
+      "verdict": "Retire",
+      "reason": "Generic design guidelines. Project is Office addins."
+    },
+    "gemini": {
+      "verdict": "Keep",
+      "reason": "Gemini CLI one-shot reference."
+    },
+    "gh-issues": {
+      "verdict": "Keep",
+      "reason": "Unique issue-to-PR automation. Needs registration."
+    },
+    "gifgrep": {
+      "verdict": "Retire",
+      "reason": "Extremely niche GIF search, macOS brew, no usage."
+    },
+    "gitcrawl": {
+      "verdict": "Retire",
+      "reason": "Superseded by gh-issues. External binary not present."
+    },
+    "github": {
+      "verdict": "Keep",
+      "reason": "gh CLI quick-reference, complements GitNexus."
+    },
+    "github-mirror-accelerator": {
+      "verdict": "Keep",
+      "reason": "Mirror acceleration with health checks."
+    },
+    "gitnexus-cli": {
+      "verdict": "Retire",
+      "reason": "CLAUDE.md already documents all core commands."
+    },
+    "gitnexus-debugging": {
+      "verdict": "Keep",
+      "reason": "Rich debugging templates not in CLAUDE.md."
+    },
+    "gitnexus-exploring": {
+      "verdict": "Keep",
+      "reason": "Scenario-based templates, highest practical value."
+    },
+    "gitnexus-guide": {
+      "verdict": "Keep",
+      "reason": "Has unique schema/cypher/cluster resources not in CLAUDE.md."
+    },
+    "gitnexus-pr-review": {
+      "verdict": "Keep",
+      "reason": "Unique PR review workflow with risk matrix."
+    },
+    "gitnexus-refactoring": {
+      "verdict": "Keep",
+      "reason": "Rename/extract checklists, actionable value."
+    },
+    "gog": {
+      "verdict": "Update",
+      "reason": "Needs registration. Unique Google Workspace CLI."
+    },
+    "himalaya": {
+      "verdict": "Update",
+      "reason": "Needs registration. Unique IMAP/SMTP email skill."
+    },
+    "image-edit": {
+      "verdict": "Keep",
+      "reason": "RunComfy image editing with 4-route intent routing."
+    },
+    "insights-cn": {
+      "verdict": "Retire",
+      "reason": "Niche report generator, uncertain tool availability."
+    },
+    "karpathy-guidelines": {
+      "verdict": "Keep",
+      "reason": "Behavioral coding guidelines, unique philosophical value."
+    },
+    "kb-batch-import": {
+      "verdict": "Retire",
+      "reason": "Fully redundant with CLAUDE.md documentation."
+    },
+    "kb-browse": {
+      "verdict": "Retire",
+      "reason": "Fully redundant with CLAUDE.md documentation."
+    },
+    "kb-maintenance": {
+      "verdict": "Retire",
+      "reason": "Redundant with CLAUDE.md. Hardcoded Windows paths."
+    },
+    "kb-search": {
+      "verdict": "Retire",
+      "reason": "Fully redundant with CLAUDE.md documentation."
+    },
+    "keil": {
+      "verdict": "Keep",
+      "reason": "Well-structured embedded build skill, highly specialized."
+    },
+    "ljg-word": {
+      "verdict": "Keep",
+      "reason": "Unique English word deep-dive analysis tool."
+    },
+    "llm-patterns": {
+      "verdict": "Update",
+      "reason": "Verify claude-sonnet-4-20250514 model ID is current."
+    },
+    "markitdown": {
+      "verdict": "Keep",
+      "reason": "Unique file-to-markdown conversion for LLM pipelines."
+    },
+    "mcporter": {
+      "verdict": "Keep",
+      "reason": "MCP server management, distinct from CodeGraph/GitNexus."
+    },
+    "meme-maker": {
+      "verdict": "Keep",
+      "reason": "Simple fun utility, low token cost."
+    },
+    "nano-pdf": {
+      "verdict": "Keep",
+      "reason": "Simple PDF editing CLI utility."
+    },
+    "next-best-practices": {
+      "verdict": "Keep",
+      "reason": "Comprehensive Next.js 15+/v16 reference."
+    },
+    "node-inspect-debugger": {
+      "verdict": "Keep",
+      "reason": "Useful Node.js debugging skill."
+    },
+    "notion": {
+      "verdict": "Keep",
+      "reason": "Well-documented Notion CLI/API skill."
+    },
+    "obsidian": {
+      "verdict": "Keep",
+      "reason": "Obsidian CLI operations, complements knowledge system."
+    },
+    "office-addin-workflow": {
+      "verdict": "Improve",
+      "reason": "Heavy duplication with 4 MEMORY.md entries. Deduplicate."
+    },
+    "openai-whisper": {
+      "verdict": "Keep",
+      "reason": "Local transcription utility."
+    },
+    "openai-whisper-api": {
+      "verdict": "Keep",
+      "reason": "API-based transcription with diarization."
+    },
+    "ouyi-ai": {
+      "verdict": "Retire",
+      "reason": "Thin wrapper with hardcoded absolute paths, sys.path hacks, opaque DALL-E size encoding. 5-line CLAUDE.md instruction sufficient."
+    },
+    "pptx": {
+      "verdict": "Keep",
+      "reason": "Unique PowerPoint skill with sub-files."
+    },
+    "python-debugpy": {
+      "verdict": "Keep",
+      "reason": "Concise Python debugging reference."
+    },
+    "python-testing-patterns": {
+      "verdict": "Improve",
+      "reason": "623 lines, heavily generic. Trim to ~150 lines."
+    },
+    "receiving-code-review": {
+      "verdict": "Keep",
+      "reason": "Behavioral guidance for handling review feedback."
+    },
+    "remotion-best-practices": {
+      "verdict": "Keep",
+      "reason": "Domain-specific Remotion reference."
+    },
+    "requesting-code-review": {
+      "verdict": "Keep",
+      "reason": "Actionable code reviewer dispatch workflow."
+    },
+    "fix": {
+      "verdict": "Keep",
+      "reason": "New skill: merged ag loop + code-review-fix-cycle fix_manifest + deadcode-scanner cleanup. Single entry point for review→fix→verify→loop workflow."
+    },
+    "sag": {
+      "verdict": "Keep",
+      "reason": "Unique ElevenLabs TTS skill."
+    },
+    "search-searxng": {
+      "verdict": "Improve",
+      "reason": "Fixed: removed WebSearch references conflicting with CLAUDE.md."
+    },
+    "senior-ml-engineer": {
+      "verdict": "Improve",
+      "reason": "306 lines, heavy boilerplate. Trim to ~150 lines."
+    },
+    "session-logs": {
+      "verdict": "Update",
+      "reason": "Verify OpenClaw paths against Claude Code session storage."
+    },
+    "sherpa-onnx-tts": {
+      "verdict": "Retire",
+      "reason": "Overlaps with sag. Manual runtime setup, no usage."
+    },
+    "skill-creator": {
+      "verdict": "Keep",
+      "reason": "Meta-skill for authoring SKILL.md files."
+    },
+    "skill-stocktake": {
+      "verdict": "Keep",
+      "reason": "Active meta-skill for auditing skills."
+    },
+    "spike": {
+      "verdict": "Keep",
+      "reason": "Concise prototyping guidance."
+    },
+    "summarize": {
+      "verdict": "Keep",
+      "reason": "URL/video/file summarization CLI."
+    },
+    "word-document-processor": {
+      "verdict": "Keep",
+      "reason": "DOCX creation/OOXML/redlining, active in Office project."
+    }
+  },
+  "last_quick_scan": "2026-06-02T09:52:27Z"
+}

@@ -1,0 +1,16 @@
+repos:
+  - repo: local
+    hooks:
+      - id: pytest-check
+        name: Run tests
+        entry: python -m pytest tests/ -x -q --tb=line
+        language: system
+        pass_filenames: false
+        always_run: true
+
+      - id: syntax-check
+        name: Python syntax check
+        entry: python -m py_compile
+        language: system
+        types: [python]
+        pass_filenames: true

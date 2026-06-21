@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Skills{% endblock %}
+
+{% block content %}
+<div class="flex items-center justify-between mb-4">
+  <div>
+    <h1 class="text-2xl text-nasa-accent">Skills</h1>
+    <p class="text-sm text-nasa-muted">{{ total }} skills · ventana {{ days }}d · filter: <span class="text-nasa-cyan">{{ filter }}</span></p>
+  </div>
+  <div class="flex gap-2 text-xs mono">
+    <a href="?filter=all&days={{ days }}" class="px-2 py-1 border border-nasa-border rounded {% if filter == 'all' %}text-nasa-accent{% endif %}">all</a>
+    <a href="?filter=active&days={{ days }}" class="px-2 py-1 border border-nasa-border rounded {% if filter == 'active' %}text-nasa-accent{% endif %}">active</a>
+    <a href="?filter=ghost&days={{ days }}" class="px-2 py-1 border border-nasa-border rounded {% if filter == 'ghost' %}text-nasa-accent{% endif %}">ghost</a>
+    <a href="?filter=missing&days={{ days }}" class="px-2 py-1 border border-nasa-border rounded {% if filter == 'missing' %}text-nasa-accent{% endif %}">missing</a>
+  </div>
+</div>
+
+<div class="border border-nasa-border bg-nasa-panel rounded-md overflow-x-auto">
+  <table class="w-full text-sm">
+    <thead>
+      <tr>
+        <th>skill</th>
+        <th>source</th>
+        <th class="text-right">suggested</th>
+        <th class="text-right">invoked</th>
+        <th class="text-right">ratio</th>
+        <th>flag</th>
+        <th class="text-xs">path</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for s in skills %}
+      <tr>
+        <td class="mono text-xs">{{ s.name }}</td>
+        <td>
+          {% if s.source == 'user' %}<span class="badge badge-cyan">user</span>
+          {% elif s.source == 'plugin' %}<span class="badge badge-muted">plugin</span>
+          {% elif s.source == 'missing' %}<span class="badge badge-danger">missing</span>
+          {% else %}<span class="badge badge-muted">{{ s.source }}</span>{% endif %}
+        </td>
+        <td class="text-right mono">{{ s.suggested }}</td>
+        <td class="text-right mono {% if s.invoked > 0 %}text-nasa-accent{% endif %}">{{ s.invoked }}</td>
+        <td class="text-right mono">{{ (s.ratio * 100) | round(0) }}%</td>
+        <td>{% if s.ghost %}<span class="badge badge-danger">GHOST</span>{% endif %}</td>
+        <td class="text-xs text-nasa-muted truncate" style="max-width:380px">{{ s.path }}</td>
+      </tr>
+      {% endfor %}
+      {% if not skills %}
+      <tr><td colspan="7" class="text-center text-nasa-muted py-6">sin skills para el filtro actual</td></tr>
+      {% endif %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

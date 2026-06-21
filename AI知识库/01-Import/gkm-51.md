@@ -1,0 +1,147 @@
+---
+title: "gkm-5.1"
+category: "ai"
+date: "2026-06-01"
+source: "kb-manager batch-import"
+---
+
+# gkm-5.1
+
+ompletion = client.chat.completions.create(
+  model="z-ai/glm-5.1",
+  messages=[{"role":"user","content":""}],
+  temperature=1,
+  top_p=1,
+  max_tokens=16384,
+  
+  stream=True
+)
+
+GLM-5.1
+Description:
+GLM-5.1 is a next-generation flagship large language model designed for agentic engineering, featuring significantly stronger coding capabilities than its predecessor GLM-5. It sustains optimization over hundreds of reasoning rounds and thousands of tool calls, enabling it to solve complex software engineering tasks with extended reasoning horizons and iterative refinement.
+GLM-5.1 was developed by Z.ai (zai-org) as a part of the GLM model family.
+
+This model is ready for commercial/non-commercial use.
+
+Third-Party Community Consideration
+This model is not owned or developed by NVIDIA. This model has been developed and built to a third-party's requirements for this application and use case; see link to Non-NVIDIA GLM-5.1 Model Card.
+
+License/Terms of Use:
+GOVERNING TERMS: The trial service is governed by the NVIDIA API Trial Terms of Service; use of this model is governed by the NVIDIA Open Model License Agreement. ADDITIONAL INFORMATION: MIT License.
+
+Deployment Geography:
+Global
+
+Use Case:
+Developers and researchers can use GLM-5.1 for complex software engineering tasks, agentic workflows requiring long-horizon planning and tool use, mathematical reasoning, terminal-based automation, code generation and debugging, and general conversational AI applications.
+
+Release Date:
+Build.NVIDIA.com: 4/17/2026 via link
+NGC: 04/15/2026 via link
+HuggingFace: 04/08/2026 via link
+
+Reference(s):
+References:
+
+GLM-5.1 on Hugging Face
+GLM-5 Technical Report (arXiv:2602.15763)
+GLM-5.1 Blog Post
+Z.ai API Platform
+GitHub Repository
+Model Architecture:
+Architecture Type: Mixture of Experts (MoE)
+Network Architecture: GLM (General Language Model) with DSA (Dense-Sparse-Alternating)
+
+This model was developed based on GLM-5.
+Number of model parameters: 754B
+
+Input:
+Input Type(s): Text
+Input Format(s): String
+Input Parameters: One Dimensional (1D)
+Other Properties Related to Input: Supports multi-turn conversations, tool calling, system prompts, and extended agentic sessions. Input context length: 131,072 tokens.
+
+Output:
+Output Type(s): Text
+Output Format: String
+Output Parameters: One Dimensional (1D)
+Other Properties Related to Output: Supports streaming, structured output, reasoning traces, and tool call responses. Output context length: 131,072 tokens.
+
+Our AI models are designed and/or optimized to run on NVIDIA GPU-accelerated systems. By leveraging NVIDIA's hardware (e.g. GPU cores) and software frameworks (e.g., CUDA libraries), the model achieves faster training and inference times compared to CPU-only solutions.
+
+Software Integration:
+Runtime Engine(s):
+
+vLLM
+Supported Hardware Microarchitecture Compatibility:
+
+NVIDIA Blackwell
+NVIDIA Hopper
+Supported Operating System(s):
+
+Linux
+The integration of foundation and fine-tuned models into AI systems requires additional testing using use-case-specific data to ensure safe and effective deployment. Following the V-model methodology, iterative testing and validation at both unit and system levels are essential to mitigate risks, meet technical and functional requirements, and ensure compliance with safety and ethical standards before deployment.
+
+Model Version(s):
+GLM v5.1
+
+Training, Testing, and Evaluation Datasets:
+Training Dataset
+Data Modality: Text (English, Chinese, multilingual)
+Text Training Data Size: Undisclosed
+Training Data Collection: Undisclosed
+Training Labeling: Undisclosed
+Training Properties: Undisclosed
+
+Testing Dataset
+Testing Data Collection: Undisclosed
+Testing Labeling: Undisclosed
+Testing Properties: Undisclosed
+
+Evaluation Dataset
+Evaluation Benchmark Score: Evaluated on multiple benchmarks including SWE-Bench Pro, Terminal-Bench 2.0, CyberGym, NL2Repo, AIME 2026, HMMT, GPQA-Diamond, IMOAnswerBench, HLE w/ Tools, BrowseComp, τ³-Bench, MCP-Atlas, and Tool-Decathlon.
+Evaluation Data Collection: Automated
+Evaluation Labeling: Human
+Evaluation Properties: GLM-5.1 achieves state-of-the-art results across coding, mathematical reasoning, and agentic benchmarks, outperforming its predecessor GLM-5 on all major evaluations.
+
+Evaluation Results
+Detailed Benchmark Results
+Inference:
+Acceleration Engine: vLLM
+
+Test Hardware:
+
+NVIDIA GB200x4
+Ethical Considerations:
+NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications. When downloaded or used in accordance with our terms of service, developers should work with their internal model team to ensure this model meets requirements for the relevant industry and use case and addresses unforeseen product misuse.
+
+Please report model quality, risk, security vulnerabilities or NVIDIA AI Concerns here.
+
+Training, Testing, and Evaluation Datasets:
+Training Dataset
+Data Modality: Text (English, Chinese, multilingual)
+Text Training Data Size: Undisclosed
+Training Data Collection: Undisclosed
+Training Labeling: Undisclosed
+Training Properties: Undisclosed
+
+Testing Dataset
+Testing Data Collection: Undisclosed
+Testing Labeling: Undisclosed
+Testing Properties: Undisclosed
+
+Evaluation Dataset
+Evaluation Benchmark Score: Evaluated on multiple benchmarks including SWE-Bench Pro, Terminal-Bench 2.0, CyberGym, NL2Repo, AIME 2026, HMMT, GPQA-Diamond, IMOAnswerBench, HLE w/ Tools, BrowseComp, τ³-Bench, MCP-Atlas, and Tool-Decathlon.
+Evaluation Data Collection: Automated
+Evaluation Labeling: Human
+Evaluation Properties: GLM-5.1 achieves state-of-the-art results across coding, mathematical reasoning, and agentic benchmarks, outperforming its predecessor GLM-5 on all major evaluations.
+
+Evaluation Results
+Detailed Benchmark Results
+Inference:
+Acceleration Engine: vLLM
+
+Test Hardware:
+
+NVIDIA GB200x4

@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# router-search — CLI wrapper para search.py (FAISS semantic search).
+#
+# Uso:
+#   router-search "voy a hacer git commit del SOUL"
+#   router-search --top 10 "limpia worktrees"
+#   router-search --json "deploy a vercel"
+set -euo pipefail
+
+EMB_DIR="$(cd "$(dirname "$(readlink "$0" || echo "$0")")" 2>/dev/null && pwd || dirname "$0")"
+# Si readlink no resolvió (symlink), prueba ruta canónica conocida:
+if [ ! -f "$EMB_DIR/search.py" ]; then
+  EMB_DIR="$HOME/.claude/skill-router/v3-niveldios/embeddings"
+fi
+
+VENV_PY="$EMB_DIR/venv/bin/python3"
+if [ ! -x "$VENV_PY" ]; then
+  echo "[router-search] venv no encontrada en $EMB_DIR/venv" >&2
+  echo "Construye índice primero:  python3 $EMB_DIR/build_index.py" >&2
+  exit 1
+fi
+
+if [ ! -f "$EMB_DIR/indexes/manifest.json" ]; then
+  echo "[router-search] Índice no construido. Construyendo ahora (~30s)..." >&2
+  "$VENV_PY" "$EMB_DIR/build_index.py" --quiet >&2
+fi
+
+exec "$VENV_PY" "$EMB_DIR/search.py" "$@"

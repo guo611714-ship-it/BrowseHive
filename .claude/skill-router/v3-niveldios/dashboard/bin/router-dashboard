@@ -1,0 +1,118 @@
+#!/usr/bin/env bash
+# router-dashboard {start|stop|restart|status|logs|test}
+#
+# Run, stop, monitor the Mission Control dashboard for the Skill Router.
+# Localhost-only on 127.0.0.1:9300 (override with ROUTER_DASH_PORT).
+set -euo pipefail
+
+DASH_DIR="${HOME}/.claude/skill-router/v3-niveldios/dashboard"
+VENV="${DASH_DIR}/venv"
+PYTHON="${VENV}/bin/python"
+UVICORN="${VENV}/bin/uvicorn"
+PID_DIR="${DASH_DIR}/pid"
+LOG_DIR="${DASH_DIR}/log"
+PID_FILE="${PID_DIR}/dashboard.pid"
+LOG_FILE="${LOG_DIR}/dashboard.log"
+
+HOST="${ROUTER_DASH_HOST:-127.0.0.1}"
+PORT="${ROUTER_DASH_PORT:-9300}"
+
+mkdir -p "${PID_DIR}" "${LOG_DIR}"
+
+_is_running() {
+  if [[ -f "${PID_FILE}" ]]; then
+    local pid
+    pid="$(cat "${PID_FILE}" 2>/dev/null || true)"
+    if [[ -n "${pid}" ]] && kill -0 "${pid}" 2>/dev/null; then
+      echo "${pid}"
+      return 0
+    fi
+    rm -f "${PID_FILE}"
+  fi
+  return 1
+}
+
+cmd_start() {
+  if pid="$(_is_running)"; then
+    echo "already running pid=${pid} url=http://${HOST}:${PORT}"
+    exit 0
+  fi
+  if [[ ! -x "${UVICORN}" ]]; then
+    echo "ERROR: venv not found at ${VENV}. Run setup first." >&2
+    exit 1
+  fi
+  cd "${DASH_DIR}"
+  ROUTER_DASH_HOST="${HOST}" ROUTER_DASH_PORT="${PORT}" \
+    nohup "${UVICORN}" app.main:app \
+      --host "${HOST}" --port "${PORT}" --log-level info \
+      >> "${LOG_FILE}" 2>&1 &
+  echo $! > "${PID_FILE}"
+  sleep 1.0
+  if pid="$(_is_running)"; then
+    echo "started pid=${pid} url=http://${HOST}:${PORT} log=${LOG_FILE}"
+  else
+    echo "ERROR: failed to start. Check ${LOG_FILE}" >&2
+    tail -n 20 "${LOG_FILE}" >&2 || true
+    exit 1
+  fi
+}
+
+cmd_stop() {
+  if pid="$(_is_running)"; then
+    kill "${pid}" 2>/dev/null || true
+    sleep 0.5
+    if kill -0 "${pid}" 2>/dev/null; then
+      kill -9 "${pid}" 2>/dev/null || true
+    fi
+    rm -f "${PID_FILE}"
+    echo "stopped pid=${pid}"
+  else
+    echo "not running"
+  fi
+}
+
+cmd_restart() {
+  cmd_stop || true
+  cmd_start
+}
+
+cmd_status() {
+  if pid="$(_is_running)"; then
+    echo "running pid=${pid} url=http://${HOST}:${PORT}"
+    if command -v curl >/dev/null 2>&1; then
+      curl -fsS --max-time 2 "http://${HOST}:${PORT}/health" || echo "(health endpoint unreachable)"
+    fi
+  else
+    echo "not running"
+    exit 1
+  fi
+}
+
+cmd_logs() {
+  [[ -f "${LOG_FILE}" ]] || { echo "(no log yet)"; exit 0; }
+  tail -n 80 -f "${LOG_FILE}"
+}
+
+cmd_test() {
+  cd "${DASH_DIR}"
+  "${PYTHON}" -m pytest tests/ -q --color=yes "$@"
+}
+
+case "${1:-status}" in
+  start)   cmd_start ;;
+  stop)    cmd_stop ;;
+  restart) cmd_restart ;;
+  status)  cmd_status ;;
+  logs)    cmd_logs ;;
+  test)    shift; cmd_test "$@" ;;
+  *)
+    cat >&2 <<EOF
+usage: router-dashboard {start|stop|restart|status|logs|test}
+
+env overrides:
+  ROUTER_DASH_HOST (default 127.0.0.1)
+  ROUTER_DASH_PORT (default 9300)
+EOF
+    exit 2
+    ;;
+esac

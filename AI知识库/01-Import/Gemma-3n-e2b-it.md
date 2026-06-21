@@ -1,0 +1,265 @@
+---
+title: "Gemma 3n e2b-it "
+category: "ai"
+date: "2026-06-01"
+source: "kb-manager batch-import"
+---
+
+# Gemma 3n e2b-it 
+
+payload = {
+  "model": "google/gemma-3n-e2b-it",
+  "messages": [{"role":"user","content":""}],
+  "max_tokens": 512,
+  "temperature": 0.20,
+  "top_p": 0.70,
+  "frequency_penalty": 0.00,
+  "presence_penalty": 0.00,
+  "stream": stream
+}
+
+Gemma 3n e2b-it Overview
+Description
+Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. Gemma 3n models are designed for efficient execution on low-resource devices. They are capable of multimodal input, handling text, image, video, and audio input, and generating text outputs, with open weights for pre-trained and instruction-tuned variants. These models were trained with data in over 140 spoken languages.
+
+This model is ready for commercial/non-commercial use.
+
+Third-Party Community Consideration
+This model is not owned or developed by NVIDIA. It has been produced to a third-party's requirements for this application and use-case. See the external card: Gemma 3n e2b-it Model Card.
+
+License and Terms of Use:
+GOVERNING TERMS: This trial service is governed by the NVIDIA API Trial Terms of Service. Use of this model is governed by the NVIDIA Community Model License. Additional Information: Gemma Terms of Use
+
+Deployment Geography:
+Global
+
+Use Case:
+Content Creation and Communication (Text Generation, Chatbots, Summarization, Image/Audio Data Extraction), Research and Education (NLP Research, Language Learning, Knowledge Exploration)
+
+Intended Usage
+Open generative models have a wide range of applications across various industries and domains. The following list of potential uses is not comprehensive. The purpose of this list is to provide contextual information about the possible use-cases that the model creators considered as part of model training and development.
+
+Content Creation and Communication
+Text Generation: Generate creative text formats such as poems, scripts, code, marketing copy, and email drafts.
+Chatbots and Conversational AI: Power conversational interfaces for customer service, virtual assistants, or interactive applications.
+Text Summarization: Generate concise summaries of a text corpus, research papers, or reports.
+Image Data Extraction: Extract, interpret, and summarize visual data for text communications.
+Audio Data Extraction: Transcribe spoken language, translate speech to text in other languages, and analyze sound-based data.
+Research and Education
+Natural Language Processing (NLP) and generative model Research: These models can serve as a foundation for researchers to experiment with generative models and NLP techniques, develop algorithms, and contribute to the advancement of the field.
+Language Learning Tools: Support interactive language learning experiences, aiding in grammar correction or providing writing practice.
+Knowledge Exploration: Assist researchers in exploring large bodies of data by generating summaries or answering questions about specific topics.
+Release Date:
+Build.NVIDIA.com: 06/26/2025 via (link)
+Hugging Face: 06/26/2025 via (link)
+
+References:
+Gemma 3n Model Overview
+Gemma 3n's Efficient Parameter Management Technology
+Responsible Generative AI Toolkit
+Gemma on Kaggle
+Gemma on HuggingFace
+Gemma on Vertex Model Garden
+Model Architecture:
+Architecture Type: Matryoshka Transformer
+Network Architecture: Matryoshka Transformer (MatFormer)
+Parameter Count: 2B (base model), ~4.4B (with Per-Layer Embeddings)
+Number of Layers: 30
+Notable Architectural Features: Selective parameter activation technology
+Base Model: google/gemma-3n-e2b
+Additional Notes: The model's full parameter count is higher than its base model size due to Per-Layer Embeddings (PLE). Standard implementations will load all parameters, including PLE, into VRAM.
+Input
+Input Type(s): Text, Image, Audio
+Input Formats: Text string, Images (normalized to 256x256, 512x512, or 768x768), Audio data (single channel)
+Input Parameters: One Dimensional (1D), Two Dimensional (2D), Three Dimensional (3D)
+Other Properties Related to Input: Total input context of 32K tokens. Images are encoded to 256 tokens each. Audio data is encoded to 6.25 tokens per second from a single channel.
+Output
+Output Type(s): Text
+Output Formats: Text
+Output Parameters: 1D
+Other Properties Related to Output: Total output length up to 32K tokens, subtracting the request input tokens.
+
+Our Al models are designed and/or optimized to run on NVIDIA GPU-accelerated systems. By leveraging NVIDIA's hardware (e.g. GPU cores) and software frameworks (e.g., CUDA libraries), the model achieves faster training and inference times compared to CPU-only solutions.
+Software Integration
+Supported Hardware Microarchitecture Compatibility:
+
+NVIDIA GPU Micro-architectures Suitable for Serving Gemma 3n in Production
+(≥ 16 GB VRAM + Tensor-core /mixed-precision support)
+
+µArch	First Public Release	Example SKUs (≥ 16 GB)	Tensor-core Gen / Precision	Production Suitability
+Blackwell	2024	B100 (192 GB HBM3e) · B200 (192 GB HBM3e) · RTX 5090 (24 GB GDDR7)	5-th-gen, FP4 / FP8	Best-in-class throughput & memory for high-QPS clusters
+Hopper	2022	H100 (80 / 94 GB) · H200 (141 GB)	4-th-gen, FP8 (Transformer Engine)	Datacenter standard for LLM inference & training
+Ada Lovelace	2022	RTX 6000 Ada (48 GB) · L40/L40 S (48 GB)	4-th-gen, FP8	Cost-effective edge / on-prem deployments with strong media blocks
+Ampere	2020	A100 (40 / 80 GB) · A30 (24 GB) · RTX 3090 (24 GB)	3-rd-gen, BF16 / TF32	Proven, widely available choice for medium-to-large scale serving
+Turing	2018	Quadro/RTX 6000 (24 GB) · RTX 8000 (48 GB)	2-nd-gen, FP16 / INT8	Viable for latency-tolerant or dev/test replicas
+Volta	2017	Tesla V100 (16 / 32 GB)	1-st-gen, FP16	Legacy datacenter GPUs still supported by CUDA 12 drivers
+Pascal (edge case)	2016	Tesla P100 (16 GB) · P40 (24 GB)	No Tensor Cores	Only for low-QPS single-replica use; still covered by R570/575 drivers
+Recommendation: Start with Ampere or newer for production workloads that demand real-time multimodal responses or higher concurrency. Turing/Volta can host smaller replica pools; Pascal is generally not advised for new deployments.
+
+Model Version:
+gemma-3n-e2b-it v1.0
+
+Training, Testing, and Evaluation Datasets:
+Training Dataset:
+Data Collection Method: Hybrid: Automated, Synthetic, Human
+Labeling Method: Undisclosed
+Properties: A diverse collection of web text in over 140 languages, code, mathematics, images, and audio, totalling approximately 11 trillion tokens. Knowledge cutoff date is June 2024.
+Data Preprocessing
+Here are the key data cleaning and filtering methods applied to the training data:
+
+CSAM Filtering: Rigorous CSAM (Child Sexual Abuse Material) filtering was applied at multiple stages in the data preparation process to ensure the exclusion of harmful and illegal content.
+Sensitive Data Filtering: As part of making Gemma pre-trained models safe and reliable, automated techniques were used to filter out certain personal information and other sensitive data from training sets.
+Additional methods: Filtering based on content quality and safety in line with our policies.
+Testing Dataset:
+Data Collection Method by dataset: Hybrid: Automated, Synthetic, Human
+Labeling Method by dataset: Undisclosed
+Properties: Undisclosed
+Evaluation Benchmark Results:
+Data Collection Method: Undisclosed
+Labeling Method: Undisclosed
+Properties: Benchmarks include: HellaSwag, BoolQ, PIQA, SocialIQA, TriviaQA, Natural Questions, ARC-c, ARC-e, WinoGrande, BIG-Bench Hard, DROP, MGSM, WMT24++, Include, MMLU, GPQA Diamond, LiveCodeBench, Codegolf, AIME 2025, MBPP, HumanEval, HiddenMath, Global-MMLU-Lite.
+Model evaluation metrics and results.
+
+Benchmark Results
+These models were evaluated at full precision (float32) against a large collection of different datasets and metrics to cover different aspects of content generation. Evaluation results marked with IT are for instruction-tuned models. Evaluation results marked with PT are for pre-trained models.
+
+Reasoning and factuality
+Benchmark	Metric	n-shot	E2B PT	E4B PT
+HellaSwag	Accuracy	10-shot	72.2	78.6
+BoolQ	Accuracy	0-shot	76.4	81.6
+PIQA	Accuracy	0-shot	78.9	81.0
+SocialIQA	Accuracy	0-shot	48.8	50.0
+TriviaQA	Accuracy	5-shot	60.8	70.2
+Natural Questions	Accuracy	5-shot	15.5	20.9
+ARC-c	Accuracy	25-shot	51.7	61.6
+ARC-e	Accuracy	0-shot	75.8	81.6
+WinoGrande	Accuracy	5-shot	66.8	71.7
+BIG-Bench Hard	Accuracy	few-shot	44.3	52.9
+DROP	Token F1 score	1-shot	53.9	60.8
+Multilingual
+Benchmark	Metric	n-shot	E2B IT	E4B IT
+MGSM	Accuracy	0-shot	53.1	60.7
+WMT24++ (ChrF)	Character-level F-score	0-shot	42.7	50.1
+Include	Accuracy	0-shot	38.6	57.2
+MMLU (ProX)	Accuracy	0-shot	8.1	19.9
+OpenAI MMLU	Accuracy	0-shot	22.3	35.6
+Global-MMLU	Accuracy	0-shot	55.1	60.3
+ECLeKTic	ECLeKTic score	0-shot	2.5	1.9
+STEM and code
+Benchmark	Metric	n-shot	E2B IT	E4B IT
+GPQA Diamond	RelaxedAccuracy/accuracy	0-shot	24.8	23.7
+LiveCodeBench v5	pass@1	0-shot	18.6	25.7
+Codegolf v2.2	pass@1	0-shot	11.0	16.8
+AIME 2025	Accuracy	0-shot	6.7	11.6
+Additional benchmarks
+Benchmark	Metric	n-shot	E2B IT	E4B IT
+MMLU	Accuracy	0-shot	60.1	64.9
+MBPP	pass@1	3-shot	56.6	63.6
+HumanEval	pass@1	0-shot	66.5	75.0
+LiveCodeBench	pass@1	0-shot	13.2	13.2
+HiddenMath	Accuracy	0-shot	27.7	37.7
+Global-MMLU-Lite	Accuracy	0-shot	59.0	64.5
+MMLU (Pro)	Accuracy	0-shot	40.5	50.6
+Evaluation Approach
+Our evaluation methods include structured evaluations and internal red-teaming testing of relevant content policies. Red-teaming was conducted by a number of different teams, each with different goals and human evaluation metrics. These models were evaluated against a number of different categories relevant to ethics and safety, including:
+
+Child Safety: Evaluation of text-to-text and image to text prompts covering child safety policies, including child sexual abuse and exploitation.
+Content Safety: Evaluation of text-to-text and image to text prompts covering safety policies including, harassment, violence and gore, and hate speech.
+Representational Harms: Evaluation of text-to-text and image to text prompts covering safety policies including bias, stereotyping, and harmful associations or inaccuracies.
+In addition to development level evaluations, we conduct "assurance evaluations" which are our 'arms-length' internal evaluations for responsibility governance decision making. They are conducted separately from the model development team, to inform decision making about release. High level findings are fed back to the model team, but prompt sets are held-out to prevent overfitting and preserve the results' ability to inform decision making. Notable assurance evaluation results are reported to our Responsibility & Safety Council as part of release review.
+
+Evaluation Results
+For all areas of safety testing, we saw safe levels of performance across the categories of child safety, content safety, and representational harms relative to previous Gemma models. All testing was conducted without safety filters to evaluate the model capabilities and behaviors. For text-to-text, image-to-text, and audio-to-text, and across all model sizes, the model produced minimal policy violations, and showed significant improvements over previous Gemma models' performance with respect to high severity violations. A limitation of our evaluations was they included primarily English language prompts.
+
+Inference:
+Acceleration Engine: vLLM
+Test Hardware: L40s
+
+Usage
+Below, there are some code snippets on how to get quickly started with running the model. First, install the Transformers library. Gemma 3n is supported starting from transformers 4.53.0.
+
+Sh
+
+Copy
+$ pip install -U transformers
+Then, copy the snippet from the section that is relevant for your use case.
+
+Running with the pipeline API
+You can initialize the model and processor for inference with pipeline as follows.
+
+Python
+
+Copy
+from transformers import pipeline
+import torch
+
+pipe = pipeline(
+    "image-text-to-text",
+    model="google/gemma-3n-e2b-it",
+    device="cuda",
+    torch_dtype=torch.bfloat16,
+)
+output = pipe(
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/bee.jpg",
+    text="<image_soft_token> in this image, there is"
+)
+
+print(output)
+# [{'input_text': '<image_soft_token> in this image, there is',
+# 'generated_text': '<image_soft_token> in this image, there is a beautiful flower and a bee is sucking nectar and pollen from the flower.'}]
+Running the model on a single GPU
+Python
+
+Copy
+from transformers import AutoProcessor, Gemma3nForConditionalGeneration
+from PIL import Image
+import requests
+import torch
+
+model_id = "google/gemma-3n-e2b-it"
+
+model = Gemma3nForConditionalGeneration.from_pretrained(model_id, device="cuda", torch_dtype=torch.bfloat16,).eval()
+
+processor = AutoProcessor.from_pretrained(model_id)
+
+url = "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/bee.jpg"
+image = Image.open(requests.get(url, stream=True).raw)
+prompt = "<image_soft_token> in this image, there is"
+model_inputs = processor(text=prompt, images=image, return_tensors="pt").to(model.device)
+
+input_len = model_inputs["input_ids"].shape[-1]
+
+with torch.inference_mode():
+    generation = model.generate(**model_inputs, max_new_tokens=10)
+    generation = generation[0][input_len:]
+
+decoded = processor.decode(generation, skip_special_tokens=True)
+print(decoded)
+# one picture of flowers which shows that the flower is
+Additional Details:
+Usage and Limitations
+These models have certain limitations that users should be aware of.
+
+Limitations
+Training Data
+The quality and diversity of the training data significantly influence the model's capabilities. Biases or gaps in the training data can lead to limitations in the model's responses.
+The scope of the training dataset determines the subject areas the model can handle effectively.
+Context and Task Complexity
+Models are better at tasks that can be framed with clear prompts and instructions. Open-ended or highly complex tasks might be challenging.
+A model's performance can be influenced by the amount of context provided (longer context generally leads to better outputs, up to a certain point).
+Language Ambiguity and Nuance
+Natural language is inherently complex. Models might struggle to grasp subtle nuances, sarcasm, or figurative language.
+Factual Accuracy
+Models generate responses based on information they learned from their training datasets, but they are not knowledge bases. They may generate incorrect or outdated factual statements.
+Common Sense
+Models rely on statistical patterns in language. They might lack the ability to apply common sense reasoning in certain situations.
+Risks identified and mitigations:
+
+Perpetuation of biases: It's encouraged to perform continuous monitoring (using evaluation metrics, human review) and the exploration of de-biasing techniques during model training, fine-tuning, and other use cases.
+Generation of harmful content: Mechanisms and guidelines for content safety are essential. Developers are encouraged to exercise caution and implement appropriate content safety safeguards based on their specific product policies and application use cases.
+Misuse for malicious purposes: Technical limitations and developer and end-user education can help mitigate against malicious applications of generative models. Educational resources and reporting mechanisms for users to flag misuse are provided. Prohibited uses of Gemma models are outlined in the Gemma Prohibited Use Policy.
+Privacy violations: Models were trained on data filtered for removal of certain personal information and other sensitive data. Developers are encouraged to adhere to privacy regulations with privacy-preserving techniques.
+Benefits
+At the time of release, this family of models provides high-performance open generative model implementations designed from the ground up for responsible AI development compared to similarly sized models.
+
+Using the benchmark evaluation metrics described in this document, these models have shown to provide superior performance to other, comparably-sized open model alternatives.
